@@ -15,6 +15,8 @@ A simple local hex map ties the road, forest sites, and northern approach togeth
 | G | Riddle Cave of the Ash Tongue |
 | H | Northern Rise (sightline to White Plume Mountain) |
 
+**Area 6 — Game Trails** does not occupy a single hex. It is a network of interconnected paths spanning the interior hexes between C, D, F, and G. When using the hex map, treat the Game Trails as the travel layer through those hexes rather than a discrete destination: the discoveries there (Blackrazor, the dead smuggler, the rival scavengers, the lost gnome) are encountered during transit between named hexes, not by navigating to a fixed point. A party moving between any two of hexes C, D, F, and G passes through Game Trails territory and may find what is there.
+
 ---
 
 ## Referee Use of the Hex Map

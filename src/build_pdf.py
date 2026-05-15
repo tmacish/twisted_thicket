@@ -18,6 +18,7 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MANUSCRIPT_FILES = [
     'manuscript/00_overview.md',
     'manuscript/00b_session_intro.md',
+    'manuscript/00c_the_north_gate.md',
     'manuscript/01_referee_notes.md',
     'manuscript/02_white_plume_dust.md',
     'manuscript/03_npcs.md',

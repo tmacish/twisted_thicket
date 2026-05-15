@@ -34,7 +34,7 @@ This ragged guardian watches the glade in Area 4 and believes the forest itself 
 
 ## Gnome Berry-Gatherers
 
-Generations of mountain gnomes still emerge from hidden vents and root-choked paths to gather plumeberries in the thicket. Signs of their passage include tiny wicker baskets, knotted trail cords, chalked K symbols, and small boot prints mixed with berry stains.
+Generations of mountain gnomes still emerge from hidden vents and root-choked paths to gather plumeberries in the thicket. Signs of their passage include tiny wicker baskets, knotted trail cords, chalked directional arrows, and small boot prints mixed with berry stains. Their chalk marks are distinct from the carved K-marks left by the Inheritor's operation — gnome waymarks are rounded, gestural, and point toward destinations, while the carved K-marks are angular, deliberate, and point at nothing a person would want to go toward.
 
 **AC** 6; **HD** 1−1; **hp** 3 each; **MV** 9"  
 **Attacks** hand axe, sling, or knife; **Morale** 7
