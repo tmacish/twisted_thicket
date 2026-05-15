@@ -17,6 +17,7 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 MANUSCRIPT_FILES = [
     'manuscript/00_overview.md',
+    'manuscript/00b_session_intro.md',
     'manuscript/01_referee_notes.md',
     'manuscript/02_white_plume_dust.md',
     'manuscript/03_npcs.md',
@@ -30,6 +31,8 @@ MANUSCRIPT_FILES = [
     'manuscript/areas/07_riddle_cave_of_the_ash_tongue.md',
     'manuscript/05_conclusion.md',
     'manuscript/06_hex_map.md',
+    'manuscript/07_ringstown.md',
+    'manuscript/08_rumors.md',
 ]
 
 CSS = """
@@ -189,7 +192,7 @@ def build_html():
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Cocaine Owlbear in the Twisted Thicket</title>
+<title>The Twisted Thicket</title>
 <style>
 {CSS}
 </style>
