@@ -1,0 +1,890 @@
+#!/usr/bin/env python3
+"""
+AD&D 2e Character Sheet Generator — The Twisted Thicket
+Authentic 1980s TSR aesthetic: parchment, fantasy fonts, red-and-brown borders.
+
+Usage:
+    python3 generate_sheets.py           # all characters -> sheets/
+    python3 generate_sheets.py 01        # single character (by number prefix)
+    python3 generate_sheets.py --all     # all + combined PDF
+
+Requires: pip install reportlab
+Fonts downloaded automatically to fonts/ on first run.
+"""
+
+import re
+import os
+import sys
+import urllib.request
+from pathlib import Path
+
+# ---------------------------------------------------------------------------
+# Paths
+# ---------------------------------------------------------------------------
+
+ROOT       = Path(__file__).parent
+CHAR_DIR   = ROOT / "characters"
+FONTS_DIR  = ROOT / "fonts"
+OUTPUT_DIR = ROOT / "sheets"
+
+# ---------------------------------------------------------------------------
+# Colour palette  (R, G, B  in  0.0–1.0)
+# ---------------------------------------------------------------------------
+
+C_PARCHMENT     = (0.961, 0.922, 0.788)   # aged cream
+C_PARCHMENT_SHD = (0.886, 0.839, 0.694)   # slightly darker cream
+C_INK           = (0.082, 0.039, 0.008)   # near-black
+C_BORDER        = (0.400, 0.145, 0.035)   # dark saddle-brown
+C_HEADING       = (0.530, 0.000, 0.020)   # dark blood-red
+C_RULE          = (0.600, 0.440, 0.180)   # golden rule lines
+C_SHADED_ROW    = (0.918, 0.875, 0.745)   # alternating row tint
+
+# ---------------------------------------------------------------------------
+# Font management
+# ---------------------------------------------------------------------------
+
+BASE = "https://raw.githubusercontent.com/google/fonts/main/ofl"
+
+FONT_URLS = {
+    # Cinzel (variable font — registers fine as-is; bold = same file at larger size)
+    "Cinzel.ttf":
+        f"{BASE}/cinzel/Cinzel%5Bwght%5D.ttf",
+    # IM Fell English (actual filenames in the repo are abbreviated)
+    "IMFell.ttf":
+        f"{BASE}/imfellenglish/IMFeENrm28P.ttf",
+    "IMFell-Italic.ttf":
+        f"{BASE}/imfellenglish/IMFeENit28P.ttf",
+    # UnifrakturMaguntia blackletter
+    "Blackletter.ttf":
+        f"{BASE}/unifrakturmaguntia/UnifrakturMaguntia-Book.ttf",
+}
+
+FONT_NAMES = {
+    "Cinzel.ttf":        ("Cinzel", "Cinzel-Bold"),   # register same file under both names
+    "IMFell.ttf":        ("IMFell",),
+    "IMFell-Italic.ttf": ("IMFell-Italic",),
+    "Blackletter.ttf":   ("Blackletter",),
+}
+
+_registered: set[str] = set()
+
+
+def ensure_fonts() -> None:
+    FONTS_DIR.mkdir(exist_ok=True)
+    for fname, url in FONT_URLS.items():
+        dest = FONTS_DIR / fname
+        if dest.exists():
+            continue
+        print(f"  Downloading {fname} ...", end=" ", flush=True)
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                dest.write_bytes(r.read())
+            print("ok")
+        except Exception as exc:
+            print(f"failed ({exc})")
+
+
+def register_fonts() -> None:
+    from reportlab.pdfbase import pdfmetrics
+    from reportlab.pdfbase.ttfonts import TTFont
+    for fname, regnames in FONT_NAMES.items():
+        fpath = FONTS_DIR / fname
+        if not fpath.exists():
+            continue
+        for regname in regnames:
+            try:
+                pdfmetrics.registerFont(TTFont(regname, str(fpath)))
+                _registered.add(regname)
+            except Exception:
+                pass
+
+
+def F(preferred: str, fallback: str) -> str:
+    return preferred if preferred in _registered else fallback
+
+
+def body() -> str:   return F("IMFell",       "Times-Roman")
+def italic() -> str: return F("IMFell-Italic","Times-Italic")
+def head() -> str:   return F("Cinzel-Bold",  "Times-Bold")
+def bl() -> str:     return F("Blackletter",  "Times-BoldItalic")
+
+# ---------------------------------------------------------------------------
+# Markdown parser
+# ---------------------------------------------------------------------------
+
+def _clean(s: str) -> str:
+    """Strip common markdown markup from a string."""
+    s = re.sub(r'\*\*(.+?)\*\*', r'\1', s)
+    s = re.sub(r'\*(.+?)\*',     r'\1', s)
+    s = re.sub(r'`(.+?)`',       r'\1', s)
+    return s.strip()
+
+
+def parse_character(md_path: Path) -> dict:
+    text = md_path.read_text(encoding="utf-8")
+    char: dict = {"source": md_path.name}
+
+    # H1: "Name — Race Class Level"
+    m = re.match(r'#\s+(.+?)\s+[—–]\s+(.+?)\s+(\d+)', text)
+    if m:
+        char["name"]  = m.group(1).strip()
+        raw_cls       = m.group(2).strip()
+        char["level"] = m.group(3).strip()
+    else:
+        char["name"], raw_cls, char["level"] = md_path.stem, "Unknown", "?"
+
+    # Split race from class string (e.g. "Dwarf Fighter", "Human Paladin")
+    race_m = re.match(r'(Human|Dwarf|Elf|Half.?Elf|Gnome|Halfling|Half.?Orc)\s+(.*)', raw_cls)
+    if race_m:
+        char["race"]  = race_m.group(1)
+        char["class"] = race_m.group(2)
+    else:
+        char["race"]  = "Human"
+        char["class"] = raw_cls
+
+    # Opening italic description
+    m = re.search(r'\n\*([^*].+?)\*\n', text, re.DOTALL)
+    char["description"] = _clean(m.group(1)) if m else ""
+
+    # Alignment
+    aln_pat = (r'Lawful Good|Lawful Neutral|Lawful Evil|'
+               r'Neutral Good|True Neutral|Neutral Evil|'
+               r'Chaotic Good|Chaotic Neutral|Chaotic Evil')
+    m = re.search(aln_pat, text)
+    char["alignment"] = m.group(0) if m else ""
+
+    # Ability scores table
+    char["abilities"] = []
+    sec = re.search(r'## Ability Scores\n\n(.+?)\n\n---', text, re.DOTALL)
+    if sec:
+        for row in re.finditer(
+            r'^\|\s*([^|]+?)\s*\|\s*(\d+[/\d]*)\s*\|\s*([^|]*?)\s*\|',
+            sec.group(1), re.MULTILINE
+        ):
+            name = row.group(1).strip()
+            if name and name.lower() not in ("ability", "---"):
+                char["abilities"].append({
+                    "name":  name,
+                    "score": row.group(2).strip(),
+                    "notes": row.group(3).strip(),
+                })
+
+    # Combat statistics (key–value pairs before the Weapons table)
+    char["combat"] = {}
+    sec = re.search(r'## Combat Statistics\n\n(.+?)(?=\n\*\*Weapons|\n---|\n## )',
+                    text, re.DOTALL)
+    if sec:
+        for kv in re.finditer(r'\*\*(.+?):\*\*\s*(.+)', sec.group(1)):
+            key = kv.group(1).strip()
+            val = re.sub(r'\s*\(.*?\)', '', kv.group(2)).strip()
+            val = re.sub(r'\s*\*.*', '', val).strip()
+            char["combat"][key] = val
+
+    # Weapons table
+    char["weapons"] = []
+    sec = re.search(
+        r'\| Weapon \|.+?\n\|[-| ]+\n((?:\|.+\n)+)', text
+    )
+    if sec:
+        for row in re.finditer(r'^\|(.+?)\|(.+?)\|(.+?)\|(.+?)\|',
+                               sec.group(1), re.MULTILINE):
+            name = row.group(1).strip()
+            if name and "---" not in name:
+                char["weapons"].append({
+                    "name":   name,
+                    "to_hit": row.group(2).strip(),
+                    "damage": row.group(3).strip(),
+                    "notes":  row.group(4).strip(),
+                })
+
+    # Saving throws
+    char["saves"] = []
+    sec = re.search(r'\| Save \| Target \|\n\|[-| ]+\n((?:\|.+\n)+)', text)
+    if sec:
+        for row in re.finditer(r'^\|\s*(.+?)\s*\|\s*(\d+)\s*\|',
+                               sec.group(1), re.MULTILINE):
+            char["saves"].append({
+                "name":   row.group(1).strip(),
+                "target": row.group(2).strip(),
+            })
+
+    # Thief skills (Kaida only, but detect generically)
+    char["thief_skills"] = []
+    sec = re.search(r'## Thief Skills\n\n(.+?)(?=\n---|\n## )', text, re.DOTALL)
+    if sec:
+        for row in re.finditer(
+            r'^\|\s*([^|]+?)\s*\|[^|]+\|[^|]+\|\s*(\d+%)\s*\|',
+            sec.group(1), re.MULTILINE
+        ):
+            skill = row.group(1).strip()
+            total = row.group(2).strip()
+            if skill and skill.lower() not in ("skill", "---"):
+                char["thief_skills"].append({"name": skill, "total": total})
+
+    # Spells memorised
+    char["spells"] = {}
+    sec = re.search(r'## Spells Memoris[e|é]d\n\n(.+?)(?=\n---|\n## )', text, re.DOTALL)
+    if sec:
+        for blk in re.finditer(
+            r'\*\*(\d+)(?:st|nd|rd|th) Level \((\d+) slots?\).*?\*\*[:\n]+((?:-[^\n]+\n?)+)',
+            sec.group(1)
+        ):
+            lv    = int(blk.group(1))
+            slots = blk.group(2)
+            names = []
+            for line in re.findall(r'^-\s*(.+)', blk.group(3), re.MULTILINE):
+                m2 = re.match(r'([^*(×]+)', line)
+                if m2:
+                    names.append(m2.group(1).strip().rstrip(':').strip())
+            char["spells"][lv] = {"slots": slots, "spells": names}
+
+    # Equipment block
+    sec = re.search(r'## Equipment\n\n(.+?)(?=\n---|\n## )', text, re.DOTALL)
+    char["equipment"] = _clean(sec.group(1)) if sec else ""
+
+    # Magic items
+    char["magic_items"] = []
+    sec = re.search(r'## Magic Items\n\n(.+?)(?=\n---|\n## )', text, re.DOTALL)
+    if sec:
+        for item in re.finditer(
+            r'\*\*(.+?)\*\*:?\s*(.+?)(?=\n\n\*\*|\Z)', sec.group(1), re.DOTALL
+        ):
+            desc = re.sub(r'\n', ' ', _clean(item.group(2)))
+            desc = re.sub(r'\s+', ' ', desc).strip()
+            char["magic_items"].append({"name": item.group(1).strip(), "desc": desc})
+
+    # Personality bullets
+    char["personality"] = []
+    sec = re.search(r'## Personality\n\n(.+?)(?=\n---|\n## |\Z)', text, re.DOTALL)
+    if sec:
+        for b in re.findall(r'^-\s*(.+)', sec.group(1), re.MULTILINE):
+            char["personality"].append(_clean(b))
+
+    return char
+
+# ---------------------------------------------------------------------------
+# Drawing helpers
+# ---------------------------------------------------------------------------
+
+def _sf(c, col):  c.setFillColorRGB(*col)
+def _ss(c, col):  c.setStrokeColorRGB(*col)
+
+
+def draw_parchment(c, W, H):
+    _sf(c, C_PARCHMENT)
+    c.rect(0, 0, W, H, fill=1, stroke=0)
+    # Light vignette strips at edges
+    _sf(c, C_PARCHMENT_SHD)
+    for i in range(5):
+        alpha_like = 0.15 - i * 0.025
+        # Simulate with thin shaded rects
+        _sf(c, (C_PARCHMENT_SHD[0], C_PARCHMENT_SHD[1] - i*0.01, C_PARCHMENT_SHD[2]))
+        c.rect(0,           i * 8, W, 8, fill=1, stroke=0)
+        c.rect(0, H - (i+1)*8, W, 8, fill=1, stroke=0)
+    _sf(c, C_PARCHMENT)
+
+
+def draw_border(c, x, y, w, h, lw=1.5, gap=3):
+    """Double-rule border box."""
+    _ss(c, C_BORDER)
+    c.setLineWidth(lw)
+    c.rect(x, y, w, h, stroke=1, fill=0)
+    c.setLineWidth(0.4)
+    c.rect(x + gap, y + gap, w - 2*gap, h - 2*gap, stroke=1, fill=0)
+
+
+def draw_diamond(c, cx, cy, half=5):
+    """Filled diamond ornament."""
+    _sf(c, C_BORDER)
+    p = c.beginPath()
+    p.moveTo(cx, cy + half)
+    p.lineTo(cx + half, cy)
+    p.lineTo(cx, cy - half)
+    p.lineTo(cx - half, cy)
+    p.close()
+    c.drawPath(p, fill=1, stroke=0)
+
+
+def draw_page_border(c, W, H, M):
+    """Full-page ornate double border with corner diamonds."""
+    bx, by = M, M
+    bw, bh = W - 2*M, H - 2*M
+
+    _ss(c, C_BORDER)
+    c.setLineWidth(2.0)
+    c.rect(bx, by, bw, bh, stroke=1, fill=0)
+    c.setLineWidth(0.6)
+    c.rect(bx + 5, by + 5, bw - 10, bh - 10, stroke=1, fill=0)
+
+    for dx, dy in ((bx, by), (bx+bw, by), (bx, by+bh), (bx+bw, by+bh)):
+        draw_diamond(c, dx, dy, half=6)
+
+
+def h_rule(c, x, y, w, double=False):
+    _ss(c, C_RULE)
+    c.setLineWidth(0.8)
+    c.line(x, y, x + w, w + y - w)  # y only, horizontal
+    c.line(x, y, x + w, y)
+    if double:
+        c.setLineWidth(0.3)
+        c.line(x, y + 2, x + w, y + 2)
+
+
+def section_bar(c, label, x, y, w, font_size=7):
+    """Red header bar for a section."""
+    bar_h = font_size + 6
+    _sf(c, C_HEADING)
+    c.rect(x + 2, y, w - 4, bar_h, fill=1, stroke=0)
+    _sf(c, C_PARCHMENT)
+    c.setFont(head(), font_size)
+    c.drawCentredString(x + w / 2, y + 3.5, label.upper())
+    return bar_h
+
+
+def word_wrap(text: str, c, font: str, size: float, max_w: float) -> list[str]:
+    lines, cur = [], ""
+    for word in text.split():
+        test = (cur + " " + word).strip()
+        if c.stringWidth(test, font, size) <= max_w:
+            cur = test
+        else:
+            if cur:
+                lines.append(cur)
+            cur = word
+    if cur:
+        lines.append(cur)
+    return lines
+
+
+def clip_str(s: str, c, font: str, size: float, max_w: float) -> str:
+    if c.stringWidth(s, font, size) <= max_w:
+        return s
+    while s and c.stringWidth(s + "...", font, size) > max_w:
+        s = s[:-1]
+    return s + "..."
+
+# ---------------------------------------------------------------------------
+# Section renderers  (each returns updated y after drawing)
+# ---------------------------------------------------------------------------
+
+def render_abilities(c, char, x, y, w) -> float:
+    ROW_H = 15
+    ab = char["abilities"]
+    inner_h = ROW_H * len(ab) + 4
+    bar_h = section_bar(c, "Ability Scores", x, y - 12, w)
+    box_h = bar_h + 12 + inner_h
+    draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
+
+    # Re-draw bar inside border
+    section_bar(c, "Ability Scores", x, y - bar_h - 2, w)
+
+    ry = y - bar_h - 2 - 10
+
+    # Column headers
+    _sf(c, C_INK)
+    c.setFont(head(), 6.5)
+    c.drawString(x + 5, ry, "Ability")
+    c.drawCentredString(x + w - 32, ry, "Score")
+    c.drawString(x + w - 18, ry, "Notes")
+    _ss(c, C_RULE);  c.setLineWidth(0.5)
+    c.line(x + 4, ry - 2, x + w - 4, ry - 2)
+    ry -= ROW_H - 2
+
+    for i, ab_row in enumerate(char["abilities"]):
+        # Alternate shading
+        if i % 2 == 1:
+            _sf(c, C_SHADED_ROW)
+            c.rect(x + 4, ry - 3, w - 8, ROW_H - 1, fill=1, stroke=0)
+
+        _sf(c, C_INK)
+        c.setFont(body(), 8)
+        c.drawString(x + 5, ry, ab_row["name"])
+
+        # Score in a small box
+        score_x = x + w - 50
+        _ss(c, C_BORDER);  c.setLineWidth(0.6)
+        c.rect(score_x, ry - 2, 22, 11, stroke=1, fill=0)
+        _sf(c, C_HEADING)
+        c.setFont(head(), 8.5)
+        c.drawCentredString(score_x + 11, ry + 1, ab_row["score"])
+
+        # Notes (abbreviated)
+        notes = clip_str(ab_row["notes"], c, italic(), 6.5, w - 56)
+        _sf(c, C_INK)
+        c.setFont(italic(), 6.5)
+        c.drawString(x + w - 24, ry, notes)
+
+        ry -= ROW_H
+
+    return y - box_h - 5
+
+
+def render_saves(c, char, x, y, w) -> float:
+    ROW_H = 13
+    saves = char["saves"]
+    if not saves:
+        return y
+    inner_h = ROW_H * len(saves) + 4
+    bar_h = 10
+    box_h = bar_h + 14 + inner_h
+    draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
+    section_bar(c, "Saving Throws", x, y - bar_h - 2, w, font_size=7)
+
+    ry = y - bar_h - 2 - 10
+    for i, sv in enumerate(saves):
+        if i % 2 == 1:
+            _sf(c, C_SHADED_ROW)
+            c.rect(x + 4, ry - 3, w - 8, ROW_H, fill=1, stroke=0)
+        _sf(c, C_INK)
+        c.setFont(body(), 7.5)
+        c.drawString(x + 5, ry, sv["name"])
+
+        tx = x + w - 22
+        _ss(c, C_BORDER);  c.setLineWidth(0.6)
+        c.rect(tx, ry - 2, 18, 11, stroke=1, fill=0)
+        _sf(c, C_HEADING)
+        c.setFont(head(), 8)
+        c.drawCentredString(tx + 9, ry + 1, sv["target"])
+
+        ry -= ROW_H
+
+    return y - box_h - 5
+
+
+def render_combat(c, char, x, y, w) -> float:
+    FIELDS = [
+        ("Hit Points",        "HP"),
+        ("Armour Class",      "AC"),
+        ("THAC0",             "THAC0"),
+        ("Attacks per Round", "Attacks/Rd"),
+        ("Movement",          "Movement"),
+    ]
+    ROW_H = 14
+    rows = [(label, char["combat"].get(key, "")) for key, label in FIELDS
+            if key in char["combat"]]
+    if not rows:
+        return y
+    bar_h = 10
+    box_h = bar_h + 14 + ROW_H * len(rows) + 4
+    draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
+    section_bar(c, "Combat Statistics", x, y - bar_h - 2, w, font_size=7)
+
+    ry = y - bar_h - 2 - 10
+    for label, val in rows:
+        _sf(c, C_INK)
+        c.setFont(head(), 7)
+        label_w = c.stringWidth(label + ": ", head(), 7)
+        c.drawString(x + 5, ry, label + ":")
+        _sf(c, C_HEADING)
+        c.setFont(body(), 8)
+        c.drawString(x + 5 + label_w + 1, ry, val)
+        ry -= ROW_H
+
+    return y - box_h - 5
+
+
+def render_weapons(c, char, x, y, w) -> float:
+    weapons = char["weapons"]
+    if not weapons:
+        return y
+    ROW_H = 11
+    bar_h = 10
+    box_h = bar_h + 14 + 10 + ROW_H * len(weapons) + 4
+    draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
+    section_bar(c, "Weapons & Attacks", x, y - bar_h - 2, w, font_size=7)
+
+    ry = y - bar_h - 2 - 10
+
+    # Column proportions
+    c1x = x + 5
+    c2x = x + w * 0.45
+    c3x = x + w * 0.60
+    c4x = x + w * 0.73
+
+    _sf(c, C_INK);  c.setFont(head(), 6)
+    c.drawString(c1x, ry, "WEAPON")
+    c.drawString(c2x, ry, "+HIT")
+    c.drawString(c3x, ry, "DAMAGE")
+    c.drawString(c4x, ry, "NOTES")
+    _ss(c, C_RULE);  c.setLineWidth(0.5)
+    c.line(x + 4, ry - 2, x + w - 4, ry - 2)
+    ry -= ROW_H
+
+    for i, wp in enumerate(weapons):
+        if i % 2 == 1:
+            _sf(c, C_SHADED_ROW)
+            c.rect(x + 4, ry - 2, w - 8, ROW_H, fill=1, stroke=0)
+        _sf(c, C_INK);  c.setFont(body(), 7)
+        c.drawString(c1x, ry, clip_str(wp["name"],   c, body(), 7, c2x - c1x - 3))
+        c.drawString(c2x, ry, clip_str(wp["to_hit"], c, body(), 7, c3x - c2x - 3))
+        c.drawString(c3x, ry, clip_str(wp["damage"], c, body(), 7, c4x - c3x - 3))
+        c.drawString(c4x, ry, clip_str(wp["notes"],  c, body(), 7, x + w - 4 - c4x))
+        ry -= ROW_H
+
+    return y - box_h - 5
+
+
+def render_thief_skills(c, char, x, y, w) -> float:
+    skills = char.get("thief_skills", [])
+    if not skills:
+        return y
+    ROW_H = 11
+    bar_h = 10
+    # Two columns of skills
+    mid = (len(skills) + 1) // 2
+    col_rows = max(mid, len(skills) - mid)
+    box_h = bar_h + 16 + ROW_H * col_rows + 4
+    draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
+    section_bar(c, "Thief Skills", x, y - bar_h - 2, w, font_size=7)
+
+    ry = y - bar_h - 2 - 10
+    half_w = (w - 12) / 2
+
+    for i, sk in enumerate(skills):
+        col = 0 if i < mid else 1
+        row = i if col == 0 else i - mid
+        rx = x + 5 + col * (half_w + 6)
+        ry_row = ry - row * ROW_H
+
+        _sf(c, C_INK);  c.setFont(body(), 7)
+        c.drawString(rx, ry_row, sk["name"])
+        _sf(c, C_HEADING);  c.setFont(head(), 7.5)
+        tw = c.stringWidth(sk["total"], head(), 7.5)
+        c.drawString(rx + half_w - tw - 2, ry_row, sk["total"])
+
+    return y - box_h - 5
+
+
+def render_spells(c, char, x, y, w) -> float:
+    spells = char.get("spells", {})
+    if not spells:
+        return y
+    LEVEL_H = 12
+    SPELL_H = 10
+    bar_h = 10
+    total_lines = sum(1 + len(d["spells"]) for d in spells.values())
+    box_h = bar_h + 16 + LEVEL_H * len(spells) + SPELL_H * total_lines + 8
+    box_h = min(box_h, 200)
+
+    draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
+    section_bar(c, "Spells Memorised", x, y - bar_h - 2, w, font_size=7)
+
+    ORDINALS = {1:"1st", 2:"2nd", 3:"3rd", 4:"4th", 5:"5th", 6:"6th"}
+    ry = y - bar_h - 2 - 10
+    stop_y = y - box_h + SPELL_H
+
+    for lv, data in sorted(spells.items()):
+        if ry < stop_y:
+            break
+        lv_label = f"{ORDINALS.get(lv, str(lv)+'th')} Level  ({data['slots']} slots)"
+        _sf(c, C_BORDER)
+        c.rect(x + 4, ry - 1, w - 8, LEVEL_H, fill=1, stroke=0)
+        _sf(c, C_PARCHMENT);  c.setFont(head(), 6.5)
+        c.drawString(x + 8, ry + 3, lv_label)
+        ry -= LEVEL_H
+
+        spell_list = data["spells"]
+        mid = (len(spell_list) + 1) // 2
+        col_w = (w - 14) / 2
+
+        for i, name in enumerate(spell_list):
+            if ry < stop_y:
+                break
+            col = 0 if i < mid else 1
+            row = i if col == 0 else i - mid
+            if col == 1 and row == 0:
+                ry_base = ry + mid * SPELL_H
+            else:
+                ry_base = ry
+
+            rx = x + 6 + col * col_w
+            r_y = ry_base - (row if col == 0 else row) * SPELL_H
+            _sf(c, C_INK);  c.setFont(body(), 7)
+            c.drawString(rx, r_y, "- " + name)
+
+        rows_drawn = max(mid, len(spell_list) - mid)
+        ry -= rows_drawn * SPELL_H + 3
+
+    return y - box_h - 5
+
+
+def render_equipment(c, char, x, y, w, max_h=120) -> float:
+    text = char.get("equipment", "")
+    if not text:
+        return y
+    FONT_SZ = 7
+    LEADING  = 9
+    bar_h    = 10
+    # Build wrapped lines
+    lines = []
+    for raw in text.split("\n"):
+        raw = raw.strip()
+        if not raw:
+            continue
+        # Bold category label handling: "Worn: ..." → "Worn: ..."
+        m = re.match(r'\*\*(.+?):\*\*\s*(.*)', raw)
+        if m:
+            raw = m.group(1) + ": " + m.group(2)
+        lines.extend(word_wrap(raw, c, body(), FONT_SZ, w - 12))
+
+    box_h = min(bar_h + 16 + len(lines) * LEADING + 4, max_h)
+    draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
+    section_bar(c, "Equipment", x, y - bar_h - 2, w, font_size=7)
+
+    ry = y - bar_h - 2 - 10
+    stop_y = y - box_h + LEADING
+
+    for line in lines:
+        if ry < stop_y:
+            break
+        # Category labels in bold-ish color
+        _sf(c, C_HEADING if re.match(r'(Worn|Pack|Coin):', line) else C_INK)
+        c.setFont(body(), FONT_SZ)
+        c.drawString(x + 5, ry, line)
+        ry -= LEADING
+
+    return y - box_h - 5
+
+
+def render_magic_items(c, char, x, y, w, max_h=150) -> float:
+    items = char.get("magic_items", [])
+    if not items:
+        return y
+    FONT_SZ = 6.5
+    LEADING  = 8.5
+    bar_h    = 10
+
+    # Build line list: (bold?, text)
+    content: list[tuple[bool, str]] = []
+    for item in items:
+        content.append((True, item["name"] + ":"))
+        for line in word_wrap(item["desc"], c, body(), FONT_SZ, w - 18):
+            content.append((False, "  " + line))
+        content.append((False, ""))  # gap
+
+    box_h = min(bar_h + 16 + len(content) * LEADING + 4, max_h)
+    draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
+    section_bar(c, "Magic Items", x, y - bar_h - 2, w, font_size=7)
+
+    ry = y - bar_h - 2 - 10
+    stop_y = y - box_h + LEADING
+
+    for bold, line in content:
+        if ry < stop_y:
+            break
+        if not line.strip():
+            ry -= LEADING * 0.35
+            continue
+        _sf(c, C_HEADING if bold else C_INK)
+        c.setFont(head() if bold else body(), FONT_SZ)
+        c.drawString(x + 5, ry, line)
+        ry -= LEADING
+
+    return y - box_h - 5
+
+
+def render_personality(c, char, x, y, w, max_h=90) -> float:
+    bullets = char.get("personality", [])[:3]
+    if not bullets:
+        return y
+    FONT_SZ = 6.5
+    LEADING  = 8.5
+    bar_h    = 10
+
+    lines: list[str] = []
+    for b in bullets:
+        lines.extend(word_wrap("- " + b, c, italic(), FONT_SZ, w - 12))
+
+    box_h = min(bar_h + 16 + len(lines) * LEADING + 4, max_h)
+    draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
+    section_bar(c, "Personality", x, y - bar_h - 2, w, font_size=7)
+
+    ry = y - bar_h - 2 - 10
+    stop_y = y - box_h + LEADING
+
+    for line in lines:
+        if ry < stop_y:
+            break
+        _sf(c, C_INK);  c.setFont(italic(), FONT_SZ)
+        c.drawString(x + 5, ry, line)
+        ry -= LEADING
+
+    return y - box_h - 5
+
+# ---------------------------------------------------------------------------
+# Full page composition
+# ---------------------------------------------------------------------------
+
+MARGIN = 32
+
+
+def draw_sheet(char: dict, c):
+    from reportlab.lib.pagesizes import LETTER
+    W, H = LETTER
+
+    draw_parchment(c, W, H)
+    draw_page_border(c, W, H, MARGIN)
+
+    IW = W - 2 * MARGIN   # inner width
+    LX = MARGIN + 7       # left content edge
+
+    TOP = H - MARGIN - 8  # top of usable content area
+
+    # ---- TOP GAME TITLE BAR ----
+    _sf(c, C_BORDER)
+    c.rect(LX, TOP - 14, IW - 14, 14, fill=1, stroke=0)
+    _sf(c, C_PARCHMENT)
+    c.setFont(head(), 6.5)
+    c.drawCentredString(W / 2, TOP - 10.5,
+        "THE TWISTED THICKET    *    AD&D 2ND EDITION    *    CHARACTER RECORD SHEET")
+
+    # ---- CHARACTER NAME (blackletter, large) ----
+    name_y = TOP - 14
+    _sf(c, C_PARCHMENT_SHD)
+    c.rect(LX, name_y - 26, IW - 14, 26, fill=1, stroke=0)
+    _ss(c, C_BORDER);  c.setLineWidth(0.8)
+    c.rect(LX, name_y - 26, IW - 14, 26, stroke=1, fill=0)
+    draw_diamond(c, LX + 14, name_y - 13, half=5)
+    draw_diamond(c, LX + IW - 28, name_y - 13, half=5)
+
+    _sf(c, C_INK)
+    c.setFont(bl(), 20)
+    c.drawCentredString(W / 2, name_y - 20, char.get("name", "Unknown"))
+
+    # ---- INFO BAR: class / race / level / alignment ----
+    info_y = name_y - 26
+    _sf(c, C_HEADING)
+    c.rect(LX, info_y - 13, IW - 14, 13, fill=1, stroke=0)
+    _sf(c, C_PARCHMENT)
+    c.setFont(head(), 7)
+    parts = []
+    if char.get("class"):     parts.append(f"Class: {char['class']}")
+    parts.append(f"Race: {char.get('race', 'Human')}")
+    if char.get("level"):     parts.append(f"Level: {char['level']}")
+    if char.get("alignment"): parts.append(f"Alignment: {char['alignment']}")
+    c.drawCentredString(W / 2, info_y - 10, "  |  ".join(parts))
+
+    current_y = info_y - 13 - 6
+
+    # ---- TWO-COLUMN LAYOUT ----
+    LEFT_W = 165
+    RIGHT_W = IW - LEFT_W - 14 - 8
+    RIGHT_X = LX + LEFT_W + 8
+
+    left_y  = current_y
+    right_y = current_y
+
+    left_y  = render_abilities(c, char, LX,     left_y,  LEFT_W)
+    left_y -= 3
+    left_y  = render_saves(c, char, LX,         left_y,  LEFT_W)
+
+    right_y = render_combat(c, char, RIGHT_X,   right_y, RIGHT_W)
+    right_y -= 3
+    right_y = render_weapons(c, char, RIGHT_X,  right_y, RIGHT_W)
+    if char.get("thief_skills"):
+        right_y -= 3
+        right_y = render_thief_skills(c, char, RIGHT_X, right_y, RIGHT_W)
+
+    bottom_y = min(left_y, right_y) - 6
+    FULL_W = IW - 14
+
+    # Spells (casters only)
+    if char.get("spells"):
+        bottom_y = render_spells(c, char, LX, bottom_y, FULL_W)
+        bottom_y -= 4
+
+    # Equipment
+    bottom_y = render_equipment(c, char, LX, bottom_y, FULL_W)
+    bottom_y -= 4
+
+    # Magic items + personality side by side if space allows
+    remaining = bottom_y - (MARGIN + 14)
+    if remaining > 36:
+        mi_w   = FULL_W * 0.60
+        pers_w = FULL_W * 0.37
+        pers_x = LX + mi_w + 7
+
+        render_magic_items( c, char, LX,     bottom_y, mi_w,   max_h=remaining)
+        render_personality( c, char, pers_x, bottom_y, pers_w, max_h=remaining)
+
+    # ---- FOOTER ----
+    _sf(c, C_BORDER)
+    c.setFont(body(), 5.5)
+    c.drawCentredString(W / 2, MARGIN + 4,
+        f"The Twisted Thicket  *  {char.get('name','')}  "
+        f"*  {char.get('class','')} {char.get('level','')}")
+
+# ---------------------------------------------------------------------------
+# Entry point
+# ---------------------------------------------------------------------------
+
+def generate_sheet(md_path: Path, out_dir: Path) -> None:
+    from reportlab.pdfgen import canvas as cv
+    from reportlab.lib.pagesizes import LETTER
+    char = parse_character(md_path)
+    out  = out_dir / f"{md_path.stem}_sheet.pdf"
+    c = cv.Canvas(str(out), pagesize=LETTER)
+    c.setTitle(f"{char.get('name','Character')} — The Twisted Thicket")
+    draw_sheet(char, c)
+    c.save()
+    print(f"  {out.name}")
+
+
+def main():
+    # Ensure reportlab
+    try:
+        import reportlab  # noqa: F401
+    except ImportError:
+        print("Installing reportlab...")
+        os.system(f"{sys.executable} -m pip install reportlab")
+
+    print("AD&D 2e Sheet Generator — The Twisted Thicket")
+    print("-" * 46)
+    print("Checking fonts...")
+    ensure_fonts()
+    register_fonts()
+    if _registered:
+        print(f"  Loaded: {', '.join(sorted(_registered))}")
+    else:
+        print("  No custom fonts; using built-in Times.")
+
+    OUTPUT_DIR.mkdir(exist_ok=True)
+
+    # Determine targets
+    do_combined = "--all" in sys.argv
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+
+    if args:
+        prefix = args[0].zfill(2)
+        files = sorted(CHAR_DIR.glob(f"{prefix}_*.md"))
+    else:
+        files = sorted(f for f in CHAR_DIR.glob("[0-9][0-9]_*.md")
+                       if not f.stem.startswith("00"))
+
+    if not files:
+        print(f"No character files found in {CHAR_DIR}")
+        sys.exit(1)
+
+    print(f"\nGenerating {len(files)} sheet(s)...")
+    for f in files:
+        generate_sheet(f, OUTPUT_DIR)
+
+    if do_combined or len(files) > 1:
+        from reportlab.pdfgen import canvas as cv
+        from reportlab.lib.pagesizes import LETTER
+        combined = OUTPUT_DIR / "all_characters.pdf"
+        c = cv.Canvas(str(combined), pagesize=LETTER)
+        c.setTitle("The Twisted Thicket — All Characters")
+        for i, f in enumerate(files):
+            if i > 0:
+                c.showPage()
+            draw_sheet(parse_character(f), c)
+        c.save()
+        print(f"  all_characters.pdf  ({len(files)} pages)")
+
+    print(f"\nSheets saved to {OUTPUT_DIR}/")
+
+
+if __name__ == "__main__":
+    main()
