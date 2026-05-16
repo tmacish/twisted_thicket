@@ -1,4 +1,4 @@
-# Tessaly Vorn — Human Cleric 6 (St. Cuthbert)
+# Tessaly Vorn, Human Cleric 6 (St. Cuthbert)
 
 *Curate-errant from a St. Cuthbert temple in the central Shield Lands, sent north to investigate and document the dust's theological implications. "A substance that compels the carving of a specific name" was, apparently, considered a matter of religious concern. She agrees.*
 
@@ -8,10 +8,10 @@
 
 | Ability | Score | Notes |
 |---------|-------|-------|
-| Strength | 12 | — |
-| Dexterity | 10 | — |
-| Constitution | 13 | — |
-| Intelligence | 14 | — |
+| Strength | 12 |, |
+| Dexterity | 10 |, |
+| Constitution | 13 |, |
+| Intelligence | 14 |, |
 | Wisdom | 17 | +3 magical defence bonus; bonus spell* |
 | Charisma | 14 | Reaction +1 |
 
@@ -47,13 +47,13 @@
 | Breath Weapon | 12 |
 | Spells | 14 |
 
-*Wisdom 17 grants an additional +3 bonus to saves against spells, enchantments, and magical compulsion (already reflected in the Spells save above; apply the +3 again to charm, hold, and dust-related compulsion effects).*
+*Wisdom 17 grants +3 added to the d20 roll (not subtracted from the target) on saving throws against spells, enchantments, and magical compulsion, including charm, hold, and dust-driven compulsion effects. The targets in the table above are the unmodified base values; add +3 to the die roll when the source is magical.*
 
 ---
 
 ## Spells Memorised
 
-**1st Level (4 slots — 3 base + 1 Wisdom bonus):**
+**1st Level (4 slots, 3 base + 1 Wisdom bonus):**
 - Cure Light Wounds ×2
 - Command
 - Detect Evil
@@ -81,9 +81,9 @@
 
 **Mace +1:** A well-balanced weapon with a head of black iron and a haft wrapped in red cord. The cudgel is St. Cuthbert's traditional symbol; she considers carrying it a form of devotional expression. It strikes true.
 
-**Ring of Protection +1:** Silver ring with an engraved eye — St. Cuthbert's other symbol, representing piercing truth. Part of her temple kit.
+**Ring of Protection +1:** Silver ring with an engraved eye, St. Cuthbert's other symbol, representing piercing truth. Part of her temple kit.
 
-**Holy Water (3 vials):** Standard blessed water. Each vial deals 2d4 damage to undead on a direct hit. In this adventure, each vial also qualifies as an anchor for the Area 4 cleansing rite — the most potent anchor available. She should not use all three on undead when they might be needed at the pool; the referee should note this tension.
+**Holy Water (3 vials):** Standard blessed water. Each vial deals 2d4 damage to undead on a direct hit. In this adventure, each vial also qualifies as an anchor for the Area 4 cleansing rite, the most potent anchor available. She should not use all three on undead when they might be needed at the pool; the referee should note this tension.
 
 ---
 
@@ -105,7 +105,7 @@
 
 ## Background
 
-Tessaly's temple sent her north when three separate reports arrived in the same month describing survivors who compulsively carved a specific letter — K — into surfaces while muttering apparent divine names. The temple's assessment: either a corrupted deity is making plays through a physical substance, or something is imitating divine compulsion without divine authority. Either possibility required investigation. She was the available curate with relevant field experience. She has been in Ringstown one week, spent most of it reviewing Brother Aldric's infirmary records, and has concluded that the substance is definitely not divine in origin — but the compulsion it produces is eerily similar to certain ritual states she has studied. She finds this deeply concerning.
+Tessaly's temple sent her north when three separate reports arrived in the same month describing survivors who compulsively carved a specific letter, K, into surfaces while muttering apparent divine names. The temple's assessment: either a corrupted deity is making plays through a physical substance, or something is imitating divine compulsion without divine authority. Either possibility required investigation. She was the available curate with relevant field experience. She has been in Ringstown one week, spent most of it reviewing Brother Aldric's infirmary records, and has concluded that the substance is definitely not divine in origin, but the compulsion it produces is eerily similar to certain ritual states she has studied. She finds this deeply concerning.
 
 ---
 

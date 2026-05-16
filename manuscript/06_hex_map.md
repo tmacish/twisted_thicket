@@ -7,7 +7,7 @@ A simple local hex map ties the road, forest sites, and northern approach togeth
 | Hex | Location |
 |-----|----------|
 | A | Road to Town |
-| B | Forest Edge Camp |
+| B | Forest Edge Road |
 | C | Ravine Wagon Wreck |
 | D | Logging Camp |
 | E | Dust Pool Glade |
@@ -15,7 +15,7 @@ A simple local hex map ties the road, forest sites, and northern approach togeth
 | G | Riddle Cave of the Ash Tongue |
 | H | Northern Rise (sightline to White Plume Mountain) |
 
-**Area 6 — Game Trails** does not occupy a single hex. It is a network of interconnected paths spanning the interior hexes between C, D, F, and G. When using the hex map, treat the Game Trails as the travel layer through those hexes rather than a discrete destination: the discoveries there (Blackrazor, the dead smuggler, the rival scavengers, the lost gnome) are encountered during transit between named hexes, not by navigating to a fixed point. A party moving between any two of hexes C, D, F, and G passes through Game Trails territory and may find what is there.
+**Area 6, Game Trails** does not occupy a single hex. It is a network of interconnected paths spanning the interior hexes between C, D, F, and G. When using the hex map, treat the Game Trails as the travel layer through those hexes rather than a discrete destination: the discoveries there (Blackrazor, the dead smuggler, the rival scavengers, the lost gnome) are encountered during transit between named hexes, not by navigating to a fixed point. A party moving between any two of hexes C, D, F, and G passes through Game Trails territory and may find what is there.
 
 ---
 
@@ -23,7 +23,7 @@ A simple local hex map ties the road, forest sites, and northern approach togeth
 
 Run the map as a small decision space rather than a true long-range wilderness crawl.
 
-- Put **Road to Town** and **Forest Edge Camp** in front of the players as obvious starts.
+- Put **Road to Town** and **Forest Edge Road** in front of the players as obvious starts.
 - Let **Ravine Wreck** act as the mandatory clue hex.
 - Use **Dust Pool Glade**, **Riddle Cave**, and **Logging Camp** as choice-driven side hexes.
 - Keep **Dead Gnoll's Eye Socket** as a fallback or sequel hook.

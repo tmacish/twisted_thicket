@@ -1,12 +1,12 @@
 # Rumour Table
 
-Roll 1d100. Rumours may be heard in Ringstown taverns, at the market, from travellers, or from NPCs with relevant knowledge. The referee should use rumours appropriate to the source — a trapper knows the Thicket, a guardsman knows the garrison's mood, a merchant knows trade patterns.
+Roll 1d100. Rumours may be heard in Ringstown taverns, at the market, from travellers, or from NPCs with relevant knowledge. The referee should use rumours appropriate to the source, a trapper knows the Thicket, a guardsman knows the garrison's mood, a merchant knows trade patterns.
 
 **Truth key:** **T** = True. **F** = False. **~** = Partially true or misleading.
 
 | d% | Rumour | |
 |----|--------|-|
-| 01 | "That owlbear glows. Not like foxfire — like something is burning inside it. Three separate survivors said the same thing before they stopped talking about it." | **T** |
+| 01 | "That owlbear glows. Not like foxfire, like something is burning inside it. Three separate survivors said the same thing before they stopped talking about it." | **T** |
 | 02 | "The powder they found at the wreck sites tastes sweet. That's how you know it's dangerous. Nothing that sweet out here is natural." | **~** |
 | 03 | "Blink Tinderflip hasn't been seen in Critwall since he handed off those crates. Word is he left owing money to a lot of people." | **~** |
 | 04 | "Elnara's been sending ravens south for two weeks. None of them are coming back with answers." | **T** |
@@ -20,7 +20,7 @@ Roll 1d100. Rumours may be heard in Ringstown taverns, at the market, from trave
 | 12 | "Old Brindle can call the owlbear off. He just won't do it for free." | **F** |
 | 13 | "The paths in the Thicket change. You walk in on a straight road and come out somewhere else. The trees move when no one's watching." | **F** |
 | 14 | "There's a cave in the Thicket with old writing carved inside. Some of the trappers used to use it as a waystation before all this started." | **T** |
-| 15 | "The beast screams words. Not animal sounds — words. Rennick heard it say a name before it took his arm." | **~** |
+| 15 | "The beast screams words. Not animal sounds, words. Rennick heard it say a name before it took his arm." | **~** |
 | 16 | "River water cures the dust sickness. Just drink a lot of it and the voice goes away." | **F** |
 | 17 | "Sorel Vane was in the Scalded Goblin three nights ago. Quiet. Drinking alone. Watching the door." | **~** |
 | 18 | "Elnara already has one of the old weapons. She's had it for months. That's why she wants the others so badly." | **F** |
@@ -33,7 +33,7 @@ Roll 1d100. Rumours may be heard in Ringstown taverns, at the market, from trave
 | 25 | "Blink Tinderflip is a gnome. Small, fast-talking, never stays in one place long enough to be accountable. Classic." | **T** |
 | 26 | "A face forms in the smoke above the mountain at dusk. Perfectly clear. It's been happening every night for a month." | **T** |
 | 27 | "The logging camp foreman made it back to Ringstown. He's not talking, but he's here." | **T** |
-| 28 | "The dust makes animals aggressive. Not just the owlbear — weasels, deer, things that have no reason to attack a man." | **T** |
+| 28 | "The dust makes animals aggressive. Not just the owlbear, weasels, deer, things that have no reason to attack a man." | **T** |
 | 29 | "There are K-marks scratched into trees throughout the Thicket. Some old, some fresh. Nobody knows what they mean." | **T** |
 | 30 | "Thingizzard's shop in Ringstown isn't actually hers. Someone's just using her name because people are afraid of it." | **~** |
 | 31 | "The three weapons Tinderflip was moving were taken from White Plume Mountain by a previous expedition. Elnara hired that group too." | **T** |
@@ -46,7 +46,7 @@ Roll 1d100. Rumours may be heard in Ringstown taverns, at the market, from trave
 | 38 | "Wave calls to water. If you hold it near a river, the river leans toward it." | **T** |
 | 39 | "The owlbear has been seen as far south as the main Critwall road. It's expanding its range." | **F** |
 | 40 | "Brod Chandler has crates in his warehouse he won't let anyone near. They've been sitting there three weeks and nobody's collected them." | **T** |
-| 41 | "The powder was made underground, in a laboratory. It's not harvested — it's manufactured." | **T** |
+| 41 | "The powder was made underground, in a laboratory. It's not harvested, it's manufactured." | **T** |
 | 42 | "You can tell who's used the dust because their eyes go white around the iris. Temporary, but it lasts a day or so." | **F** |
 | 43 | "Elnara was a Shield Lands intelligence officer before she took the ranger post. She knows more about White Plume Mountain than she admits." | **~** |
 | 44 | "There's more than one Keraptis. The original is gone but the copies are fighting each other for control of the mountain." | **T** |
@@ -65,7 +65,7 @@ Roll 1d100. Rumours may be heard in Ringstown taverns, at the market, from trave
 | 57 | "The glade north of the logging camp smells wrong. Sweet and cold at the same time. Animals won't go near it." | **T** |
 | 58 | "There are bones north of the logging camp. A lot of them. Something has been using that area as a feeding ground." | **T** |
 | 59 | "You can track the owlbear by the white powder prints it leaves when it's in frenzy. Glows faintly in the dark." | **~** |
-| 60 | "The owlbear has young somewhere in the Thicket. That's why it's so aggressive — it's protecting a nest." | **F** |
+| 60 | "The owlbear has young somewhere in the Thicket. That's why it's so aggressive, it's protecting a nest." | **F** |
 | 61 | "Elnara is paying a hundred gold pieces for proof the owlbear is dead. She'll add fifty if you bring back anything connected to the powder." | **T** |
 | 62 | "The smugglers had a second wagon that got through before the owlbear went mad. Whoever was expecting that shipment is still expecting it." | **F** |
 | 63 | "Old Brindle tried to cleanse that glowing pool in the Thicket. Whatever is in it drove him back. He doesn't talk about it." | **T** |
@@ -91,7 +91,7 @@ Roll 1d100. Rumours may be heard in Ringstown taverns, at the market, from trave
 | 83 | "The dust leaves traces in water. If you drop a pinch in a cup, the water goes white-blue for an hour." | **T** |
 | 84 | "Whoever controls the dust controls the mountain. That's what the false Keraptis believes, anyway." | **~** |
 | 85 | "The Thicket has always had a bad reputation. Before the dust, before the beast. There are things in there that predate the town." | **~** |
-| 86 | "Blackrazor sings. Not out loud — in your chest. You feel it before you hear it. The feeling is not unpleasant, which is the problem." | **~** |
+| 86 | "Blackrazor sings. Not out loud, in your chest. You feel it before you hear it. The feeling is not unpleasant, which is the problem." | **~** |
 | 87 | "Whelm calls back to its maker. If you hold it in the dark and listen, you hear hammering." | **~** |
 | 88 | "The logging camp survivors all drew the same symbol without talking to each other. Nobody told them to. They didn't know they were doing it." | **T** |
 | 89 | "The north road goes all the way to the mountain if you follow it. Nobody does." | **T** |

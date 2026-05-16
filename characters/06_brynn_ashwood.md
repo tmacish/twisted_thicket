@@ -1,4 +1,4 @@
-# Brynn Ashwood — Human Druid 6
+# Brynn Ashwood, Human Druid 6
 
 *Grove-warden from the woodlands south of Ringstown. She came north when the birds stopped returning from the Thicket. She has been watching the forest die from the edges inward, one species at a time, and she is done watching.*
 
@@ -8,10 +8,10 @@
 
 | Ability | Score | Notes |
 |---------|-------|-------|
-| Strength | 10 | — |
+| Strength | 10 |, |
 | Dexterity | 13 | −1 AC |
 | Constitution | 15 | +1 hp/die |
-| Intelligence | 13 | — |
+| Intelligence | 13 |, |
 | Wisdom | 16 | +2 magical defence bonus |
 | Charisma | 14 | Reaction +1; required for Druidic standing |
 
@@ -30,7 +30,7 @@
 | Weapon | To Hit | Damage | Notes |
 |--------|--------|--------|-------|
 | Scimitar +1 | +1 | 1d8+1 | Primary melee; Druids use curved blades |
-| Sling | +1 | 1d4 | +0 Dex missile; range 5"/10"/20"; 20 bullets |
+| Sling | +0 | 1d4 | Range 5"/10"/20"; 20 bullets |
 | Dagger | +0 | 1d4 | Utility / last resort |
 
 **Saving Throws:**
@@ -43,7 +43,7 @@
 | Breath Weapon | 12 |
 | Spells | 14 |
 
-*Wisdom 16 grants +2 to saves against mind-affecting magic and compulsion effects — including dust-driven compulsion.*
+*Wisdom 16 grants +2 to saves against mind-affecting magic and compulsion effects, including dust-driven compulsion.*
 
 ---
 
@@ -68,7 +68,7 @@
 ## Equipment
 
 **Worn:** Leather armour, medium shield, scimitar +1, wooden holy symbol (ash-leaf design), ring on left hand  
-**Pack:** Sling + 20 bullets, dagger, rations ×5, waterskin of Ringstown well water *(full — see below)*, bedroll, holly and mistletoe (Druidic focus), healer's herbs (4 uses, each restores 1d4 hp and neutralises mild poison), 50 ft hempen rope, small hand axe (utility tool)  
+**Pack:** Sling + 20 bullets, dagger, rations ×5, waterskin of Ringstown well water *(full, see below)*, bedroll, holly and mistletoe (Druidic focus), healer's herbs (4 uses, each restores 1d4 hp and neutralises mild poison), 50 ft hempen rope, small hand axe (utility tool)  
 **Coin:** 32 gp, 18 sp
 
 ---
@@ -81,7 +81,7 @@
 
 **Potion of Healing:** Standard preparation, 1d8+1 hp. Wrapped in oilskin in the bottom of her pack.
 
-**Waterskin of Ringstown Well Water:** Not magical — just well water from before she entered the Thicket. The Ringstown well is noted as drawing from a pre-Flan source that predates the current contamination. This waterskin qualifies as a valid anchor for Old Brindle's cleansing rite at Area 4. Brynn brought it specifically because she read the signs and suspected she might need something clean and untouched.
+**Waterskin of Ringstown Well Water:** Not magical, just well water from before she entered the Thicket. The Ringstown well is noted as drawing from a pre-Flan source that predates the current contamination. This waterskin qualifies as a valid anchor for Old Brindle's cleansing rite at Area 4. Brynn brought it specifically because she read the signs and suspected she might need something clean and untouched.
 
 ---
 
@@ -102,14 +102,14 @@ Brynn has been grove-warden for five years, managing the woodland commons south 
 
 ## Adventure Connections
 
-- **Old Brindle.** Brynn and Old Brindle have never met, but they know of each other — two nature-wardens working adjacent territories inevitably share observations through mutual contacts. She knows he is in the Thicket and is alarmed that he hasn't emerged. When she finds him at Area 4 exhausted and at 6 hp, she will use *Cure Light Wounds* on him immediately without being asked.
+- **Old Brindle.** Brynn and Old Brindle have never met, but they know of each other, two nature-wardens working adjacent territories inevitably share observations through mutual contacts. She knows he is in the Thicket and is alarmed that he hasn't emerged. When she finds him at Area 4 exhausted and at 6 hp, she will use *Cure Light Wounds* on him immediately without being asked.
 - **The cleansing rite anchor.** Brynn's waterskin of well water is the second available anchor (after Tessaly's holy water). Old Brindle will accept either. Brynn will instinctively understand the rite he is attempting and can assist rather than simply watching.
-- **Hold Animal and the owlbear.** At Area 5, Brynn may attempt *Hold Animal* on the owlbear. It will not work — Old Brindle warned her. If she has been told this, she holds the spell. If she has not been to Area 4, she will try it, fail, and understand immediately what Old Brindle meant when he said *"What answered me was not the beast."*
+- **Hold Animal and the owlbear.** At Area 5, Brynn may attempt *Hold Animal* on the owlbear. It will not work, Old Brindle warned her. If she has been told this, she holds the spell. If she has not been to Area 4, she will try it, fail, and understand immediately what Old Brindle meant when he said *"What answered me was not the beast."*
 
 ---
 
 ## Personality
 
 - Speaks to trees, animals, and plants as a matter of course. Does not apologise for this. Genuinely listens for responses.
-- Has a pragmatist's relationship with death — living things die, that is the nature of living things — but what is happening in the Thicket is not natural death and she distinguishes between the two clearly.
+- Has a pragmatist's relationship with death, living things die, that is the nature of living things, but what is happening in the Thicket is not natural death and she distinguishes between the two clearly.
 - Will argue for calming the owlbear rather than killing it, clearly and without apology, until the evidence suggests it is impossible. Then she will say *"I understand"* and help kill it cleanly.

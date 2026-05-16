@@ -21,7 +21,7 @@
 
 **Whelm** (Area 2) responds to Wulfric by instinct. Any character can carry it; only a dwarf gets the full mechanical benefit.
 
-**Aldwyn's detect evil** (at will, 60 ft) identifies the pool at Area 4 as evil before the party can see it, and reads the obsidian disc from Area 3 as "faintly, coldly evil — structured rather than passionate." His *Cure Disease* clears the dust compulsion on Pirrel if no antitoxin is available, and his aura grants companions +1 to saves during the cleansing rite.
+**Aldwyn's detect evil** (at will, 60 ft) identifies the pool at Area 4 as evil before the party can see it, and reads the obsidian disc from Area 3 as "faintly, coldly evil, structured rather than passionate." His *Cure Disease* clears the dust compulsion on Pirrel if no antitoxin is available, and his aura grants companions +1 to saves during the cleansing rite.
 
 **The cleansing rite** (Area 4) requires an anchor from outside the Thicket. Tessaly carries holy water. Brynn carries a waterskin of Ringstown well water. Either qualifies.
 

@@ -20,7 +20,7 @@ The cobbled central square serves as market, meeting ground, and the town's de f
 
 The gatehouse beside the south gate is less a building than a fortified lean-to: arrow slits, a reinforced door, a rack of crossbows, and a cot that Elnara rarely uses. A hand-drawn map of the Thicket trails covers one wall, marked with red ink wherever travellers have gone missing.
 
-**Referee Information:** Elnara's full statistics appear in the NPCs section. She is the party's primary quest-giver and the person holding the most accurate — if incomplete — picture of what is happening in the Thicket. The one crate that arrived intact from the session zero run — Wave, still sealed in its bladder-skin lining — is locked in an iron chest bolted to the floor in the back corner of the Post. Elnara will not discuss its contents, confirm its existence, or allow anyone near it. If the party recovered Whelm and Blackrazor from the Thicket and returns them to her, she accepts each weapon with the same flat expression and says nothing that constitutes an explanation.
+**Referee Information:** Elnara's full statistics appear in the NPCs section. She is the party's primary quest-giver and the person holding the most accurate, if incomplete, picture of what is happening in the Thicket. The one crate that arrived intact from the session zero run, Wave, still sealed in its bladder-skin lining, is locked in an iron chest bolted to the floor in the back corner of the Post. Elnara will not discuss its contents, confirm its existence, or allow anyone near it. If the party recovered Whelm and Blackrazor from the Thicket and returns them to her, she accepts each weapon with the same flat expression and says nothing that constitutes an explanation.
 
 **Gate Wardens (×2)**  
 **AC** 6; **HD** 1+1; **hp** 7 each; **MV** 12"  
@@ -64,7 +64,7 @@ Low ceiling, long benches, and a fire that someone clearly built too large and h
 **AC** 7 (leather); **Fighter** 3; **hp** 19; **MV** 12"  
 **Attacks** fist or shortsword  
 **Str** 15, **Int** 10, **Wis** 9, **Dex** 13, **Con** 14, **Cha** 11  
-A broad, scarred man with a mercenary past he does not discuss. Grix knows Sorel Vane by name and will say so if pressed, for a price. He is not loyal to the smugglers — he simply knows things cost money.
+A broad, scarred man with a mercenary past he does not discuss. Grix knows Sorel Vane by name and will say so if pressed, for a price. He is not loyal to the smugglers, he simply knows things cost money.
 
 ---
 
@@ -95,11 +95,11 @@ Aldeth knows Blink Tinderflip, knows roughly what he trades in, and is not pleas
 
 A narrow shopfront packed floor-to-beam with dried herbs, sealed jars, coils of wire, bone components, inks, and a persistent smell of burnt hair. The proprietor claims the shop is licensed to use Thingizzard's name. Whether Thingizzard knows this is unclear. Whether she would care is more unclear still.
 
-**Referee Information:** Mundane alchemical supplies, spell components (common), and antitoxins are available here. Kelpwick has a small supply of items that counteract the effects of white plume dust — he does not advertise this, but will mention it if the party describes dust-related symptoms.
+**Referee Information:** Mundane alchemical supplies, spell components (common), and antitoxins are available here. Kelpwick has a small supply of items that counteract the effects of white plume dust, he does not advertise this, but will mention it if the party describes dust-related symptoms.
 
 **Dust Antitoxin (3 doses available):** A bitter grey tincture. A creature that drinks one dose gains a +2 bonus to its next saving throw against dust backlash effects. 8 gp per dose.
 
-**The Clearance Bin.** Near the door, a battered wooden crate holds a collection of unlabelled vials, ceramic flasks, and wax-stoppered bottles — Kelpwick's miscellaneous inventory: things whose labels detached, batches whose notes he lost, experiments that did not go where intended, and stock acquired from other practitioners without full documentation. He sells them at 1 copper piece each. He does not identify them in advance. He does not offer refunds. He does maintain, with some dignity, that none of them will *definitely* kill anyone.
+**The Clearance Bin.** Near the door, a battered wooden crate holds a collection of unlabelled vials, ceramic flasks, and wax-stoppered bottles, Kelpwick's miscellaneous inventory: things whose labels detached, batches whose notes he lost, experiments that did not go where intended, and stock acquired from other practitioners without full documentation. He sells them at 1 copper piece each. He does not identify them in advance. He does not offer refunds. He does maintain, with some dignity, that none of them will *definitely* kill anyone.
 
 *Roll 1d6 when a character drinks from a clearance bin potion:*
 
@@ -109,7 +109,7 @@ A narrow shopfront packed floor-to-beam with dried herbs, sealed jars, coils of 
 | 2 | Murky orange, no notable taste | **Potion of infravision.** Grants infravision 60 ft for 1 hour. The original label was in a language Kelpwick cannot read. |
 | 3 | Thick, colourless, faintly oily | **Oil of slipperiness (mislabelled as tonic).** Intended to be applied externally; when drunk, the drinker's grip becomes unreliable for 1 hour. All attack rolls and item manipulation (opening doors, using tools) suffer a −2 penalty. Applying it to a surface or object works normally. |
 | 4 | Grey particulate suspended in water, slightly fizzy | **Philtre of sneezing.** Save vs. poison or sneeze uncontrollably for 1d4 rounds: −2 to attack rolls, automatic failure on any attempt at silence or stealth. On a successful save, the drinker merely finds it repulsive. |
-| 5 | Faintly iridescent, smells of bitter sweetness | **Failed dust counteragent.** Save vs. poison. *Failure:* gain the white plume dust combat bonuses (+2 attack, damage, saves) for 1 round, then roll immediately on the dust backlash table. *Success:* no effect except that the drinker smells strongly of bitter sweetness for 2d4 hours — animals react to them as a dust-exposed creature, and the owlbear (if still active) detects them by scent at double normal range. |
+| 5 | Faintly iridescent, smells of bitter sweetness | **Failed dust counteragent.** Save vs. poison. *Failure:* gain the white plume dust combat bonuses (+2 attack, damage, saves) for 1 round, then roll immediately on the dust backlash table. *Success:* no effect except that the drinker smells strongly of bitter sweetness for 2d4 hours, animals react to them as a dust-exposed creature, and the owlbear (if still active) detects them by scent at double normal range. |
 | 6 | Dark red, no label, no smell, bottle slightly warm | **Unknown provenance.** The referee rolls 1d6 secretly: on 1–3, this is a genuine potion of heroism (Fighter-type characters gain +2 effective levels for 10 rounds; others gain +2 to hit and +5 temporary hp); on 4–6, it is a slow-acting poison (2d6 damage after 1d4 rounds, save vs. poison for half). Kelpwick does not know which it is. He has not been able to bring himself to test it. |
 
 ---
@@ -135,7 +135,7 @@ Anvil, bellows, and a dwarf who has been working iron for longer than most of th
 **AC** 6 (natural toughness and leather apron); **Dwarf Fighter** 4; **hp** 28; **MV** 9"  
 **Attacks** hammer (as warhammer) +1 to hit and damage (Str)  
 **Str** 17, **Int** 10, **Wis** 12, **Dex** 9, **Con** 16, **Cha** 8  
-Durven has noticed that three separate caravans have brought wagons with the same type of bracket damage — the kind left by a very large claw. He has said nothing because no one asked. He will tell the party if they bring him work first.
+Durven has noticed that three separate caravans have brought wagons with the same type of bracket damage, the kind left by a very large claw. He has said nothing because no one asked. He will tell the party if they bring him work first.
 
 ---
 
@@ -163,7 +163,7 @@ Practical, direct, and pleased to have customers who aren't asking her about Dur
 
 ## White Plume Armory
 
-The name is a joke, or was originally: Orryn Vault named it after the mountain because he thought it sounded impressive and nobody would ever take a Shield Lands soldier seriously enough to complain. The shop sells solid used equipment — nothing enchanted, nothing new, everything functional.
+The name is a joke, or was originally: Orryn Vault named it after the mountain because he thought it sounded impressive and nobody would ever take a Shield Lands soldier seriously enough to complain. The shop sells solid used equipment, nothing enchanted, nothing new, everything functional.
 
 **Referee Information:** Standard arms and armour at book prices, with a 10% discount for anyone who mentions they are headed into the Thicket. Orryn considers this a dead man's discount and does not say so aloud.
 
@@ -179,7 +179,7 @@ A retired Shield Lands sergeant with a long memory and a dislike of unanswered q
 
 ## Brindle's Stable
 
-Old Brindle — the hermit druid from the Thicket — once kept horses here before the forest pulled him away entirely. Yenna runs the stable now. She is not his niece by blood; the town has called her that for twenty years and neither of them has corrected it. She sends him money when she can find him and food when she cannot.
+Old Brindle, the hermit druid from the Thicket, once kept horses here before the forest pulled him away entirely. Yenna runs the stable now. She is not his niece by blood; the town has called her that for twenty years and neither of them has corrected it. She sends him money when she can find him and food when she cannot.
 
 **Referee Information:** Horses, mules, and tack for purchase or hire. Feed and boarding available. Yenna can describe her uncle's habits and last known location in the Thicket, which overlaps significantly with Area 4 (the Dust Pool Glade).
 
@@ -201,7 +201,7 @@ An elderly man of few words who is very good with horses and indifferent to peop
 
 ## Shrine of St. Cuthbert
 
-A modest stone building with a heavy door and a cudgel hung above the altar — St. Cuthbert's traditional symbol. The shrine doubles as a small infirmary when Ringstown needs one, which is increasingly often.
+A modest stone building with a heavy door and a cudgel hung above the altar, St. Cuthbert's traditional symbol. The shrine doubles as a small infirmary when Ringstown needs one, which is increasingly often.
 
 **Referee Information:** Curative services available: *cure light wounds* for 10 gp donation, *cure disease* for 50 gp. Brother Aldric will treat injured party members at no cost if they are visibly working to address the threat in the Thicket.
 
@@ -248,7 +248,7 @@ An ancient woman who charges a copper piece per bucket and has an opinion on eve
 
 A semi-permanent collection of stalls occupying the eastern edge of Ring Square on most mornings. The market sells food, basic tools, rope, candles, dried goods, and whatever the current crop of trappers has brought in from the edge of the Thicket. Business has been poor lately: the trappers have stopped coming.
 
-**Referee Information:** Standard adventuring supplies available at listed prices. The party can sell non-magical salvage here at 30-50% of book value. Fennick keeps records of what traders have been bringing in — or rather, what they have stopped bringing in.
+**Referee Information:** Standard adventuring supplies available at listed prices. The party can sell non-magical salvage here at 30-50% of book value. Fennick keeps records of what traders have been bringing in, or rather, what they have stopped bringing in.
 
 ---
 
@@ -256,7 +256,7 @@ A semi-permanent collection of stalls occupying the eastern edge of Ring Square 
 **AC** 9; **HD** 1; **hp** 5; **MV** 12"  
 **Attacks** short sword (rarely drawn)  
 **Str** 9, **Int** 13, **Wis** 11, **Dex** 11, **Con** 10, **Cha** 13  
-An officious, record-keeping man who is more useful than he appears. His trade ledgers document a sharp drop in trapper activity beginning six weeks ago — roughly coinciding with the first carriage disappearances. He will share this if asked about trade patterns.
+An officious, record-keeping man who is more useful than he appears. His trade ledgers document a sharp drop in trapper activity beginning six weeks ago, roughly coinciding with the first carriage disappearances. He will share this if asked about trade patterns.
 
 ---
 
@@ -281,7 +281,7 @@ Senna is the most practically knowledgeable person in Ringstown about what the d
 
 ## Chandler's Warehouse
 
-A large, draughty building at the edge of the town ring, used to store trade goods in transit. The Chandler family — now represented entirely by Brod — takes a percentage of everything stored here. Brod takes a percentage of that for himself. The arrangement has worked for twenty years and everyone involved pretends not to know how it functions.
+A large, draughty building at the edge of the town ring, used to store trade goods in transit. The Chandler family, now represented entirely by Brod, takes a percentage of everything stored here. Brod takes a percentage of that for himself. The arrangement has worked for twenty years and everyone involved pretends not to know how it functions.
 
 **Referee Information:** The warehouse currently holds several unmarked crates that arrived three weeks ago and have not been collected. One of them has a very faint bitter smell around its seams. Brod does not want anyone looking at these crates. He is not connected to the smuggling operation but knows what a bribe looks like and has accepted one.
 

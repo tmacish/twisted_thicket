@@ -1,4 +1,4 @@
-# Calder Mourne — Human Fighter 7
+# Calder Mourne, Human Fighter 7
 
 *Former Shield Lands heavy cavalry, now working independent commissions. He knows Elnara from a previous job. He does not discuss the details of that job.*
 
@@ -11,8 +11,8 @@
 | Strength | 17 | +1 to hit, +1 damage |
 | Dexterity | 13 | −1 AC |
 | Constitution | 16 | +2 hp/die |
-| Intelligence | 11 | — |
-| Wisdom | 12 | — |
+| Intelligence | 11 |, |
+| Wisdom | 12 |, |
 | Charisma | 14 | Reaction +1 |
 
 ---
@@ -29,9 +29,9 @@
 
 | Weapon | To Hit | Damage | Notes |
 |--------|--------|--------|-------|
-| Longsword +2 | +5 | 1d8+4 | +2 magic, +1 Str to hit, +1 Str damage |
-| Hand axe (×2) | +2 | 1d6+2 | Thrown range 1"/2"/3" |
-| Dagger | +2 | 1d4+2 | Last resort |
+| Longsword +2 | +3 | 1d8+3 | +2 magic, +1 Str to hit, +1 Str damage |
+| Hand axe (×2) | +1 | 1d6+1 | Thrown range 1"/2"/3" |
+| Dagger | +1 | 1d4+1 | Last resort |
 
 **Saving Throws:**
 
@@ -59,13 +59,13 @@
 
 **Potion of Extra Healing:** A dark amber liquid in a ceramic vial sealed with red wax. Restores 3d8+3 hit points. Calder has been carrying this for two months and hasn't needed it yet, which he considers either lucky or ominous.
 
-**Ring of Protection +1:** A plain iron band on his right hand. Contributes to his AC. He does not know where it came from — it was in an evidence box from a previous commission, unclaimed.
+**Ring of Protection +1:** A plain iron band on his right hand. Contributes to his AC. He does not know where it came from, it was in an evidence box from a previous commission, unclaimed.
 
 ---
 
 ## Background
 
-Calder served twelve years with the Shield Lands heavy cavalry before the unit was disbanded in a political restructuring he has no interest in explaining. He has been working independent security contracts since, mostly escort and clearance work. Elnara reached out to him specifically for this job — she knows his capabilities and, more importantly, knows he will follow through on a commission once he takes it.
+Calder served twelve years with the Shield Lands heavy cavalry before the unit was disbanded in a political restructuring he has no interest in explaining. He has been working independent security contracts since, mostly escort and clearance work. Elnara reached out to him specifically for this job, she knows his capabilities and, more importantly, knows he will follow through on a commission once he takes it.
 
 ---
 
@@ -79,6 +79,6 @@ Calder served twelve years with the Shield Lands heavy cavalry before the unit w
 
 ## Personality
 
-- Economical with words. States objectives, checks progress, moves on. Not cold — just efficient.
+- Economical with words. States objectives, checks progress, moves on. Not cold, just efficient.
 - Has a professional respect for competence in others regardless of class or background. Will follow a good plan from anyone.
 - Does not use the dust. Has watched enough soldiers get creative with questionable substances and knows how that ends.

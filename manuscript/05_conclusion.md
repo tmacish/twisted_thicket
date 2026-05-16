@@ -1,6 +1,6 @@
 # Concluding the Adventure
 
-The adventure ends when the party returns to Ringstown — whether the owlbear is dead or calmed, the dust destroyed or secured, and regardless of how many of the seven areas they explored. Elnara pays the commission without ceremony and asks three questions in sequence, in this order, before saying anything else: *"Is the beast dealt with? Is the pool closed? What did you bring back?"* The third question is the one she is most interested in.
+The adventure ends when the party returns to Ringstown, whether the owlbear is dead or calmed, the dust destroyed or secured, and regardless of how many of the seven areas they explored. Elnara pays the commission without ceremony and asks three questions in sequence, in this order, before saying anything else: *"Is the beast dealt with? Is the pool closed? What did you bring back?"* The third question is the one she is most interested in.
 
 ---
 
@@ -20,9 +20,13 @@ Elnara's reactions to what the party returns with:
 
 **The wagon manifest naming "E. Forger" returned to her:** She takes it, looks at it for one moment, and places it in her ledger without comment. She adds 10 gp to the commission without explanation. If pressed, she says: *"For your discretion."* She does not confirm what the name means.
 
-**Whelm and/or Blackrazor returned:** She receives each weapon with the same flat expression — relief, carefully managed. She places them in the iron chest with Wave and locks it. She tells the party: *"These three objects are the reason this entire situation exists. Someone underground wants them back. As long as they are here, that someone has a reason to keep looking north."* She does not explain further. She is already thinking about what comes next.
+**Whelm and/or Blackrazor returned:** She receives each weapon with the same flat expression, relief, carefully managed. She places them in the iron chest with Wave and locks it. She tells the party: *"These three objects are the reason this entire situation exists. Someone underground wants them back. As long as they are here, that someone has a reason to keep looking north."* She does not explain further. She is already thinking about what comes next.
 
-**The coded ledger (Area 2) and/or Kael Vorst's identity:** If the party has connected Kael Vorst to the Inheritor's network and can describe the chain — Inheritor → Kael → Sorel → Mave/Dort → road — Elnara listens without interrupting. She adds 50 gp (the promised intelligence bonus) and says: *"That confirms what I suspected about the structure. It does not tell me who is at the top of it."* She means this literally.
+**If the party describes the full picture, the operative, the mountain route, the test-site pattern:** Elnara is quiet for longer than is comfortable. Then: *"The Thicket wasn't a destination. It was a proving ground. Someone poisoned a forest and a water table and a large animal at range, to see if the dust could do it. It could."* She does not raise her voice. *"I cannot move armed forces into the mountain territory. The district command makes any official action slow and visible, which is worse than nothing."* She looks at the party. *"What I can do is pay, significantly, to the people who already know the enemy's mark, have held the weapons he wants back, and are standing in my office with a map that opens a specific door. If you're willing to be those people."*
+
+She names a figure. The referee should set it high enough to mean something. She does not negotiate it down.
+
+**The coded ledger (Area 2) and/or Kael Vorst's identity:** If the party has connected Kael Vorst to the Inheritor's network and can describe the chain, Inheritor → Kael → Sorel → Mave/Dort → road, Elnara listens without interrupting. She adds 50 gp (the promised intelligence bonus) and says: *"That confirms what I suspected about the structure. It does not tell me who is at the top of it."* She means this literally.
 
 **The obsidian disc (cracked) from Area 3:** She examines it carefully, sets it down. *"Kael Vorst's. He was carrying a live one when we last tracked him, three months ago. This one is spent."* This is the first confirmation that Elnara has been monitoring the Inheritor's network for longer than this adventure suggests.
 
@@ -38,9 +42,15 @@ Elnara's reactions to what the party returns with:
 
 The adventure resolves its immediate threats but does not close the larger story. These threads remain when the party leaves Ringstown:
 
-**The Inheritor is still active.** The false Keraptis was watching through the pool, through the K-marks, through the owlbear's borrowed eyes. The pool is closed. The owlbear is dealt with. The control apparatus in the Thicket is dismantled. But the source — the laboratory under the mountain, the manufactured dust, the copies of Keraptis fighting over a dead wizard's identity — is untouched. White Plume Mountain still smokes. The face still forms at dusk.
+**The Inheritor is still active.** The false Keraptis was watching through the pool, through the K-marks, through the owlbear's borrowed eyes. The pool is closed. The owlbear is dealt with. The control apparatus in the Thicket is dismantled. But the source, the laboratory under the mountain, the manufactured dust, the copies of Keraptis fighting over a dead wizard's identity, is untouched. White Plume Mountain still smokes. The face still forms at dusk.
 
-**The silk-wearing operative is north.** They killed Kael Vorst and Orn, moved the secondary dust cache, and entered the Riddle Cave. Their prints lead north and do not return. They know the party has been through the Thicket. Whether they know the extent of what the party found — the cracked disc, the broken pool, the calmed owlbear — depends on whether the detection mechanism in the cave was triggered. If the pool was closed before the cave was visited, the signal puff of dust reached no one watching. If the pool was active, the signal reached the false Keraptis, and the operative has been briefed.
+**The silk-wearing operative is north.** They killed Kael Vorst and Orn, moved the secondary dust cache, and entered the Riddle Cave. Their prints lead north and do not return. They know the party has been through the Thicket. Whether they know the extent of what the party found, the cracked disc, the broken pool, the calmed owlbear, depends on whether the detection mechanism in the cave was triggered. If the pool was closed before the cave was visited, the signal puff of dust reached no one watching. If the pool was active, the signal reached the false Keraptis, and the operative has been briefed.
+
+**The weapons remember the mountain.** A character who has carried Whelm since Area 2 may notice, on the approach to the Riddle Cave or afterward, a faint rhythmic vibration in the haft, something between a pulse and a lean, growing slightly stronger when they face northeast. Whelm was forged in the mountain. It has not stopped knowing which direction home is. A dwarf carrier feels this more acutely: the hammer does not fight to move, but it inclines, the way a compass needle inclines, toward the northeast, without urgency and without rest.
+
+Blackrazor does not orient toward a direction. It orients toward depth, toward mass, toward presence, toward the weight of something very large underground that has been waiting long enough to stop feeling like waiting. When the party is north of Ringstown, in the foothills, this becomes a pressure rather than a pull. The mountain is full of old things. One of them is waiting. Blackrazor can feel it, and anyone carrying Blackrazor will eventually feel Blackrazor feel it.
+
+Wave does neither of these things. Wave is a sea weapon, aquatic in origin, aligned with open water rather than underground fire and sulphur, and the mountain is essentially everything it is not: enclosed, volcanic, dark, dry. If Whelm leans northeast and Blackrazor pulls toward depth, Wave leans south, toward the coast, toward whatever open water it considers home. A character carrying Wave into the mountain foothills may feel a faint resistance, the way a tool feels wrong in the hand when used for a purpose it was not made for. Wave will function. It will not cooperate. The party is taking it somewhere it does not want to go, and it will be quietly, persistently clear about this for as long as they are heading inland.
 
 **Sorel Vane is alive (if the party allowed it).** He has a family in Critwall, a contact address hidden in his boot lining, and detailed knowledge of the Inheritor's buyer network. He is not a villain. He is a man who took a bad contract and wants to survive it. Whether the party honoured the safe-passage agreement determines whether he is a future resource or a future complication.
 
@@ -52,9 +62,9 @@ The adventure resolves its immediate threats but does not close the larger story
 
 ## Outcome Variations
 
-**If the dust was destroyed in its entirety:** The contamination in the immediate area begins to recede within days. Animals return to the game trails within a week. Old Brindle, when he eventually emerges, will say the forest is recovering — slowly, with the particular stubbornness of things that have been sick for a long time. The underlying source in the mountain is unchanged, but the Thicket's infection is clearing.
+**If the dust was destroyed in its entirety:** The contamination in the immediate area begins to recede within days. Animals return to the game trails within a week. Old Brindle, when he eventually emerges, will say the forest is recovering, slowly, with the particular stubbornness of things that have been sick for a long time. The underlying source in the mountain is unchanged, but the Thicket's infection is clearing.
 
-**If the dust was preserved or sold:** The substance continues to exist in the world. Whoever holds it — Elnara, a Critwall buyer, the party — holds a temptation and a liability. The Inheritor will want it back or want to know who took it. Kelpwick, if he purchased doses from the party, will have questions about their provenance that he does not ask aloud for at least a week.
+**If the dust was preserved or sold:** The substance continues to exist in the world. Whoever holds it, Elnara, a Critwall buyer, the party, holds a temptation and a liability. The Inheritor will want it back or want to know who took it. Kelpwick, if he purchased doses from the party, will have questions about their provenance that he does not ask aloud for at least a week.
 
 **If party members used the dust repeatedly:** End with a quiet moment: a character notices they have scratched something into a surface without intending to. They look at what they carved. It is a K. They do not remember doing it. The voice, if there was ever a voice, is not there anymore. But the habit is.
 
@@ -62,12 +72,20 @@ The adventure resolves its immediate threats but does not close the larger story
 
 ---
 
+## The Final Image
+
+*Read this when the party departs Ringstown heading north, or as the closing image of this session.*
+
+> The owlbear is silent. The dust pool is dark. The logging camp is quiet. As the sun dips behind the Shield Lands, you look north. The white plume from the mountain is no longer just a landmark; it is a chimney. Somewhere beneath that peak, the person who poisoned this forest is waiting. And in your pack, the map you found in the cave points to a door that hasn't been opened in a thousand years. The Thicket was just the porch. The mountain is the house.
+
+---
+
 ## Forest Tie-Ins
 
 The Twisted Thicket should feel like the infected outer skin of White Plume Mountain rather than an isolated woodland. The following elements connect this adventure to the larger world and to any sequel.
 
-**The Gnome Berry-Gatherers.** Mountain gnomes have worked these trails for generations. They know vents, routes, and the mountain's internal rhythm in ways no surface expedition can match. Nib (Area 6), if the party treated her well, is a potential contact for a future expedition — she will not go inside, but she knows who among the mountain gnomes might. Their knotted trail cords and chalked directional arrows are a living warning system; as long as the gnomes are still marking trails, the situation above ground has not become completely hopeless.
+**The Gnome Berry-Gatherers.** Mountain gnomes have worked these trails for generations. They know vents, routes, and the mountain's internal rhythm in ways no surface expedition can match. Nib (Area 6), if the party treated her well, is a potential contact for a future expedition, she will not go inside, but she knows who among the mountain gnomes might. Their knotted trail cords and chalked directional arrows are a living warning system; as long as the gnomes are still marking trails, the situation above ground has not become completely hopeless.
 
 **Dead Gnoll's Eye Socket.** A blasted hollow roughly two hours northeast of the Riddle Cave, named for its shape. Former gnoll territory, long since abandoned. The gnomes use it as a waystation on the approach to the mountain's outer vents. It functions as a fallback camp, a hidden cache point, or a place where a party waiting for the mountain smoke to turn grey can shelter without being exposed on the approach. It is not in any area of this adventure; it appears on no map the party has found. Old Brindle knows it exists. Nib can describe its location. A referee running a sequel into White Plume Mountain should populate it with whatever serves the next chapter.
 
-**The Plume as Omen.** At dusk, looking north from anywhere in the Thicket with a clear sightline — the glade, the game trails, the cave mouth — the smoke above White Plume Mountain briefly forms a face. It does not move. It does not react to being observed. It simply watches, the way an intelligence watches when it believes it cannot be seen watching. After this adventure, the party has seen the pool behind that face, heard the pool's voice described by Old Brindle, and possibly made eye contact with it directly. The face at dusk is no longer an abstract omen. It is a person they have almost met, looking south from a place they now know how to reach.
+**The Plume as Omen.** At dusk, looking north from anywhere in the Thicket with a clear sightline, the glade, the game trails, the cave mouth, the smoke above White Plume Mountain briefly forms a face. It does not move. It does not react to being observed. It simply watches, the way an intelligence watches when it believes it cannot be seen watching. After this adventure, the party has seen the pool behind that face, heard the pool's voice described by Old Brindle, and possibly made eye contact with it directly. The face at dusk is no longer an abstract omen. It is a person they have almost met, looking south from a place they now know how to reach.

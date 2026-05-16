@@ -2,7 +2,7 @@
 
 ## Tone and Style
 
-This adventure works best when run as a mixture of wilderness horror, dark comedy, and old-school resource play. The beast is terrifying, but the absurdity of a hyper-aggressive owlbear empowered by magical narcotic dust should still come through. Lean into signs of excess — trees clawed to splinters, half-eaten smugglers, glowing sneezes of white powder, and confused witnesses recounting impossible speed and human-like shrieks.
+This adventure works best when run as a mixture of wilderness horror, dark comedy, and old-school resource play. The beast is terrifying, but the absurdity of a hyper-aggressive owlbear empowered by magical narcotic dust should still come through. Lean into signs of excess, trees clawed to splinters, half-eaten smugglers, glowing sneezes of white powder, and confused witnesses recounting impossible speed and human-like shrieks.
 
 ---
 
