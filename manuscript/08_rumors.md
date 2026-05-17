@@ -23,7 +23,7 @@ Roll 1d100. Rumours may be heard in Ringstown taverns, at the market, from trave
 | 15 | "The beast screams words. Not animal sounds, words. Rennick heard it say a name before it took his arm." | **~** |
 | 16 | "River water cures the dust sickness. Just drink a lot of it and the voice goes away." | **F** |
 | 17 | "Sorel Vane was in the Scalded Goblin three nights ago. Quiet. Drinking alone. Watching the door." | **~** |
-| 18 | "Elnara already has one of the old weapons. She's had it for months. That's why she wants the others so badly." | **F** |
+| 18 | "Elnara already has one of the old weapons. She's had it for months. That's why she wants the others so badly." | **~** |
 | 19 | "The gnomes under the mountain serve Keraptis willingly. Always have. They think he's a god." | **~** |
 | 20 | "There's a pool deep in the Thicket that glows white-blue. Locals say it cleans the dust out of you if you wash in it." | **~** |
 | 21 | "That owlbear was seen by Renwick's boys in early spring, normal as anything. Whatever happened to it happened fast and recently." | **T** |
@@ -36,7 +36,7 @@ Roll 1d100. Rumours may be heard in Ringstown taverns, at the market, from trave
 | 28 | "The dust makes animals aggressive. Not just the owlbear, weasels, deer, things that have no reason to attack a man." | **T** |
 | 29 | "There are K-marks scratched into trees throughout the Thicket. Some old, some fresh. Nobody knows what they mean." | **T** |
 | 30 | "Thingizzard's shop in Ringstown isn't actually hers. Someone's just using her name because people are afraid of it." | **~** |
-| 31 | "The three weapons Tinderflip was moving were taken from White Plume Mountain by a previous expedition. Elnara hired that group too." | **T** |
+| 31 | "The three weapons Tinderflip was moving were taken from White Plume Mountain by a previous expedition. Elnara hired that group too." | **~** |
 | 32 | "Kelpwick the gnome is Thingizzard in disguise. The hair is wrong and she doesn't smell right." | **F** |
 | 33 | "One of those three weapons picks its own wielder. Refuses everyone else. Threw a man across a room when he tried to lift it." | **T** |
 | 34 | "Durven Ash has the best metalwork in Ringstown but he won't admit the Kolm woman exists. Bessa thinks it's hilarious." | **T** |

@@ -22,10 +22,11 @@ from pathlib import Path
 # Paths
 # ---------------------------------------------------------------------------
 
-ROOT       = Path(__file__).parent
-CHAR_DIR   = ROOT / "characters"
-FONTS_DIR  = ROOT / "fonts"
-OUTPUT_DIR = ROOT / "sheets"
+ROOT            = Path(__file__).parent.parent   # the_twisted_thicket/ project root
+CHAR_DIR        = ROOT / "characters"
+FONTS_DIR       = ROOT / "fonts"
+OUTPUT_DIR      = ROOT / "sheets"
+BACKGROUNDS_DIR = ROOT / "handouts" / "player_backgrounds"
 
 # ---------------------------------------------------------------------------
 # Colour palette  (R, G, B  in  0.0–1.0)
@@ -816,8 +817,236 @@ def draw_sheet(char: dict, c):
         f"*  {char.get('class','')} {char.get('level','')}")
 
 # ---------------------------------------------------------------------------
+# Background sheet — parser
+# ---------------------------------------------------------------------------
+
+def parse_background(md_path: Path) -> dict:
+    text = md_path.read_text(encoding="utf-8")
+    bg: dict = {"source": md_path.name}
+
+    # H1: character name
+    m = re.match(r'#\s+(.+)', text)
+    bg["name"] = m.group(1).strip() if m else md_path.stem
+
+    # H3: "Race Class — Your Background"
+    m = re.search(r'###\s+(.+?)\s*—\s*Your Background', text)
+    bg["subtitle"] = m.group(1).strip() if m else ""
+
+    # Split on horizontal rules to get content blocks
+    blocks = re.split(r'\n---\n', text)
+    sections: list[dict] = []
+    intro_set = False
+
+    for block in blocks:
+        block = block.strip()
+        if not block:
+            continue
+        if block.startswith('#'):
+            continue  # title block
+
+        # Section with a ### heading?
+        m = re.match(r'###\s+(.+?)\n+([\s\S]+)', block)
+        if m:
+            heading = m.group(1).strip()
+            content = m.group(2).strip()
+            sections.append({"heading": heading, "content": content})
+        elif not intro_set:
+            bg["intro"] = block
+            intro_set = True
+
+    bg["sections"] = sections
+    return bg
+
+
+# ---------------------------------------------------------------------------
+# Background sheet — renderers
+# ---------------------------------------------------------------------------
+
+def _render_prose_block(c, text: str, x: float, y: float, w: float,
+                        font_size: float = 7.5, leading: float = 9.5,
+                        use_italic: bool = False) -> float:
+    """Render flowing prose inside an already-drawn box. Returns new y."""
+    fnt = italic() if use_italic else body()
+    stop_y = y - 600  # hard floor; caller constrains box_h
+    for para in text.split('\n\n'):
+        para = _clean(para.strip())
+        if not para:
+            y -= leading * 0.5
+            continue
+        for line in word_wrap(para, c, fnt, font_size, w - 12):
+            if y < stop_y:
+                break
+            _sf(c, C_INK)
+            c.setFont(fnt, font_size)
+            c.drawString(x + 6, y, line)
+            y -= leading
+        y -= leading * 0.4   # paragraph gap
+    return y
+
+
+def render_bg_section(c, heading: str, content: str,
+                      x: float, y: float, w: float,
+                      bottom_limit: float) -> float:
+    """Draw one prose section with a header bar. Returns y after the box."""
+    FONT_SZ = 7.5
+    LEADING  = 9.5
+    bar_h    = 10
+
+    # Estimate line count
+    all_lines: list[str] = []
+    for para in content.split('\n\n'):
+        para = _clean(para.strip())
+        if para:
+            all_lines.extend(word_wrap(para, c, body(), FONT_SZ, w - 12))
+            all_lines.append('')
+    while all_lines and not all_lines[-1]:
+        all_lines.pop()
+
+    if not all_lines:
+        return y
+
+    raw_h = bar_h + 14 + len(all_lines) * LEADING + 4
+    available = y - bottom_limit
+    box_h = min(raw_h, available - 4)
+    if box_h < bar_h + 18:
+        return y  # not enough room
+
+    draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
+    section_bar(c, heading, x, y - bar_h - 2, w, font_size=7)
+
+    ry = y - bar_h - 2 - 10
+    stop_ry = y - box_h + LEADING
+
+    for line in all_lines:
+        if ry < stop_ry:
+            break
+        if not line:
+            ry -= LEADING * 0.4
+            continue
+        _sf(c, C_INK)
+        c.setFont(body(), FONT_SZ)
+        c.drawString(x + 6, ry, line)
+        ry -= LEADING
+
+    return y - box_h - 5
+
+
+def draw_background_sheet(bg: dict, c) -> None:
+    from reportlab.lib.pagesizes import LETTER
+    W, H = LETTER
+
+    draw_parchment(c, W, H)
+    draw_page_border(c, W, H, MARGIN)
+
+    IW  = W - 2 * MARGIN
+    LX  = MARGIN + 7
+    TOP = H - MARGIN - 8
+
+    # ---- DETACHABLE MARKER ----
+    _ss(c, C_RULE)
+    c.setLineWidth(0.4)
+    c.setDash([3, 3], 0)
+    c.line(LX, TOP - 3, LX + IW - 14, TOP - 3)
+    c.setDash()
+    _sf(c, C_RULE)
+    c.setFont(body(), 5.5)
+    c.drawCentredString(W / 2, TOP - 8.5,
+        "- - - - - - -  PLAYER HANDOUT  /  DETACH AND KEEP  - - - - - - -")
+
+    # ---- HEADER BAR ----
+    _sf(c, C_BORDER)
+    c.rect(LX, TOP - 24, IW - 14, 13, fill=1, stroke=0)
+    _sf(c, C_PARCHMENT)
+    c.setFont(head(), 6.5)
+    c.drawCentredString(W / 2, TOP - 20,
+        "THE TWISTED THICKET    *    PLAYER BACKGROUND    *    THE TWISTED THICKET")
+
+    # ---- CHARACTER NAME ----
+    name_y = TOP - 24
+    _sf(c, C_PARCHMENT_SHD)
+    c.rect(LX, name_y - 26, IW - 14, 26, fill=1, stroke=0)
+    _ss(c, C_BORDER)
+    c.setLineWidth(0.8)
+    c.rect(LX, name_y - 26, IW - 14, 26, stroke=1, fill=0)
+    draw_diamond(c, LX + 14,       name_y - 13, half=5)
+    draw_diamond(c, LX + IW - 28,  name_y - 13, half=5)
+    _sf(c, C_INK)
+    c.setFont(bl(), 20)
+    c.drawCentredString(W / 2, name_y - 20, bg.get("name", ""))
+
+    # ---- SUBTITLE BAR ----
+    sub_y = name_y - 26
+    _sf(c, C_HEADING)
+    c.rect(LX, sub_y - 13, IW - 14, 13, fill=1, stroke=0)
+    _sf(c, C_PARCHMENT)
+    c.setFont(head(), 7)
+    c.drawCentredString(W / 2, sub_y - 10, bg.get("subtitle", ""))
+
+    current_y = sub_y - 13 - 8
+    FULL_W    = IW - 14
+    BOTTOM    = MARGIN + 16
+
+    # ---- INTRO (italic, borderless) ----
+    intro = bg.get("intro", "")
+    if intro:
+        FONT_SZ = 7.5
+        LEADING  = 9.5
+        _sf(c, C_PARCHMENT_SHD)
+        # draw a thin tinted band behind the intro
+        intro_lines: list[str] = []
+        for para in intro.split('\n\n'):
+            para = _clean(para.strip())
+            if para:
+                intro_lines.extend(word_wrap(para, c, italic(), FONT_SZ, FULL_W - 12))
+                intro_lines.append('')
+        while intro_lines and not intro_lines[-1]:
+            intro_lines.pop()
+
+        band_h = len(intro_lines) * LEADING + 10
+        c.rect(LX, current_y - band_h, FULL_W, band_h, fill=1, stroke=0)
+        _ss(c, C_RULE)
+        c.setLineWidth(0.4)
+        c.rect(LX, current_y - band_h, FULL_W, band_h, stroke=1, fill=0)
+
+        iy = current_y - 6
+        for line in intro_lines:
+            if not line:
+                iy -= LEADING * 0.4
+                continue
+            _sf(c, C_INK)
+            c.setFont(italic(), FONT_SZ)
+            c.drawString(LX + 6, iy, line)
+            iy -= LEADING
+
+        current_y = current_y - band_h - 8
+
+    # ---- SECTIONS ----
+    for section in bg.get("sections", []):
+        if current_y < BOTTOM + 30:
+            break
+        current_y = render_bg_section(
+            c, section["heading"], section["content"],
+            LX, current_y, FULL_W, BOTTOM
+        )
+        current_y -= 4
+
+    # ---- FOOTER ----
+    _sf(c, C_BORDER)
+    c.setFont(body(), 5.5)
+    c.drawCentredString(W / 2, MARGIN + 4,
+        f"The Twisted Thicket  *  {bg.get('name', '')}  *  Player Background")
+
+
+# ---------------------------------------------------------------------------
 # Entry point
 # ---------------------------------------------------------------------------
+
+def _find_background(char_stem: str) -> Path | None:
+    """Return the matching background md for a character file stem, or None."""
+    prefix = char_stem[:2]
+    matches = list(BACKGROUNDS_DIR.glob(f"{prefix}_*background*.md"))
+    return matches[0] if matches else None
+
 
 def generate_sheet(md_path: Path, out_dir: Path) -> None:
     from reportlab.pdfgen import canvas as cv
@@ -827,8 +1056,14 @@ def generate_sheet(md_path: Path, out_dir: Path) -> None:
     c = cv.Canvas(str(out), pagesize=LETTER)
     c.setTitle(f"{char.get('name','Character')} — The Twisted Thicket")
     draw_sheet(char, c)
+
+    bg_path = _find_background(md_path.stem)
+    if bg_path:
+        c.showPage()
+        draw_background_sheet(parse_background(bg_path), c)
+
     c.save()
-    print(f"  {out.name}")
+    print(f"  {out.name}"  + (" (+background)" if bg_path else ""))
 
 
 def main():
@@ -876,12 +1111,19 @@ def main():
         combined = OUTPUT_DIR / "all_characters.pdf"
         c = cv.Canvas(str(combined), pagesize=LETTER)
         c.setTitle("The Twisted Thicket — All Characters")
-        for i, f in enumerate(files):
-            if i > 0:
+        page_count = 0
+        for f in files:
+            if page_count > 0:
                 c.showPage()
             draw_sheet(parse_character(f), c)
+            page_count += 1
+            bg_path = _find_background(f.stem)
+            if bg_path:
+                c.showPage()
+                draw_background_sheet(parse_background(bg_path), c)
+                page_count += 1
         c.save()
-        print(f"  all_characters.pdf  ({len(files)} pages)")
+        print(f"  all_characters.pdf  ({page_count} pages, backgrounds included)")
 
     print(f"\nSheets saved to {OUTPUT_DIR}/")
 

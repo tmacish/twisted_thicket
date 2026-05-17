@@ -18,7 +18,11 @@ Elnara's reactions to what the party returns with:
 
 **The dust cache kept or sold:** She does not know. If she finds out later, she will remember.
 
-**The wagon manifest naming "E. Forger" returned to her:** She takes it, looks at it for one moment, and places it in her ledger without comment. She adds 10 gp to the commission without explanation. If pressed, she says: *"For your discretion."* She does not confirm what the name means.
+**The Revocation returned:** She takes the lead-lined case with both hands. She does not open it. She holds it still for a moment — longer than she holds anything — and then sets it on her desk. She looks at the party. *"This is what all of it was for. The dust, the beast, the network in the Thicket. He was not testing a weapon. He was looking for this."* She adds 50 gp to the commission without negotiation. She does not explain what the tablet says. If the party presses her, she says: *"When the time comes to use it, you will understand why I did not tell you tonight. Some knowledge makes people targets."* She does not look away when she says it.
+
+**Blink's manifest naming "E. Forger" returned to her:** She takes it, looks at it for one moment, and places it in her ledger without comment. She adds 10 gp to the commission without explanation. If pressed, she says: *"For your discretion."* She does not confirm what the name means.
+
+**The weapon-convoy manifest returned to her:** The one with the routing note signed *E.* She takes it. She does not look at it for long. She places it face-down in her ledger. She adds 10 gp to the commission and says nothing further. The party should understand, if they are paying attention, that she already knows exactly what the document says, because she wrote part of it. If pressed directly — *"Was this your operation?"* — she says: *"The owlbear was not part of my plan."* She does not answer the question that was asked. She does not look away.
 
 **Whelm and/or Blackrazor returned:** She receives each weapon with the same flat expression, relief, carefully managed. She places them in the iron chest with Wave and locks it. She tells the party: *"These three objects are the reason this entire situation exists. Someone underground wants them back. As long as they are here, that someone has a reason to keep looking north."* She does not explain further. She is already thinking about what comes next.
 
@@ -66,15 +70,13 @@ Wave does neither of these things. Wave is a sea weapon, aquatic in origin, alig
 
 **If the dust was preserved or sold:** The substance continues to exist in the world. Whoever holds it, Elnara, a Critwall buyer, the party, holds a temptation and a liability. The Inheritor will want it back or want to know who took it. Kelpwick, if he purchased doses from the party, will have questions about their provenance that he does not ask aloud for at least a week.
 
-**If party members used the dust repeatedly:** End with a quiet moment: a character notices they have scratched something into a surface without intending to. They look at what they carved. It is a K. They do not remember doing it. The voice, if there was ever a voice, is not there anymore. But the habit is.
-
-**If the party explored all seven areas:** They leave Ringstown with the bark-map (if Elnara didn't take it), the gnome's navigation note, a fresh obsidian disc that opens a door somewhere underground, and the knowledge that the previous expedition that retrieved these three weapons did not make it home. They have a route. They have intelligence no one else has. They have weapons of legendary provenance. White Plume Mountain is north, and now they know how to go in rather than merely where.
-
----
+**If party members used the dust repeatedly:** End with a quiet moment: a character notices they have scratched something into a surface without intending to. They look at what they carved. It is a K. They do not remember doing it. The voice, if there was ever a voice, is not there anymore. But the habit is.  **If the party explored all seven areas:** They leave Ringstown with the bark-map (if Elnara didn't take it), the gnome's navigation note, a fresh obsidian disc that opens a door somewhere underground, and the knowledge that the previous expedition that retrieved these three weapons did not make it home. They have a route. They have intelligence no one else has. They have weapons of legendary provenance. White Plume Mountain is north, and now they know how to go in rather than merely where.  ---
 
 ## The Final Image
 
 *Read this when the party departs Ringstown heading north, or as the closing image of this session.*
+
+> Elnara reaches back, smiles oddly, and says "You all have done well. But our work is not done. The ash has settled, yet the mountain has not grown quiet. Old wards strain. Old names are being spoken again in places that should have stayed silent. So I must ask more of you than is fair. We have to go back to where it all began. We have to see what is stirring in the smoke, and who has dared to open doors that were meant to remain sealed. You all have done well. But it is time for us all to return to White Plume Mountain."
 
 > The owlbear is silent. The dust pool is dark. The logging camp is quiet. As the sun dips behind the Shield Lands, you look north. The white plume from the mountain is no longer just a landmark; it is a chimney. Somewhere beneath that peak, the person who poisoned this forest is waiting. And in your pack, the map you found in the cave points to a door that hasn't been opened in a thousand years. The Thicket was just the porch. The mountain is the house.
 
