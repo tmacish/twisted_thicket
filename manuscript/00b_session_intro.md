@@ -51,7 +51,7 @@ The coach with the **lower sum** failed to notice in time.
 >
 > It is through the tree line and gone before you can draw a weapon.
 
-**Every player in the destroyed coach must Save vs. Paralyzation** (the 2E equivalent of a Dexterity save against a physical catastrophe).
+**Every player in the destroyed coach must Save vs. Paralyzation.**
 
 | Result | Damage |
 |--------|--------|
@@ -82,7 +82,7 @@ If Coach B is struck, the correspondence case is lost on the road south of Rings
 
 ## Referee Notes
 
-**On Blink Tinderflip:** Blink knows exactly what the two consignments contain. He is moving **Wave** openly within his own network because it can be explained away as noble salvage under heavy seal. The second consignment is Elnara's field correspondence — mundane by comparison, but Blink treats it as sensitive because Elnara asked him to, and because he has learned not to ask Elnara follow-up questions. He withheld even this detail from the couriers to prevent loose talk.[file:29]
+**On Blink Tinderflip:** Blink knows exactly what the two consignments contain. He is moving **Wave** openly within his own network because it can be explained away as noble salvage under heavy seal. The second consignment is Elnara's field correspondence — mundane by comparison, but Blink treats it as sensitive because Elnara asked him to, and because he has learned not to ask Elnara follow-up questions. He withheld even this detail from the couriers to prevent loose talk. His shipping mark appears on dust caches elsewhere in the Thicket because the Inheritor's network has been routing contraband through legitimate carriers for months, copying marks and bribing intermediaries to make their shipments indistinguishable from ordinary trade goods. Blink is aware that some of his manifests do not account for all the cargo his network has moved, and he has chosen not to ask the questions that would produce uncomfortable answers. This is not innocence, but it is not knowledge either.[file:29]
 
 **On what Elnara reveals at Ringstown:** Elnara should confirm only that one crate holds **Wave** and that the other contains correspondence. She should not mention **Blackrazor**, **Whelm**, or the Revocation yet. Those names and that document enter play later through discovery in the Thicket.
 

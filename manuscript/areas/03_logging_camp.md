@@ -22,7 +22,7 @@ The camp occupies a cleared quarter-acre of forest floor, running roughly north-
 
 ## What Happened Here
 
-The attack was mid-afternoon, not at night. The logging crew, seven men, was working the timber yard when the owlbear came south from the tree line at speed. It struck the bunkhouse, swept the north fence posts, crossed the camp in three strides, and was gone north again in under two minutes. Four of the seven loggers fled south and reached the main road. Two hid under the supply shed flooring and emerged after dark. One, Pell, the actual camp foreman, ran north in the confusion and was killed in the timber yard. His body is still there, partially obscured by a fallen trunk. He is not the most significant body in this camp.
+The attack was mid-afternoon, not at night. The logging crew, seven men, was working the timber yard when the owlbear came south from the tree line at speed. It struck the bunkhouse, swept the north fence posts, crossed the camp in three strides, and was gone north again in under two minutes. Four of the seven loggers fled south and reached the main road. Two hid under the supply shed flooring and emerged after dark. One, Pell, the actual camp foreman, fled south with the others and is now in Ringstown. He is not talking about what he saw, but he is there.
 
 **Kael Vorst.** Near the bunkhouse wreckage, propped against the south wall in a position suggesting he sat down and did not get up: a man in his middle years, well-fed for a logger, in clothes that are almost right for the work. His wounds are consistent with the owlbear's claw pattern. A character with healing experience (Cleric, Druid, Ranger, or a successful Intelligence check) who examines the body carefully notices an inconsistency: the deepest wound, the one that killed him, enters from the back, angled slightly downward, the profile of a blade thrust from a standing person to a kneeling one. The owlbear's claws are not blades. *Kael Vorst was stabbed in the back during the chaos and the claw wounds were added afterward, either by the beast or by whoever killed him.* The killer is gone. The instrument, a narrow blade, is not on the body or in the immediate area.
 
@@ -34,9 +34,9 @@ Kael Vorst is the K-contact from the Area 2 ledger. He was not a logger. He was 
 
 **The obsidian disc** (on Kael's body): No inscription, no markings, warm. A Magic-User or Cleric who holds it and concentrates (one round, uninterrupted) senses faint directed intention, not a spell, not psionic, but structured. Like a key that has been near its lock. It does not appear in Area 7 (the Riddle Cave) by coincidence.
 
-**The supply shed's emptied space:** Whatever was stored here before the owlbear arrived is not in the camp. A wax seal fragment in the dust matches Blink Tinderflip's shipping mark. The party has now found this mark in three places: Area 1 (the broken crate), Area 2 (the false-bottom crate), and here. Someone moved this consignment before the attack, possibly Kael himself, possibly whoever killed him.
+**The supply shed's emptied space:** Whatever was stored here before the owlbear arrived is not in the camp. A wax seal fragment in the dust matches Blink Tinderflip's shipping mark. The party has now found this mark in at least three places: Area 1 (the broken crate), Area 2 (the false-bottom crate), and here. Someone moved this consignment before the attack, possibly Kael himself, possibly whoever killed him. If the party visited Area 5 before Area 3, they have already found the mark a fourth time; the synthesis moment still lands here — Area 3 is the location where human context (Sorel's knowledge of Tinderflip) connects the mark to the supply chain, regardless of discovery order.
 
-**Pell's body** (in the timber yard): The real foreman. No suspicious wounds. His belt has a keyring with the supply shed key, which explains why the lock was picked rather than opened. If the party has been wondering who has the shed key, Pell does, which means whoever emptied the shed either had another key, picked the lock, or took the key from Pell before his death. The timeline is unclear.
+**Pell's absence explains the picked lock.** The supply shed key is on Pell's keyring. Pell is in Ringstown. Whoever emptied the shed before the attack did not have the key and picked the lock instead — the scored tumblers confirm it. A character who asks why a professional would bother picking a lock when they could simply ask the foreman has the right instinct: whoever emptied the shed could not ask the foreman without revealing themselves. This is when the timeline becomes interesting.
 
 **The owlbear trail north:** From the timber yard, two flattened pines point north like an arrow. No tracking roll is required to follow this to Area 5. Characters who follow the trail also notice, at the edge of the tree line, a cluster of fresh K-marks carved into three adjacent pines, not by the owlbear's claws (the angle is wrong, the lines too deliberate) but by a human hand with a small blade. They were not here before the attack. Someone came to the camp after the owlbear left and carved them.
 
@@ -92,7 +92,7 @@ Sorel does not want to fight the party. He wants to leave the Thicket alive and 
 **Saving Throws** Death/Poison 14, Wands 15, Paralyzation 16, Breath 17, Spells 17
 **Morale** 8 *(with Sorel present; drops to 5 if Sorel falls or flees)*
 
-*Note: A third crew member, Orn, departed before the party arrives and is found dead in Area 6.*
+*Note: A fourth crew member, Orn, departed before the party arrives and is found dead in Area 6.*
 
 **Tactics:** They follow Sorel's lead. If he negotiates, they stand down. If he runs, they run. They will not fight to the death for Blink Tinderflip's shipping schedule.
 
@@ -105,11 +105,13 @@ Sorel does not want to fight the party. He wants to leave the Thicket alive and 
 **Saving Throws** as crew above
 **Morale** 12 *(does not check morale; backlash compulsion overrides fear response)*
 
-*Note:* Pirrel is not enhanced, the active dose wore off hours ago. She is in the compulsion phase: she will fight without hesitation if the camp is attacked, but between combats she returns to carving. She cannot be reasoned out of this by ordinary persuasion. If the party has the dust antitoxin from Kael's body and administers it, her compulsion clears over 1d4 turns. Sorel will be quietly, genuinely grateful.
+*Note:* Pirrel is not enhanced, the active dose wore off hours ago. She found a loose tube in the camp debris while searching for signs of Kael and dosed herself before Sorel could stop her; he did not realise what she had taken until the compulsion started. The tube had rolled under the shed floorboards when Kael emptied the consignment — one tube unaccounted for in his own careful work. She is in the compulsion phase: she will fight without hesitation if the camp is attacked, but between combats she returns to carving. She cannot be reasoned out of this by ordinary persuasion. If the party has the dust antitoxin from Kael's body and administers it, her compulsion clears over 1d4 turns. Sorel will be quietly, genuinely grateful.
 
 ---
 
 ## Referee Notes
+
+**On Sorel's position during the attack:** Sorel was at the logging camp when the attack happened — he had gone ahead to meet Kael and coordinate the pickup. His outriders (including Mave and Dort) were running the road escort. When no one arrived by the morning after, he began to realise something had gone wrong. He sent Orn back toward the road to check; Orn is how he knew someone had fled the road attack, though not who.
 
 **On Kael Vorst's killer:** The party may not discover the murder during this visit; it depends on whether anyone examines the body carefully. Do not volunteer the inconsistency, reward it if found. The killer was not Sorel (he found the body; the timeline holds up under questioning). The killer came from the north, used the owlbear as cover, and left north again. This is someone with operational knowledge of both the attack's timing and the camp's role in the supply chain. The obsidian disc is the only thread, and it leads to Area 7.
 
@@ -117,10 +119,14 @@ Sorel does not want to fight the party. He wants to leave the Thicket alive and 
 
 **On the emptied supply shed:** Whatever was in it is not findable in this adventure. It is a loose end pointing forward, to White Plume Mountain proper, if this adventure serves as a prologue. Leave it open. The wax seal fragment is evidence enough that Blink's network was using this location as a depot before the owlbear disrupted everything.
 
+**On Pirrel's hidden tube.** A character who searches Pirrel or notices her carving and investigates will find a wax-sealed ceramic tube in her boot. It is identical to the tubes from Area 2's cache. She does not know what it is, only that taking it felt right at the time. If the party uses this as leverage — returning it to Sorel or destroying it in front of Pirrel — it has no immediate mechanical effect, but Sorel's cooperative threshold drops significantly: he is watching the dust do to his crew what he has heard it does in stories, and someone taking it seriously is more than he expected.
+
 **On Sorel as an ongoing resource:** If the party treats Sorel fairly, takes his information, honors the safe passage agreement, maybe even gets Pirrel treated, he becomes a useful contact in Critwall. He knows the buyer network. He has no loyalty to the Inheritor, only to being alive. A referee running this as a campaign entry point should note his address in Critwall and let Sorel be a thread the party can pull later.
 
 **On Pirrel:** If the party does not treat her and Sorel decides to head south, he will take her with him. She will get worse. By the time they reach the forest edge she will be unresponsive to anything except the compulsion. Sorel cannot make himself leave her there. He will ask the party, one more time, if there is anything that can help. This is not a trap. It is a man watching his crew come apart and not knowing why.
 
 **On the K-marks at the tree line:** These were not made by any of Sorel's crew (Sorel will confirm this, and none of his people are missing a blade with the right profile). They were not made by the owlbear. Someone with intent came to this camp after the attack and marked the trail north as though directing something, or someone, to follow it. The owlbear is controlled more than the party may yet realise.
+
+**On the path to the glade:** A game path branches west from the main north trail roughly a hundred yards south of the camp. It is not obvious from the road but is visible to anyone who slows down and looks. It leads, eventually, toward the glade described in Area 4. Old Brindle came from this direction.
 
 **On Old Brindle:** If the party rolled encounter #17 on the wandering table and Brindle appeared, he may have passed through this area. If the referee wishes, Old Brindle has left a small ward at the north edge of the timber yard, a stone circle, the rocks placed in a druidic pattern that a Ranger or Druid recognises as a slow ward against corrupted movement. It has been partially broken, the stones kicked aside. The disruption is recent. Brindle is ahead of the party, moving fast.

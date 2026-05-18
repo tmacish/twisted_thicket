@@ -4,6 +4,8 @@ Roll 1d100. Rumours may be heard in Ringstown taverns, at the market, from trave
 
 **Truth key:** **T** = True. **F** = False. **~** = Partially true or misleading.
 
+**Referee note on Rumour #99:** There is no human spy in Ringstown. The truth behind this rumour is the scrying connection — the false Keraptis has been observing through the contaminated pool and dust traces in the area, not through a human informant. Players who investigate will find no agent. If pressed, the source of the rumour is likely Brother Aldric's documented case notes being read by the wrong person, or simply the paranoia that accumulates in a town that has watched three carriages not come back. The ~ rating reflects that *someone* is watching, but not in the way the rumour describes.
+
 | d% | Rumour | |
 |----|--------|-|
 | 01 | "That owlbear glows. Not like foxfire, like something is burning inside it. Three separate survivors said the same thing before they stopped talking about it." | **T** |
@@ -23,7 +25,7 @@ Roll 1d100. Rumours may be heard in Ringstown taverns, at the market, from trave
 | 15 | "The beast screams words. Not animal sounds, words. Rennick heard it say a name before it took his arm." | **~** |
 | 16 | "River water cures the dust sickness. Just drink a lot of it and the voice goes away." | **F** |
 | 17 | "Sorel Vane was in the Scalded Goblin three nights ago. Quiet. Drinking alone. Watching the door." | **~** |
-| 18 | "Elnara already has one of the old weapons. She's had it for months. That's why she wants the others so badly." | **~** |
+| 18 | "Elnara already has one of the old weapons. She's had it for some time. That's why she wants the others so badly." | **~** |
 | 19 | "The gnomes under the mountain serve Keraptis willingly. Always have. They think he's a god." | **~** |
 | 20 | "There's a pool deep in the Thicket that glows white-blue. Locals say it cleans the dust out of you if you wash in it." | **~** |
 | 21 | "That owlbear was seen by Renwick's boys in early spring, normal as anything. Whatever happened to it happened fast and recently." | **T** |
@@ -38,7 +40,7 @@ Roll 1d100. Rumours may be heard in Ringstown taverns, at the market, from trave
 | 30 | "Thingizzard's shop in Ringstown isn't actually hers. Someone's just using her name because people are afraid of it." | **~** |
 | 31 | "The three weapons Tinderflip was moving were taken from White Plume Mountain by a previous expedition. Elnara hired that group too." | **~** |
 | 32 | "Kelpwick the gnome is Thingizzard in disguise. The hair is wrong and she doesn't smell right." | **F** |
-| 33 | "One of those three weapons picks its own wielder. Refuses everyone else. Threw a man across a room when he tried to lift it." | **T** |
+| 33 | "One of those three weapons won't cooperate with the wrong hands. A man in Critwall tried to use it and couldn't hit a target at ten feet. Gave it back and wouldn't say why." | **T** |
 | 34 | "Durven Ash has the best metalwork in Ringstown but he won't admit the Kolm woman exists. Bessa thinks it's hilarious." | **T** |
 | 35 | "Old Brindle hasn't come to market in three weeks. His niece is pretending not to be worried." | **T** |
 | 36 | "Blackrazor drains the life out of whatever it kills. The wielder feels it happen. Some people like that." | **~** |
@@ -66,7 +68,7 @@ Roll 1d100. Rumours may be heard in Ringstown taverns, at the market, from trave
 | 58 | "There are bones north of the logging camp. A lot of them. Something has been using that area as a feeding ground." | **T** |
 | 59 | "You can track the owlbear by the white powder prints it leaves when it's in frenzy. Glows faintly in the dark." | **~** |
 | 60 | "The owlbear has young somewhere in the Thicket. That's why it's so aggressive, it's protecting a nest." | **F** |
-| 61 | "Elnara is paying a hundred gold pieces for proof the owlbear is dead. She'll add fifty if you bring back anything connected to the powder." | **T** |
+| 61 | "Elnara is paying a hundred gold pieces for proof the owlbear is dead. She'll add fifty if you bring back anything connected to the powder." | **~** |
 | 62 | "The smugglers had a second wagon that got through before the owlbear went mad. Whoever was expecting that shipment is still expecting it." | **F** |
 | 63 | "Old Brindle tried to cleanse that glowing pool in the Thicket. Whatever is in it drove him back. He doesn't talk about it." | **T** |
 | 64 | "White Plume Mountain has been explored before, many times. The ones who come back mostly come back changed." | **T** |

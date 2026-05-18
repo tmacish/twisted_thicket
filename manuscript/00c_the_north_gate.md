@@ -50,7 +50,7 @@ Elnara arrives at a run within thirty seconds of the second impact. She takes in
 
 > "I have been waiting three weeks for someone capable of going in there. The town is not safe while that thing is active and the dust is still at its source. I need it stopped, the beast, the pool, the cache, whatever is feeding this."
 >
-> "One hundred gold pieces, paid on your return with proof. Fifty more if you bring back anything that tells me who is behind the smuggling. I will have the gate open for you in five minutes."
+> "One hundred gold pieces, paid on your return with proof. Fifty more at minimum if you bring back anything that tells me who is behind the smuggling, and more depending on how much of the picture you find. I will have the gate open for you in five minutes."
 >
 > She glances at the gnome. "And if she told you anything useful, now would be the time to share it."
 

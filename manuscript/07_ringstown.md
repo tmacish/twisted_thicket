@@ -52,6 +52,15 @@ Tomas is cheerful, indiscreet, and has heard every conversation held at the bar 
 
 ---
 
+**Pell Dast, Logging Camp Foreman**
+**AC** 9; **HD** 1; **hp** 5; **MV** 12"
+**Attacks** belt knife
+Pell arrived at the Plume's Rest four days ago, paid a week in advance, and has not left the common room except to sleep. He is not injured. He is very quiet and drinking steadily, which Marta permits because he is causing no trouble and he is paying. He has a ring of five keys on his belt — including the supply shed key from Area 3, which is why the lock was picked rather than opened: whoever emptied the shed could not ask Pell for the key without revealing themselves.
+
+*Referee information:* Pell was the actual foreman of the logging camp. He recognised immediately that Kael Vorst was not a real replacement foreman — Kael knew nothing about logging and moved wrong for the work. When the owlbear hit, Pell ran south. He did not witness Kael's murder, but during the chaos he saw a figure coming from the north treeline, moving fast and deliberately, while everyone else was fleeing south. He does not know this is relevant. He is not sure he saw it clearly. A character who spends an hour in patient conversation with him — and buys two or three rounds of drinks — can coax this out. He describes the figure as wearing something dark, moving wrong for a logger or hunter, heading north into the Thicket while the beast was still audible. He cannot describe a face.
+
+---
+
 ## The Scalded Goblin
 
 Low ceiling, long benches, and a fire that someone clearly built too large and has been regretting ever since. The name comes from a mounted goblin skull above the bar, its jaw propped open in a permanent scream, which Grix claims he made that face when he tried the house ale. The ale is genuinely bad.
@@ -72,6 +81,15 @@ A broad, scarred man with a mercenary past he does not discuss. Grix knows Sorel
 **AC** 9; **HD** 1-1; **hp** 4; **MV** 12"  
 **Attacks** tray (as club)  
 Lielle has memorised every face that has come through the door this season and will describe any of them in exchange for a coin or a compliment, whichever seems more sincere.
+
+---
+
+**Aldric Fetch, Surviving Outrider**
+**AC** 9; **HD** 1-1; **hp** 4; **MV** 12"
+**Attacks** knife
+One of Sorel Vane's six outriders from the Coach B run. He fled south after the wreck and has been at the Scalded Goblin for four days, spending down his emergency coin. He is not precisely guilty of anything the party can easily name but he is frightened and lying about why he is in Ringstown.
+
+*Referee information:* Aldric can confirm the attack on Coach B — the owlbear, the speed of it, the dead left behind. He does not know what the cargo was (the outriders were not told specifics). He knows Sorel Vane's name and that Sorel had gone north to coordinate something. He does not know what happened to Mave or Dort. If the party reveals that Sorel is alive in the Thicket, Aldric is visibly, quietly relieved and will tell them everything he knows. He knows nothing of real operational value but can confirm the coach's timing, the outrider count (six deployed, three dead at the wreck, one fled, two unaccounted for when he ran), and that someone else he does not recognise was already moving north through the Thicket in the same window.
 
 ---
 
@@ -97,7 +115,7 @@ A narrow shopfront packed floor-to-beam with dried herbs, sealed jars, coils of 
 
 **Referee Information:** Mundane alchemical supplies, spell components (common), and antitoxins are available here. Kelpwick has a small supply of items that counteract the effects of white plume dust, he does not advertise this, but will mention it if the party describes dust-related symptoms.
 
-**Dust Antitoxin (3 doses available):** A bitter grey tincture. A creature that drinks one dose gains a +2 bonus to its next saving throw against dust backlash effects. 8 gp per dose.
+**Dust Antitoxin (3 doses available):** A bitter grey tincture. A creature that drinks one dose gains a +2 bonus to its next saving throw against dust backlash effects. When administered directly to a creature already in active backlash or compulsion — applied rather than swallowed — it clears the ongoing symptoms over 1d4 turns instead. 8 gp per dose.
 
 **The Clearance Bin.** Near the door, a battered wooden crate holds a collection of unlabelled vials, ceramic flasks, and wax-stoppered bottles, Kelpwick's miscellaneous inventory: things whose labels detached, batches whose notes he lost, experiments that did not go where intended, and stock acquired from other practitioners without full documentation. He sells them at 1 copper piece each. He does not identify them in advance. He does not offer refunds. He does maintain, with some dignity, that none of them will *definitely* kill anyone.
 
@@ -191,6 +209,8 @@ Old Brindle, the hermit druid from the Thicket, once kept horses here before the
 **Str** 12, **Int** 11, **Wis** 13, **Dex** 12, **Con** 11, **Cha** 13  
 Yenna is worried about her uncle. She has not seen him in three weeks, which is not unusual, but two weeks ago one of his marker-cords came back tied to a horse that had clearly run a long way. She will ask the party to look for him.
 
+*Referee information:* Old Brindle has deliberately withheld from Yenna that the false Keraptis knows her name — he does not want to alarm her. If the party mentions this, she will go very quiet and ask how they know. She will not panic, but she will not forget. Old Brindle has been protecting her; the party has just handed her information he chose to keep.
+
 ---
 
 **Tok, Ostler**  
@@ -283,7 +303,7 @@ Senna is the most practically knowledgeable person in Ringstown about what the d
 
 A large, draughty building at the edge of the town ring, used to store trade goods in transit. The Chandler family, now represented entirely by Brod, takes a percentage of everything stored here. Brod takes a percentage of that for himself. The arrangement has worked for twenty years and everyone involved pretends not to know how it functions.
 
-**Referee Information:** The warehouse currently holds several unmarked crates that arrived three weeks ago and have not been collected. One of them has a very faint bitter smell around its seams. Brod does not want anyone looking at these crates. He is not connected to the smuggling operation but knows what a bribe looks like and has accepted one.
+**Referee Information:** The warehouse currently holds several unmarked crates that arrived four or five days ago and have not been collected. One of them has a very faint bitter smell around its seams. Brod does not want anyone looking at these crates. He is not connected to the smuggling operation but knows what a bribe looks like and has accepted one. The crates were dropped by one of Kael Vorst's intermediaries two days before Kael arrived at the logging camp; Brod can describe a lean man in travelling clothes who paid in Shield Lands coin, gave no name, and said someone would collect within the week. No one has.
 
 ---
 

@@ -22,7 +22,7 @@ Elnara's reactions to what the party returns with:
 
 **Blink's manifest naming "E. Forger" returned to her:** She takes it, looks at it for one moment, and places it in her ledger without comment. She adds 10 gp to the commission without explanation. If pressed, she says: *"For your discretion."* She does not confirm what the name means.
 
-**The weapon-convoy manifest returned to her:** The one with the routing note signed *E.* She takes it. She does not look at it for long. She places it face-down in her ledger. She adds 10 gp to the commission and says nothing further. The party should understand, if they are paying attention, that she already knows exactly what the document says, because she wrote part of it. If pressed directly — *"Was this your operation?"* — she says: *"The owlbear was not part of my plan."* She does not answer the question that was asked. She does not look away.
+**The weapon-convoy manifest returned to her:** The one with the routing note signed *E.* She takes it. She does not look at it for long. She places it face-down in her ledger. She adds 10 gp to the commission and says nothing further. The party should understand, if they are paying attention, that she already knows exactly what the document says, because she wrote part of it. If pressed directly — *"Was this your operation?"* — she says: *"The owlbear was not part of my plan."* She does not answer the question that was asked. She does not look away. This is the closest the adventure comes to Elnara being accountable for the situation. She authorized a trap that failed catastrophically. She has not stopped trying to salvage it.
 
 **Whelm and/or Blackrazor returned:** She receives each weapon with the same flat expression, relief, carefully managed. She places them in the iron chest with Wave and locks it. She tells the party: *"These three objects are the reason this entire situation exists. Someone underground wants them back. As long as they are here, that someone has a reason to keep looking north."* She does not explain further. She is already thinking about what comes next.
 
@@ -32,11 +32,11 @@ She names a figure. The referee should set it high enough to mean something. She
 
 **The coded ledger (Area 2) and/or Kael Vorst's identity:** If the party has connected Kael Vorst to the Inheritor's network and can describe the chain, Inheritor → Kael → Sorel → Mave/Dort → road, Elnara listens without interrupting. She adds 50 gp (the promised intelligence bonus) and says: *"That confirms what I suspected about the structure. It does not tell me who is at the top of it."* She means this literally.
 
-**The obsidian disc (cracked) from Area 3:** She examines it carefully, sets it down. *"Kael Vorst's. He was carrying a live one when we last tracked him, three months ago. This one is spent."* This is the first confirmation that Elnara has been monitoring the Inheritor's network for longer than this adventure suggests.
+**The obsidian disc (cracked, if the party used it at Area 5) from Area 3:** She examines it carefully, sets it down. *"Kael Vorst's. He was carrying a live one when we last tracked him, three months ago. This one is spent."* This is the first confirmation that Elnara has been monitoring the Inheritor's network for longer than this adventure suggests. If the party never used the disc at Area 5, it is intact and warm; she will not touch it, will ask the party to set it on the table, and her reaction shifts to the fresh disc entry below.
 
 **The fresh obsidian disc from Area 7:** She does not touch it. She asks the party to set it on the table. She looks at it from a distance. *"That came from the cache in the cave."* She does not ask how they know about the cave. She adds 25 gp and says: *"Do not use it. Do not let anyone else use it. I will arrange for it to be examined by someone who can tell me what door it opens."*
 
-**The bark-map from Area 7:** She spreads it on her desk and studies it for a full minute. She does not share what she sees in it. She folds it carefully and places it in her coat. This is the item she most wanted out of this entire operation, and she will not say so.
+**The bark-map from Area 7:** She spreads it on her desk and studies it for a full minute. She does not share what she sees in it. Then she produces her own field notebook and, without being asked, copies out the key landmarks in her precise handwriting — the forks, the iron-red spring, the entry vent. When she is done she slides the bark-map back across the desk to the party. *"You'll need this more than I will. I know the mountain."* She does not explain what she means by that. The party has the original.
 
 **The gnome warning (Gnomish, from Area 7):** If the party cannot read it, she can. She reads it twice. Her expression does not change. She says: *"The third vent from the east."* Then: *"Someone has been inside and come back. Recently."* She looks at the party. *"That is more than I knew this morning."*
 
@@ -45,6 +45,8 @@ She names a figure. The referee should set it high enough to mean something. She
 ## What Remains Open
 
 The adventure resolves its immediate threats but does not close the larger story. These threads remain when the party leaves Ringstown:
+
+**If the cleansing rite was never performed:** The pool at Area 4 remains active (if the party never reached it) or remains unaddressed. The owlbear, if killed, died at the height of its contamination rather than at partial suppression — it fought harder and the party paid for it. Elnara pays the commission without comment. Old Brindle, if he learns the rite was never completed, says only: *"The pool will need closing. Someone will have to go back."* He does not say it accusingly. He says it because it is true.
 
 **The Inheritor is still active.** The false Keraptis was watching through the pool, through the K-marks, through the owlbear's borrowed eyes. The pool is closed. The owlbear is dealt with. The control apparatus in the Thicket is dismantled. But the source, the laboratory under the mountain, the manufactured dust, the copies of Keraptis fighting over a dead wizard's identity, is untouched. White Plume Mountain still smokes. The face still forms at dusk.
 
@@ -76,9 +78,15 @@ Wave does neither of these things. Wave is a sea weapon, aquatic in origin, alig
 
 *Read this when the party departs Ringstown heading north, or as the closing image of this session.*
 
-> Elnara reaches back, smiles oddly, and says "You all have done well. But our work is not done. The ash has settled, yet the mountain has not grown quiet. Old wards strain. Old names are being spoken again in places that should have stayed silent. So I must ask more of you than is fair. We have to go back to where it all began. We have to see what is stirring in the smoke, and who has dared to open doors that were meant to remain sealed. You all have done well. But it is time for us all to return to White Plume Mountain."
+> Elnara holds the commission for a moment before setting it on the desk. She looks at the party, then at the map, then north, in the way she has been looking north all season.
+>
+> "The Thicket is contained. That buys time, not safety. The source is still there." A pause. "You have the cave map. You have the disc. You have held the weapons he wants back." She does not raise her voice. "I cannot move forces north without authorisation that would take longer than we have. But I can pay, significantly, people who are already standing in my office with the right intelligence and no official attachment." She names a figure. She does not negotiate it down.
+>
+> She does not say *be careful* or *good luck.* She unlocks the iron chest, checks that all three weapons are accounted for, and locks it again.
 
-> The owlbear is silent. The dust pool is dark. The logging camp is quiet. As the sun dips behind the Shield Lands, you look north. The white plume from the mountain is no longer just a landmark; it is a chimney. Somewhere beneath that peak, the person who poisoned this forest is waiting. And in your pack, the map you found in the cave points to a door that hasn't been opened in a thousand years. The Thicket was just the porch. The mountain is the house.
+> The pool is dark. The hollow is quiet. At dusk, looking north from the south gate, the plume above the mountain catches the last light and holds a face for three or four seconds — the same face that was carved into the cave wall before anyone alive was born — and then the light shifts and it is only smoke again.
+>
+> The cave map in your pack shows the first landmark north of the treeline. The distance, for the first time, feels measurable.
 
 ---
 
