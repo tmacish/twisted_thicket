@@ -6,8 +6,7 @@
 
 ## The Contract
 
-The player characters have been hired by **Blink Tinderflip**, a gnome they met operating out of **Critwall**, to drive and ride two carriages carrying two sealed consignments of "sensitive cargo" along the road from Critwall to the frontier town of **Ringstown**. The players are the coachmen and outriders; there is no separate hired help. They are told only that the contents are fragile, valuable, and must be delivered intact to **Ranger-Captain Elnara** at the Ringstown gatehouse. They are not told what is inside. The pay is generous. Blink is pleasant, evasive, and has already left town.[file:29]
-
+The player characters have been hired by **Blink Tinderflip**, a gnome they met operating out of **Critwall**, to drive and ride two carriages carrying two sealed consignments of "sensitive cargo" along the road from Critwall to the frontier town of **Ringstown**. The players are the coachmen and outriders; there is no separate hired help. They are told only that the contents are fragile, valuable, and must be delivered intact to **Ranger-Captain Elnara** at the Ringstown gatehouse. They are not told what is inside. The pay is generous. Blink is pleasant, evasive, and has already left town.
 The two consignments contain, unknown to the party:
 
 | Crate | Contents | Coach |
@@ -15,7 +14,7 @@ The two consignments contain, unknown to the party:
 | 1 | *Wave* (trident) | Coach A, lead carriage |
 | 2 | Sealed correspondence | Coach B, rear carriage |
 
-The **sealed correspondence** is a dispatch case — oilskin-wrapped, iron-clasped — containing field reports and contact addresses from Blink's network that Elnara requested under separate cover. It holds no artifact. Blink insisted it be treated as sensitive cargo to discourage the couriers from reading it, which is the kind of instruction that makes people want to read it. Its loss, if Coach B is destroyed, is professionally inconvenient but not catastrophic. The party should not learn its mundane contents until after they reach Ringstown, if they learn them at all.
+The **sealed correspondence** is a dispatch case, oilskin-wrapped and iron-clasped, containing field reports and contact addresses from Blink's network that Elnara requested under separate cover. It holds no artifact. Blink insisted it be treated as sensitive cargo to discourage the couriers from reading it, which is the kind of instruction that makes people want to read it. Its loss, if Coach B is destroyed, is professionally inconvenient but not catastrophic. The party should not learn its mundane contents until after they reach Ringstown, if they learn them at all.
 
 Divide the players as evenly as possible between the two coaches before the scene begins. Each coach needs at least one player on the driver's bench; the rest ride inside or on the running boards.
 
@@ -39,8 +38,7 @@ Each player rolls **1d20 and adds their Wisdom modifier** (OSRIC/2E: Wisdom reac
 
 The coach with the **lower sum** failed to notice in time.
 
-*On a tie, Coach B (the rear carriage) is struck.*[file:29]
-
+*On a tie, Coach B (the rear carriage) is struck.*
 ---
 
 ## The Strike
@@ -58,8 +56,7 @@ The coach with the **lower sum** failed to notice in time.
 | Failed save | 2d6 trampling + 1d6 falling (3d6 total) |
 | Successful save | 1d6 falling only |
 
-The surviving coach and its cargo are undamaged.[file:29]
-
+The surviving coach and its cargo are undamaged.
 **Scattered cargo:** Roll 1d6 for the sealed consignment from the destroyed coach.
 
 | d6 | Result |
@@ -68,7 +65,7 @@ The surviving coach and its cargo are undamaged.[file:29]
 | 5–6 | Outer casing smashed; inner case or crate remains closed unless forced open |
 |
 
-If Coach B is struck, the correspondence case is lost on the road south of Ringstown — close enough that Elnara's wardens can recover it without the party's involvement. It is not a Thicket objective. If Coach A is struck, *Wave* is thrown clear and becomes the obvious recovery objective. In either case, do **not** identify additional White Plume relics here.
+If Coach B is struck, the correspondence case is lost on the road south of Ringstown, close enough that Elnara's wardens can recover it without the party's involvement. It is not a Thicket objective. If Coach A is struck, *Wave* is thrown clear and becomes the obvious recovery objective. In either case, do **not** identify additional White Plume relics here.
 
 ---
 
@@ -82,14 +79,12 @@ If Coach B is struck, the correspondence case is lost on the road south of Rings
 
 ## Referee Notes
 
-**On Blink Tinderflip:** Blink knows exactly what the two consignments contain. He is moving **Wave** openly within his own network because it can be explained away as noble salvage under heavy seal. The second consignment is Elnara's field correspondence — mundane by comparison, but Blink treats it as sensitive because Elnara asked him to, and because he has learned not to ask Elnara follow-up questions. He withheld even this detail from the couriers to prevent loose talk. His shipping mark appears on dust caches elsewhere in the Thicket because the Inheritor's network has been routing contraband through legitimate carriers for months, copying marks and bribing intermediaries to make their shipments indistinguishable from ordinary trade goods. Blink is aware that some of his manifests do not account for all the cargo his network has moved, and he has chosen not to ask the questions that would produce uncomfortable answers. This is not innocence, but it is not knowledge either.[file:29]
-
+**On Blink Tinderflip:** Blink knows exactly what the two consignments contain. He is moving **Wave** openly within his own network because it can be explained away as noble salvage under heavy seal. The second consignment is Elnara's field correspondence, mundane by comparison, but Blink treats it as sensitive because Elnara asked him to, and because he has learned not to ask Elnara follow-up questions. He withheld even this detail from the couriers to prevent loose talk. His shipping mark appears on dust caches elsewhere in the Thicket because the Inheritor's network has been routing contraband through legitimate carriers for months, copying marks and bribing intermediaries to make their shipments indistinguishable from ordinary trade goods. Blink is aware that some of his manifests do not account for all the cargo his network has moved, and he has chosen not to ask the questions that would produce uncomfortable answers. This is not innocence, but it is not knowledge either.
 **On what Elnara reveals at Ringstown:** Elnara should confirm only that one crate holds **Wave** and that the other contains correspondence. She should not mention **Blackrazor**, **Whelm**, or the Revocation yet. Those names and that document enter play later through discovery in the Thicket.
 
-**On the missing cargo:** If *Wave* is lost in the wreck, it is the party's first concrete recovery objective. If the correspondence case is lost, it is close enough to the road that Elnara's wardens can retrieve it quickly — it is not a Thicket objective. The meaningful recovery objectives in the Thicket are the weapons and the Revocation, both of which were in Elnara's separate weapon convoy and are found at Area 2.
+**On the missing cargo:** If *Wave* is lost in the wreck, it is the party's first concrete recovery objective. If the correspondence case is lost, it is close enough to the road that Elnara's wardens can retrieve it quickly, it is not a Thicket objective. The meaningful recovery objectives in the Thicket are the weapons and the Revocation, both of which were in Elnara's separate weapon convoy and are found at Area 2.
 
 **On continuity with Areas 1 and 2:** Whelm, Blackrazor, and the Revocation were not in Blink's coaches. They were in Elnara's weapon convoy, which crashed at Area 2 in a prior attack. The session intro establishes two known consignments: *Wave* and mundane correspondence. Everything else the party finds in the Thicket is a discovery, not a recovery.
 
-**On the owlbear:** The party gets no clean look at it. They know it was large, fast, and abnormally luminescent. This is their first encounter with the White Plume Owlbear and should feel like a force of nature, something that cannot be engaged, only survived. Save the full reveal for later areas.[file:29]
-
-**On Elnara:** She will not share everything she knows at the gate. She confirms something is wrong in the Thicket, confirms that at least one shipment tied to White Plume has been hit, and offers the party a contract to go back out and recover what was lost. The deeper history of the mountain can wait until they have earned it.[file:29]
+**On the owlbear:** The party gets no clean look at it. They know it was large, fast, and abnormally luminescent. This is their first encounter with the White Plume Owlbear and should feel like a force of nature, something that cannot be engaged, only survived. Save the full reveal for later areas.
+**On Elnara:** She will not share everything she knows at the gate. She confirms something is wrong in the Thicket, confirms that at least one shipment tied to White Plume has been hit, and offers the party a contract to go back out and recover what was lost. The deeper history of the mountain can wait until they have earned it.
