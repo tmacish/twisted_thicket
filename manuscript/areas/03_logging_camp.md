@@ -50,7 +50,7 @@ His crew is spread through the camp: one watching the south approach from behind
 
 **First contact.** Sorel is not hiding, exactly, but he is not announcing himself either. When the party enters the camp, he will let them get roughly to the cookfire before stepping out of cover and addressing them: *"You're not loggers. You're not Kael's people. So, who sent you, and what are you carrying?"* He is evaluating threat, not picking a fight. His hand is near his crossbow but not on it.
 
-**If the party has the coded ledger from Area 2:** Sorel recognises his own shorthand immediately and his expression closes. He will ask, very quietly, what happened to Mave and Dort. He will not attack unless the party answers in a way that confirms they killed his people for the cache alone. If the party handled Mave and Dort non-lethally or explains the situation, Sorel becomes less hostile and more calculating.
+**If the party has the coded ledger from Area 2:** Sorel recognises his own shorthand immediately and his expression closes. He will ask, very quietly, what happened to Mave and Dort. He will not attack unless the party answers in a way that confirms they killed his people for the cache alone. If the party handled Mave and Dort non-lethally or explains the situation, Sorel goes quiet — not calculating, not relieved, just still. If Mave is dead, he says, eventually: *"Mave was good people."* He does not ask for details. He does not ask the party to apologise. The quiet lasts long enough to become uncomfortable, and then he nods once and the professional mask comes back. But it does not sit quite right over whatever is underneath it. Only after that does he become calculating.
 
 **If the party mentions Blink Tinderflip:** Sorel's jaw tightens. He will not confirm or deny the name in front of his crew. He will say: *"That's a name I'd rather not say out loud in the Thicket. Come inside."* He is willing to speak privately.
 
@@ -76,7 +76,7 @@ Sorel does not want to fight the party. He wants to leave the Thicket alive and 
 **Fighter 4**, Human, Male
 **AC** 5 *(studded leather + Dex)*, **HD** 4, **hp** 27
 **Attacks** 1/round: short sword +3 to hit, 1d6+1 damage; or light crossbow +4 to hit, 1d4+1 damage (range 6"/12"/18")
-**Saving Throws** Death/Poison 11, Wands 12, Paralyzation 13, Breath 14, Spells 15
+**Saving Throws** Death/Poison 13, Wands 14, Paralyzation 15, Breath 16, Spells 16
 **Morale** 10 *(drops to 7 if two crew members are down)*
 **Str** 12, **Int** 13, **Wis** 9, **Dex** 15, **Con** 11, **Cha** 14
 **Equipment** Studded leather, short sword, light crossbow, 20 bolts, 22 gp, a written contact address in Critwall (encoded, inside boot lining)

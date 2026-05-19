@@ -64,6 +64,10 @@ If the party attempts to negotiate, haggle, or stall, Elnara adds, without infle
 
 **If the party still refuses to go:** The owlbear hits the gate a third time within the hour. The post fails. The gate can be barred but not latched. Elnara will make clear, still without raising her voice, that the town cannot hold against a sustained assault, and that the only way to stop the assaults is to deal with the source. This is not a threat; it is a material fact.
 
+**On the gnome's timeline:** The gnome reports the hollow "woke up three nights ago." This corresponds to the owlbear's contamination spike and heightened pool activity. This heightened state lasts approximately 5–7 days from the adventure's start. A party that delays more than a week may find the frenzies less frequent and the pool's glow diminished — not resolved, but temporarily quieter. If a referee needs a mechanical guide: after 7 days, reduce the owlbear's Dust Frenzy uses to 2/day and the pool's ambient glow to barely visible. The gnome's warning is accurate about urgency, not about a hard deadline.
+
+**On why Elnara trusts the party:** She arrived during or just after the second impact. Everyone who stayed at the gate rather than retreating into the square is already ahead of most. She does not explain this or put it into words — it is simply what she saw when she turned around. There is no audition because the gate just administered one.
+
 **On the gnome:** She survives if given basic care. She will not accompany the party into the Thicket. She will confirm the bark map is accurate and add one detail: the hollow smells different at night than during the day. *"Sweeter. Like it is breathing."* She does not know why.
 
 **On the powder at the gate:** A character who examines the powder sifted from the gate frame and has previously encountered white plume dust will recognise it immediately, the beast left residue on impact. The gate itself has been dusted. This confirms the owlbear is the source of spread, not merely a victim of it.

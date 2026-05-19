@@ -84,12 +84,12 @@ Lielle has memorised every face that has come through the door this season and w
 
 ---
 
-**Aldric Fetch, Surviving Outrider**
+**Bren Fetch, Surviving Outrider**
 **AC** 9; **HD** 1-1; **hp** 4; **MV** 12"
 **Attacks** knife
 One of Sorel Vane's six outriders from the Coach B run. He fled south after the wreck and has been at the Scalded Goblin for four days, spending down his emergency coin. He is not precisely guilty of anything the party can easily name but he is frightened and lying about why he is in Ringstown.
 
-*Referee information:* Aldric can confirm the attack on Coach B — the owlbear, the speed of it, the dead left behind. He does not know what the cargo was (the outriders were not told specifics). He knows Sorel Vane's name and that Sorel had gone north to coordinate something. He does not know what happened to Mave or Dort. If the party reveals that Sorel is alive in the Thicket, Aldric is visibly, quietly relieved and will tell them everything he knows. He knows nothing of real operational value but can confirm the coach's timing, the outrider count (six deployed, three dead at the wreck, one fled, two unaccounted for when he ran), and that someone else he does not recognise was already moving north through the Thicket in the same window.
+*Referee information:* Bren can confirm the attack on Coach B — the owlbear, the speed of it, the dead left behind. He does not know what the cargo was (the outriders were not told specifics). He knows Sorel Vane's name and that Sorel had gone north to coordinate something. He does not know what happened to Mave or Dort. If the party reveals that Sorel is alive in the Thicket, Bren is visibly, quietly relieved and will tell them everything he knows. He knows nothing of real operational value but can confirm the coach's timing, the outrider count (six deployed, three dead at the wreck, one fled, two unaccounted for when he ran), and that someone else he does not recognise was already moving north through the Thicket in the same window.
 
 ---
 

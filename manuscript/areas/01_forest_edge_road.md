@@ -42,6 +42,8 @@ The mud at the forest edge is a record. A careful examination, a ranger's tracki
 
 ## Referee Notes
 
+**On the ravine:** Area 2 lies east of the main north trail, not on it. A party that moves straight north without examining the ravine will bypass Whelm, the Revocation, the coded ledger, and both manifests — the adventure's densest intelligence deposit. The ravine is not hidden: from the treeline the sound of the stream is audible and the ground drops visibly to the east. If the party attempts to move straight north without investigating, the referee should note the sound of water and the gouge that curves east. The decision to descend is theirs; missing Area 2 is a valid outcome, not a referee failure.
+
 **On pace:** This area is a threshold, not a destination. The party should spend no more than one exploration turn here before the trail pulls them north. The tracks are readable quickly; reward the first person who looks rather than making the whole party roll.
 
 **On the cold stone:** Any character who lingers near the impact stone for more than a round notices that their breath fogs slightly, even if the air is warm. Whelm's presence lingers in the ground it struck. A dwarf character feels this as a faint vibration rather than cold, a hammered note still ringing in the stone.

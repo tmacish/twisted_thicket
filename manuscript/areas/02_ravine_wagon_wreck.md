@@ -40,7 +40,7 @@ Two of Sorel Vane's crew came to the wreck ahead of the party, looking for the s
 
 **Dort** took a second dose perhaps a minute ago when the first wore off. He is in backlash, rolling badly across multiple symptoms simultaneously. He is scratching the letter K into the ravine wall with his belt knife in an obsessive, methodical pattern, not one K, but dozens, filling a four-foot section of exposed clay. He periodically turns to announce to no one: *"I am Keraptis. I found it first."* He may attack the party, or Mave, or simply ignore both; his attention flickers between the wall and the nearest warm body. When he attacks, he is effective, the dust-enhanced reflexes survive even as the mind fragments.
 
-**If Mave is wounded** she may grab a third tube from her pack and attempt to consume it, which the referee should telegraph clearly and allow the party one action to interrupt. If she takes a third dose, her bonuses persist but the referee should roll immediately on the backlash table at end of next round regardless of the duration, triple-dosing accelerates the crash.
+**If Mave is wounded** she may grab a third tube from her pack and attempt to consume it, which the referee should telegraph clearly — Mave is visibly reaching into the pack — and allow the party one action to interrupt. A character adjacent to Mave may make a Dexterity check to grab the pack strap or a Strength check to pin her arm before she accesses the tube; neither requires any special ability, only position and initiative. If she takes a third dose, her bonuses persist but the referee should roll immediately on the backlash table at end of next round regardless of the duration, triple-dosing accelerates the crash.
 
 **If Dort is restrained or knocked unconscious,** Mave loses her nerve and may attempt to bargain. She knows Sorel Vane's name, the location of the logging camp (Area 3), and that the rendezvous was supposed to happen the previous night. She does not know why Sorel has not appeared.
 
@@ -72,7 +72,7 @@ Two of Sorel Vane's crew came to the wreck ahead of the party, looking for the s
 
 *Backlash symptoms active:* Dort suffers a −1 penalty to AC against attacks he does not see coming (referee's discretion) due to fractured attention. He will spend his first action each round not attacking if there is an exposed surface within reach to carve. On a roll of 1 on his attack die, he has struck the ravine wall instead of his target.
 
-**Tactics:** Dort does not have tactics. He moves toward the nearest perceived threat and attacks. He does not use cover. He will not stop when reduced to 1 hp, he must be knocked unconscious or restrained.
+**Tactics:** Dort does not have tactics. He moves toward the nearest perceived threat and attacks. He does not use cover. He will not stop when reduced to 1 hp, he must be knocked unconscious or restrained. Sleep spells, paralysis, and other incapacitation work normally on Dort. He remains inert under these effects but resumes his behaviour the moment incapacitation ends unless he is also physically restrained.
 
 *Referee note:* Dort's double dose produced multiple failed saves — treat him as having rolled results 1 and 4 on the backlash table simultaneously. The module explicitly acknowledges this is exceptional; double-dosing stacks backlash rolls.
 

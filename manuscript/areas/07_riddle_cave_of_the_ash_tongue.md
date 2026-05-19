@@ -101,7 +101,7 @@ If the thread is broken (by reaching into the cache without noticing it), the vi
 
 This signal is visible at range. The operative prepared it before leaving and will not see it, they are already north. But the false Keraptis is watching through any active dust in the area, and the pool at Area 4 is now either closed (if the party cleansed it) or active. **If the pool was cleansed:** the signal is simply a puff of dust that means nothing to anyone watching; the scrying connection is severed. **If the pool was not cleansed:** the false Keraptis sees it, and knows the cave has been found.
 
-**Disabling it.** A Thief can cut the thread cleanly and remove the vial without triggering it, given one round of careful work. A careful non-Thief can attempt the same on a Dexterity check. Leaving it intact (carefully replacing the stone panel, not breaking the thread) is also an option: the mechanism is never triggered, and whoever checks for the signal receives no indication either way.
+**Disabling it.** A Thief can cut the thread cleanly and remove the vial without triggering it, given one round of careful work. A careful non-Thief can attempt the same on a Dexterity check. The disarming requires both steps: cut the thread AND catch or immobilise the vial before it can crack against the stone. Cutting the thread alone — without first securing the vial — still triggers the signal, even if the cut was deliberate. Leaving the mechanism intact (carefully replacing the stone panel without breaking the thread) is also an option: it is never triggered, and whoever is watching for the signal receives no indication either way.
 
 ---
 
