@@ -83,7 +83,7 @@
 
 **Ring of Protection +1:** Silver ring with an engraved eye, St. Cuthbert's other symbol, representing piercing truth. Part of her temple kit.
 
-**Holy Water (3 vials):** Standard blessed water. Each vial deals 2d4 damage to undead on a direct hit. In this adventure, each vial also qualifies as an anchor for the Area 4 cleansing rite, the most potent anchor available. She should not use all three on undead when they might be needed at the pool; the referee should note this tension.
+**Holy Water (3 vials):** Standard blessed water. Each vial deals 2d4 damage to undead on a direct hit.
 
 ---
 
@@ -109,11 +109,19 @@ Tessaly's temple sent her north when three separate reports arrived in the same 
 
 ---
 
-## Adventure Connections
+## Proficiencies
 
-- **Knows Brother Aldric.** She has been working from his infirmary records. He is relieved to have her here and overwhelmed. She has been giving him theological and practical context for what his patients are experiencing.
-- **The holy water anchor.** Tessaly's three vials of holy water are the strongest possible anchor for Old Brindle's cleansing rite at Area 4. She does not know this yet. When Old Brindle describes what he needs, she will immediately understand and offer one vial without negotiation.
-- **Dispel Magic.** One of her two 3rd-level slots is *Dispel Magic*. It will not dispel the dust's effects on the owlbear (the contamination is physiological, not a sustained spell), but Old Brindle can tell her this clearly if she tries, sparing the slot.
+**Weapon Proficiencies:** Mace, Sling, Flail
+
+**Non-Weapon Proficiencies:**
+
+| Proficiency | Ability | d% |
+|-------------|---------|-----|
+| Religion | Wisdom | 85% |
+| Healing | Wisdom | 75% |
+| Reading / Writing | Intelligence | 75% |
+| Ancient History | Intelligence | 65% |
+| Etiquette | Charisma | 70% |
 
 ---
 

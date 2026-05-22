@@ -6,7 +6,7 @@ If the owlbear has been defeated or calmed, replace results 5, 11, and 20 with r
 
 **State-Dependent Results.** Several results become invalid as the adventure progresses. When the conditions below are met, replace the indicated result with result 1 (Unnatural Silence):
 
-- **Result 3**, Remove once the party has made direct contact with Sorel's group at Area 3. After that, the party knows Sorel's location and a chance road encounter is no longer plausible. This result remains valid if the party bypassed Area 3 entirely.
+- **Result 3**, Remove once the party has made direct contact with Sorel's group at Area 3. After that, the party knows Sorel's location and a chance road encounter is no longer plausible. This result remains valid if the party bypassed Area 3 entirely. Roll 1d4 rather than 2d4 for crew count; Sorel's numbers are reduced after the road attack.
 - **Result 4**, Remove once the party has resolved the scavenger camp in the game trails (Area 6).
 - **Result 12**, This scene and the body at Area 6 represent the same person (Orn, from Sorel's crew). Use this result only if the party has entered the game trails but not yet found his body; if it fires earlier, hold it. Remove it once Orn has been found.
 - **Result 17**, Remove once the party has located Old Brindle at Area 4. Before that point, his appearance here reflects him returning to the glade after a brief absence; he should reach Area 4 shortly after the party does. Once his two-day vigil at the pool is established, this result no longer applies.

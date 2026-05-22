@@ -82,7 +82,7 @@
 
 **Dagger +1:** More useful as a letter opener than a weapon at this point.
 
-**Scroll of Identify:** A single-use scroll that allows the casting of *Identify* without preparation. Useful for the obsidian disc at Area 3, the fresh obsidian disc at Area 7, or any other unknown magical item the party recovers. Casting takes one turn, requires 100 gp of pearl dust as a material component (he has it).
+**Scroll of Identify:** A single-use scroll that allows the casting of *Identify* without preparation. Casting takes one turn, requires 100 gp of pearl dust as a material component (he has it).
 
 **Scroll of Protection from Magic:** Single use. Creates a globe of total magic immunity for the caster for 1 turn. Does not protect adjacent characters. Mordechai carries this because there are situations where being completely immune to all magic, including friendly spells, is the correct call.
 
@@ -94,11 +94,19 @@ Mordechai has published two monographs on mind-affecting magic and is working on
 
 ---
 
-## Adventure Connections
+## Proficiencies
 
-- **Identifies the obsidian disc.** When he holds Kael Vorst's disc (Area 3) and concentrates for one round, he can describe it clearly: *"This is a keyed magical focus, a conduit object. It carries directed intention from a caster to a fixed point. Effectively, someone's magical attention has been bound into this stone. The warmth is residual presence. The stone was near its source recently."* He has not seen one before but the theory is straightforward to him.
-- **Identifies the dust.** Mordechai can examine white plume dust and give the party the overview description: a failed byproduct of consciousness-transfer magic, carrying fragmented traces of an alien mind. *"Whoever made this was trying to transfer a copy of their consciousness into a replicable medium. They partially succeeded. The medium is unstable. The traces are real."* He is unsettled by this finding.
-- **Slow vs. the owlbear.** *Slow* affects the owlbear normally (it is not immune to non-magical speed reduction). A slowed owlbear attacks at half rate and moves at half speed. This is one of the most useful things Mordechai can do in that fight, and he knows it.
+**Weapon Proficiencies:** Dagger, Staff
+
+**Non-Weapon Proficiencies:**
+
+| Proficiency | Ability | d% |
+|-------------|---------|-----|
+| Reading / Writing | Intelligence | 95% |
+| Spellcraft | Intelligence | 80% |
+| Ancient History | Intelligence | 85% |
+| Alchemy | Intelligence | 95% |
+| Astrology | Intelligence | 90% |
 
 ---
 

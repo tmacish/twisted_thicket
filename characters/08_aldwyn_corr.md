@@ -49,7 +49,7 @@
 
 ## Paladin Abilities
 
-**Detect Evil:** At will, within 60 ft. Requires concentration for one round. Reveals the presence and approximate direction of evil intent, evil creatures, and evil-aligned magical objects. Does not reveal exact location or nature. The pool at Area 4 radiates as strongly evil at the limit of this range. The obsidian disc from Area 3 registers as faintly, coldly evil, structured rather than passionate, which Aldwyn finds more unsettling than straightforward malice.
+**Detect Evil:** At will, within 60 ft. Requires concentration for one round. Reveals the presence and approximate direction of evil intent, evil creatures, and evil-aligned magical objects. Does not reveal exact location or nature. Structured, deliberate evil reads differently than passionate malice — Aldwyn finds the former more unsettling.
 
 **Lay on Hands:** Once per day, Aldwyn may heal by touch. Heals 2 hp per paladin level, currently **12 hp total per day**, divided among as many recipients and as many touches as he chooses. He cannot use this on himself.
 
@@ -59,7 +59,7 @@
 
 **Immune to Fear:** Aldwyn is immune to fear effects, magical or mundane.
 
-**Cure Disease:** Once per week, Aldwyn may cure any disease in a creature he touches. This cures the dust compulsion's physical symptoms, it does not extract the dust from the body, but it clears the K-mark carving compulsion and the morale override in Pirrel or Dort as effectively as the antitoxin, if somewhat more slowly (one turn to take full effect rather than immediate).
+**Cure Disease:** Once per week, Aldwyn may cure any disease in a creature he touches. This can alleviate physical compulsion symptoms; it does not extract a substance from the body, but it can clear behavioural overrides over the course of one turn.
 
 **Turn Undead:** As a Cleric of level 2 (four levels below paladin level). Rarely relevant in this adventure.
 
@@ -91,12 +91,18 @@ Aldwyn has been with the Order of the Radiant Shield for eleven years, having en
 
 ---
 
-## Adventure Connections
+## Proficiencies
 
-- **Detect Evil at the pool.** When the party approaches Area 4, Aldwyn will detect the pool as evil at the edge of his range, 60 ft, before the party can see it. He will stop walking and say: *"Something ahead. Evil. Structured. Not angry."* He cannot tell more without entering the glade. When he does, the glow intensifies his reading to as strong as he has ever detected. He has faced possessed men, corrupted altars, and cursed artefacts. This is more deliberate than any of those.
-- **Cure Disease vs. Pirrel.** If the party encounters Pirrel (Area 3) and has no antitoxin, or has used their doses elsewhere, Aldwyn's *Cure Disease* ability clears the dust compulsion symptoms over one turn. Sorel Vane will watch this with an expression he does not entirely control.
-- **The Inheritor's name.** Aldwyn is specifically investigating whether Keraptis, or something using that name, is behind the dust. When Mordechai identifies the dust as a failed consciousness-transfer byproduct and names the false Keraptis, Aldwyn takes this information seriously and personally. The Order will want a full report. He will want to go north.
-- **Aura vs. the pool's compulsion.** The pool at Area 4 exerts psychic pressure during the cleansing rite, party members within 10 ft save each round or feel compelled to break Old Brindle's concentration. Aldwyn's aura grants all companions within 10 ft +1 to those saves. Position him near the rite.
+**Weapon Proficiencies:** Longsword, Dagger, Light Crossbow, Lance, Flail
+
+**Non-Weapon Proficiencies:**
+
+| Proficiency | Ability | d% |
+|-------------|---------|-----|
+| Riding, Land-based | Dexterity | 80% |
+| Religion | Wisdom | 70% |
+| Heraldry | Intelligence | 55% |
+| Healing | Wisdom | 60% |
 
 ---
 

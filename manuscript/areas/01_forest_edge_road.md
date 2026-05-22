@@ -24,7 +24,7 @@ The mud at the forest edge is a record. A careful examination, a ranger's tracki
 
 **The impact stone.** At the edge of the road, a flat paving stone is cracked cleanly through with a circular depression at the centre, as though something extremely heavy fell point-first onto it from height. The depression is roughly the diameter of a warhammer head. The crack radiates outward in six lines. The stone is cold to the touch, noticeably colder than the surrounding road, and remains so regardless of weather. A ranger's tracking check or ten minutes of careful comparison confirms this damage predates the carriage wreck: the crack edges have settled, a thin skin of dried mud has formed inside the depression, and the splintered oak from Blink's coach lies on top of the older impact scar rather than beside it. Something struck here days before the coaches arrived.
 
-**The long gouge.** A shallow groove runs from the impact stone twelve feet north into the mud, then curves east toward the ravine. The groove is consistent with a long, heavy blade being dragged or skidding across the ground. At the end of the groove, pressed into the mud, is a partial handprint, five fingers, too large for a man, consistent with an owlbear's forepad. Like the impact stone, this evidence predates the carriage wreck. Two separate events happened in the same place days apart, and the newer wreck nearly obscures the older one.
+**The long gouge.** A shallow groove runs from the impact stone twelve feet north into the mud, then curves northeast into the treeline. The groove is consistent with a long, heavy blade being dragged or skidding across the ground. At the end of the groove, pressed into the mud, is a partial handprint, five fingers, too large for a man, consistent with an owlbear's forepad. Like the impact stone, this evidence predates the carriage wreck. Two separate events happened in the same place days apart, and the newer wreck nearly obscures the older one.
 
 ---
 
@@ -32,7 +32,7 @@ The mud at the forest edge is a record. A careful examination, a ranger's tracki
 
 **Whelm** is not here. The impact stone marks where it landed in the earlier attack; the weapon has sunk into the mud at the ravine's edge or rolled east in the days since. It will be found at Area 2.
 
-**Blackrazor** was carried north by the owlbear and dropped somewhere in the Thicket. Its trail, the gouge, the eastern curve, points toward Area 6 (Game Trails). A character who succeeds on a Wisdom check while examining the gouge feels a faint pull of unease from the northeast, like the memory of a sound just below hearing. This sensation intensifies closer to the weapon.
+**Blackrazor** was carried north by the owlbear and dropped somewhere in the Thicket. Its trail, the gouge, the northeastern curve, points toward Area 6 (Game Trails). A character who succeeds on a Wisdom check while examining the gouge feels a faint pull of unease from the northeast, like the memory of a sound just below hearing. This sensation intensifies closer to the weapon.
 
 **The dust residue** in the beast's prints can be collected, enough for half a dose if scraped carefully. Any character who touches it bare-handed must save vs. poison or experience a single round of mild euphoria (no mechanical effect, but the referee should describe it vividly enough to be tempting).
 

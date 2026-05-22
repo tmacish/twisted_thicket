@@ -59,14 +59,16 @@ The depression is roughly forty feet across and eight feet deep, the walls made 
 
 ### White Plume Owlbear
 
-**Frequency:** Unique &nbsp; **No. Appearing:** 1
-**AC:** 3 &nbsp; **Move:** 15" &nbsp; **HD:** 8+3 &nbsp; **hp:** 55
-**% in Lair:** 95% &nbsp; **Treasure Type:** See below
-**No. of Attacks:** 3 &nbsp; **Damage/Attack:** 1d8+3 / 1d8+3 / 2d6+3
-**Special Attacks:** Hug, Dust Frenzy, K-Whispers
-**Special Defenses:** Nil &nbsp; **Magic Resistance:** Standard
-**Intelligence:** Animal (disturbed) &nbsp; **Alignment:** Neutral
-**Size:** L &nbsp; **Psionic Ability:** Nil
+| **Frequency:** Unique | **No. Appearing:** 1 |
+|---|---|
+| **AC:** 3 | **Move:** 15" |
+| **HD:** 8+3 | **hp:** 55 |
+| **% in Lair:** 95% | **Treasure Type:** See below |
+| **No. of Attacks:** 3 | **Damage/Attack:** 1d8+3 / 1d8+3 / 2d6+3 |
+| **Special Attacks:** Hug, Dust Frenzy, K-Whispers | |
+| **Special Defenses:** Nil | **Magic Resistance:** Standard |
+| **Intelligence:** Animal (disturbed) | **Alignment:** Neutral |
+| **Size:** L | **Psionic Ability:** Nil |
 
 **Hug:** If both claw attacks hit the same target in the same round, the owlbear seizes that creature and automatically inflicts 2d6 additional damage at the start of the following round. The victim may attempt to escape (Strength check at −4, or an ally may attack the owlbear to force it to release, any hit that deals 6 or more damage causes immediate release).
 

@@ -262,6 +262,30 @@ def parse_character(md_path: Path) -> dict:
         for b in re.findall(r'^-\s*(.+)', sec.group(1), re.MULTILINE):
             char["personality"].append(_clean(b))
 
+    # Proficiencies
+    char["proficiencies"] = {"weapon": [], "nonweapon": [], "bonus": ""}
+    sec = re.search(r'## Proficiencies\n\n(.+?)(?=\n---|\n## |\Z)', text, re.DOTALL)
+    if sec:
+        m = re.search(r'\*\*Weapon Proficiencies:\*\*\s*(.+)', sec.group(1))
+        if m:
+            char["proficiencies"]["weapon"] = [p.strip() for p in m.group(1).split(',') if p.strip()]
+        m = re.search(r'\*\*Non-Weapon Proficiencies \(Bonus\):\*\*\s*(.+)', sec.group(1))
+        if m:
+            char["proficiencies"]["bonus"] = _clean(m.group(1))
+        nwp_m = re.search(r'\| Proficiency \|.+?\n\|[-| ]+\n((?:\|.+\n)+)', sec.group(1))
+        if nwp_m:
+            for row in re.finditer(
+                r'^\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*(\d+%?)\s*\|',
+                nwp_m.group(1), re.MULTILINE
+            ):
+                name = row.group(1).strip()
+                if name and '---' not in name:
+                    char["proficiencies"]["nonweapon"].append({
+                        "name":   name,
+                        "ability": row.group(2).strip(),
+                        "check":  row.group(3).strip(),
+                    })
+
     return char
 
 # ---------------------------------------------------------------------------
@@ -427,7 +451,7 @@ def render_saves(c, char, x, y, w) -> float:
     if not saves:
         return y
     inner_h = ROW_H * len(saves) + 4
-    bar_h = 10
+    bar_h = 13
     box_h = bar_h + 14 + inner_h
     draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
     section_bar(c, "Saving Throws", x, y - bar_h - 2, w, font_size=7)
@@ -453,6 +477,75 @@ def render_saves(c, char, x, y, w) -> float:
     return y - box_h - 5
 
 
+def render_proficiencies(c, char, x, y, w) -> float:
+    profs = char.get("proficiencies", {})
+    wp    = profs.get("weapon", [])
+    nwp   = profs.get("nonweapon", [])
+    bonus = profs.get("bonus", "")
+    if not wp and not nwp:
+        return y
+
+    FONT_SZ = 6.5
+    LEADING  = 8.5
+    ROW_H    = 10
+    bar_h    = 13
+
+    # Height: weapon line(s) + optional bonus line + NWP header row + NWP rows
+    wp_text   = "WP: " + ", ".join(wp) if wp else ""
+    wp_lines  = word_wrap(wp_text, c, body(), FONT_SZ, w - 10) if wp_text else []
+    bonus_lines = word_wrap("Bonus: " + bonus, c, italic(), FONT_SZ, w - 10) if bonus else []
+    nwp_rows  = len(nwp)
+    header_h  = ROW_H if nwp else 0
+    inner_h   = (len(wp_lines) * LEADING + (2 if wp_lines else 0) +
+                 len(bonus_lines) * LEADING + (2 if bonus_lines else 0) +
+                 header_h + ROW_H * nwp_rows + 4)
+    box_h = bar_h + 14 + inner_h
+
+    draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
+    section_bar(c, "Proficiencies", x, y - bar_h - 2, w, font_size=7)
+
+    ry = y - bar_h - 2 - 10
+
+    # Weapon proficiency line
+    for i, line in enumerate(wp_lines):
+        _sf(c, C_HEADING if i == 0 else C_INK)
+        c.setFont(head() if i == 0 else body(), FONT_SZ)
+        c.drawString(x + 5, ry, line)
+        ry -= LEADING
+    if wp_lines:
+        ry -= 2
+
+    # Bonus proficiencies (ranger tracking etc.)
+    for i, line in enumerate(bonus_lines):
+        _sf(c, C_INK)
+        c.setFont(italic(), FONT_SZ)
+        c.drawString(x + 5, ry, line)
+        ry -= LEADING
+    if bonus_lines:
+        ry -= 2
+
+    # NWP table
+    if nwp:
+        _sf(c, C_INK);  c.setFont(head(), 5.5)
+        c.drawString(x + 5, ry, "NON-WEAPON PROFICIENCY")
+        c.drawCentredString(x + w - 12, ry, "d%")
+        _ss(c, C_RULE);  c.setLineWidth(0.4)
+        c.line(x + 4, ry - 2, x + w - 4, ry - 2)
+        ry -= ROW_H
+
+        for i, prof in enumerate(nwp):
+            if i % 2 == 1:
+                _sf(c, C_SHADED_ROW)
+                c.rect(x + 4, ry - 2, w - 8, ROW_H, fill=1, stroke=0)
+            _sf(c, C_INK);  c.setFont(body(), FONT_SZ)
+            c.drawString(x + 5, ry, clip_str(prof["name"], c, body(), FONT_SZ, w - 28))
+            _sf(c, C_HEADING);  c.setFont(head(), 7)
+            c.drawCentredString(x + w - 12, ry, prof["check"])
+            ry -= ROW_H
+
+    return y - box_h - 5
+
+
 def render_combat(c, char, x, y, w) -> float:
     FIELDS = [
         ("Hit Points",        "HP"),
@@ -466,7 +559,7 @@ def render_combat(c, char, x, y, w) -> float:
             if key in char["combat"]]
     if not rows:
         return y
-    bar_h = 10
+    bar_h = 13
     box_h = bar_h + 14 + ROW_H * len(rows) + 4
     draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
     section_bar(c, "Combat Statistics", x, y - bar_h - 2, w, font_size=7)
@@ -490,7 +583,7 @@ def render_weapons(c, char, x, y, w) -> float:
     if not weapons:
         return y
     ROW_H = 11
-    bar_h = 10
+    bar_h = 13
     box_h = bar_h + 14 + 10 + ROW_H * len(weapons) + 4
     draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
     section_bar(c, "Weapons & Attacks", x, y - bar_h - 2, w, font_size=7)
@@ -531,7 +624,7 @@ def render_thief_skills(c, char, x, y, w) -> float:
     if not skills:
         return y
     ROW_H = 11
-    bar_h = 10
+    bar_h = 13
     # Two columns of skills
     mid = (len(skills) + 1) // 2
     col_rows = max(mid, len(skills) - mid)
@@ -779,6 +872,9 @@ def draw_sheet(char: dict, c):
     left_y  = render_abilities(c, char, LX,     left_y,  LEFT_W)
     left_y -= 3
     left_y  = render_saves(c, char, LX,         left_y,  LEFT_W)
+    if char.get("proficiencies", {}).get("weapon") or char.get("proficiencies", {}).get("nonweapon"):
+        left_y -= 3
+        left_y = render_proficiencies(c, char, LX, left_y, LEFT_W)
 
     right_y = render_combat(c, char, RIGHT_X,   right_y, RIGHT_W)
     right_y -= 3

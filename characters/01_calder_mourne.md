@@ -69,11 +69,19 @@ Calder served twelve years with the Shield Lands heavy cavalry before the unit w
 
 ---
 
-## Adventure Connections
+## Proficiencies
 
-- **Called in by Elnara directly.** She sent a letter two weeks ago: *"Something in the Thicket needs ending. Your kind of work. Standard rates."* He accepted without asking for details because he has learned that asking for details from Elnara is unproductive.
-- **Survived the session zero.** He was on one of the coaches. He has seen the owlbear at close range and has a considered professional opinion that it needs to die.
-- **Carries the team.** With the highest hit points and best AC in the party, Calder is the one who stands between the owlbear and the squishier members. He knows this and does not resent it.
+**Weapon Proficiencies:** Longsword, Hand Axe, Dagger, Lance, Heavy Crossbow, Bastard Sword
+
+**Non-Weapon Proficiencies:**
+
+| Proficiency | Ability | d% |
+|-------------|---------|-----|
+| Riding, Land-based | Dexterity | 80% |
+| Military Tactics | Intelligence | 55% |
+| Endurance | Constitution | 90% |
+| Direction Sense | Wisdom | 65% |
+| Intimidation | Strength | 85% |
 
 ---
 

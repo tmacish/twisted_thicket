@@ -86,11 +86,18 @@ Kaida has been working the Critwall information markets for six years, courier w
 
 ---
 
-## Adventure Connections
+## Proficiencies
 
-- **Second client.** Someone in Critwall wants the dust network documented, not destroyed, at least initially. Kaida's instructions are to identify the chain from source to buyers. Whether she shares this with the party is the player's call.
-- **Open Locks at the supply shed.** Area 3's supply shed lock shows pick marks. If Kaida examines it, she can identify the tool marks as professional work, the same gauge of pick she carries herself. Someone in her trade was here.
-- **The detection mechanism in Area 7** is her domain. She will spot it on a successful Find Traps roll. If she misses it, she triggers it, and knows immediately what she did.
+**Weapon Proficiencies:** Shortsword, Dagger, Hand Crossbow
+
+**Non-Weapon Proficiencies:**
+
+| Proficiency | Ability | d% |
+|-------------|---------|-----|
+| Disguise | Charisma | 60% |
+| Forgery | Dexterity | 85% |
+| Alertness | Wisdom | 50% |
+| Tumbling | Dexterity | 90% |
 
 ---
 
@@ -98,4 +105,4 @@ Kaida has been working the Critwall information markets for six years, courier w
 
 - Watches everyone's hands. Occupational habit. She is not suspicious of the party specifically; she is suspicious of everyone equally.
 - Will share information when it is tactically useful to do so. Withholds it when it is not. Considers this honest behaviour.
-- Has a genuine reaction to Orn's body in Area 6 if she has met him at Area 3, the post-mortem K carved into his forehead unsettles her in a way she does not hide well.
+- Unsettled by deliberate, post-mortem markings on a body. Has seen a lot, but calculated cruelty reads differently to her than violence.

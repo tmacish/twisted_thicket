@@ -30,7 +30,6 @@
 | Weapon | To Hit | Damage | Notes |
 |--------|--------|--------|-------|
 | Warhammer +1 (own) | +2 | 1d4+1+3 = 1d4+4 | +1 magic, +1 to hit / +3 damage from Str |
-| Whelm *(if found, Area 2)* | +2* | 1d4+1+3 = 1d4+4* | *See Whelm notes below* |
 | Hand axe ×2 | +1 | 1d6+4 | Thrown range 1"/2"/3" |
 | Dagger | +1 | 1d4+3 |, |
 
@@ -67,23 +66,11 @@
 
 ## Magic Items
 
-**Warhammer +1 (his own):** A solid weapon he has carried for eight years, reheaded twice. He trusts it. He is going to feel strange about setting it aside when Whelm enters the picture, but he is going to set it aside anyway, because he will feel the difference the moment he holds Whelm and he is not a complicated man about these things.
+**Warhammer +1 (his own):** A solid weapon he has carried for eight years, reheaded twice. He trusts it the way you trust something that has never failed you.
 
 **Ring of Protection +1:** Iron band, worn on his right hand. Standard military-issue from his garrison days; he bought it off a retiring officer.
 
 **Potion of Giant Strength:** A murky brown liquid that smells of iron and something organic. Consuming it temporarily grants Strength 21 (Exceptional Strength, +3 to hit, +9 damage) for 1 turn (10 rounds). He should use this when fighting the owlbear. He has been saving it for something worthy of it.
-
----
-
-## On Whelm
-
-When Wulfric comes within thirty feet of Whelm (buried in the ravine at Area 2), he feels it before he sees it, a low vibration in his jaw and chest, like a hammer struck on stone reverberating through the ground. He has no explanation for this. He will feel compelled to locate the source.
-
-**Whelm in his hands:**
-- He receives the full dwarf affinity bonus: +2 to hit and +2 damage against the owlbear (Large/giant-class creature) rather than the standard +1/+1.
-- Whelm is cold in his hand, then warm, then simply correct, the way a well-balanced tool feels when it is the right tool for the work.
-- Against the owlbear specifically: when Whelm strikes, a tone rings from the impact. Wulfric knows this sound. It is the sound of a warhammer hitting stone on a cold morning. He has been hearing it his whole life. Whelm has not, until now.
-- He will not be aware that Whelm wants to go north, toward the mountain, until after the adventure. It will manifest as a mild directional restlessness. He will think he is just tired of sleeping in the same place.
 
 ---
 
@@ -95,11 +82,18 @@ He does not have opinions about legendary weapons, Keraptis, or the politics of 
 
 ---
 
-## Adventure Connections
+## Proficiencies
 
-- **Whelm detection.** He will feel Whelm at Area 2 before the party reaches the ravine floor. He cannot explain it. He will go toward it regardless of whether the party is ready to descend.
-- **The cold impact stone at Area 1.** When the party finds the cold paving stone, the impact point where Whelm landed, Wulfric can put his hand on it and feel the vibration that the text describes: *"A dwarf character feels this as a faint vibration rather than cold, a hammered note still ringing in the stone."* He may look confused. Good.
-- **The owlbear fight.** Wulfric plus Calder is the core of the party's melee damage. With the Potion of Giant Strength held until the owlbear arrives, and Whelm's dwarf bonus active, he is the most dangerous creature in the hollow (barely).
+**Weapon Proficiencies:** Warhammer, Hand Axe, Dagger, Military Pick, Short Sword
+
+**Non-Weapon Proficiencies:**
+
+| Proficiency | Ability | d% |
+|-------------|---------|-----|
+| Engineering | Intelligence | 35% |
+| Endurance | Constitution | 95% |
+| Mining | Wisdom | 40% |
+| Appraising | Intelligence | 50% |
 
 ---
 

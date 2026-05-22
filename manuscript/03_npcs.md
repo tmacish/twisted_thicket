@@ -26,7 +26,7 @@ Sorel ran the distribution leg of the dust network in the Thicket, dispatching c
 
 ## Varek Sorn, Deep Operative
 
-Varek Sorn preceded the party through the Thicket by days — killing Kael Vorst (Area 3) and Orn (Area 6), placing the K-marks in the hollow (Area 5), and caching route intelligence in the Riddle Cave (Area 7). They are not encountered in this adventure; they are a thread pointing forward to White Plume Mountain.
+Varek Sorn preceded the party through the Thicket by days — killing Kael Vorst (Area 3) and Orn (Area 6), carving fresh K-marks at the logging camp treeline (Area 3), and caching route intelligence in the Riddle Cave (Area 7). They are not encountered in this adventure; they are a thread pointing forward to White Plume Mountain.
 
 **AC** 4; **Class** Thief 6; **hp** 24; **MV** 12"  
 **Attacks** short sword or dagger; back-stab ×3 damage  

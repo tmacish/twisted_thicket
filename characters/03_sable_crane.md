@@ -53,7 +53,7 @@
 
 ## Ranger Abilities
 
-- **Tracking:** Can follow tracks in wilderness without a roll; difficult conditions require a Wisdom check. Reads the Area 1 track record automatically.
+- **Tracking:** Can follow tracks in wilderness without a roll; difficult conditions require a Wisdom check.
 - **Move Silently / Hide in Shadows:** 35% / 25% base in light armour outdoors.
 - **Surprise:** Surprises opponents 50% of the time in natural settings.
 - **Spells:** Rangers of level 6 may cast Druidic spells. Sable has access to one 1st-level Druidic spell per day: she has *Animal Friendship* memorised but will swap it for *Entangle* if she has time to prepare before entering the Thicket.
@@ -84,11 +84,20 @@ Sable worked game warden patrol in the roadwoods south of the Thicket for four y
 
 ---
 
-## Adventure Connections
+## Proficiencies
 
-- **Reads Area 1 without rolling.** She can identify every track layer in the Area 1 description, the beast, the drag, the scavengers' retreat, without a check. She knows the three-toed prints. She has seen them before and retreated from them.
-- **Knows the Thicket is wrong.** Three weeks ago the songbirds stopped at the treeline. Two weeks ago the deer stopped coming to the southern meadows. One week ago she found a dead fox with white powder on its muzzle. She brought this to Elnara and Elnara said: *"I know."* That is when Sable decided she needed to be on whatever team went in.
-- **Wisdom 15 and Blackrazor.** Sable feels the pull from Area 6 before anyone else names it. She will describe it as *"something wrong to the northeast, like a bad smell you can't locate."*
+**Weapon Proficiencies:** Longsword, Shortsword, Longbow, Dagger, Short Bow
+
+**Non-Weapon Proficiencies (Bonus):** Tracking *(Wisdom, 75%)*, Wilderness Survival *(Intelligence, 60%)*
+
+**Non-Weapon Proficiencies:**
+
+| Proficiency | Ability | d% |
+|-------------|---------|-----|
+| Animal Handling | Wisdom | 70% |
+| Herbalism | Intelligence | 50% |
+| Weather Sense | Wisdom | 70% |
+| Hunting | Wisdom | 70% |
 
 ---
 

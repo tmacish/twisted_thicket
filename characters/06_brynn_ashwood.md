@@ -57,11 +57,11 @@
 **2nd Level (3 slots):**
 - Barkskin *(improves target's AC by 1 per 4 caster levels; currently AC −1 to any touched creature for 4+ rounds)*
 - Slow Poison *(halts poison progression for 1 hour per level; does not cure, only delays)*
-- Charm Person or Mammal *(charm a humanoid or beast; useful for defusing Dort or Pirrel if caught in compulsion)*
+- Charm Person or Mammal *(charm a humanoid or beast; will not work on targets whose will is already fully overridden)*
 
 **3rd Level (2 slots):**
-- Hold Animal *(immobilises 1d4 normal animals; will not work on the dust-controlled owlbear per Area 4's Old Brindle note)*
-- Call Lightning *(during storms outdoors only; summons lightning bolts dealing 2d8+level damage each round for 1 round/level; not usable in the hollow or cave)*
+- Hold Animal *(immobilises 1d4 normal animals; no effect on creatures whose behaviour has been physically altered)*
+- Call Lightning *(during storms outdoors only; summons lightning bolts dealing 2d8+level damage each round for 1 round/level; not usable underground)*
 
 ---
 
@@ -81,7 +81,7 @@
 
 **Potion of Healing:** Standard preparation, 1d8+1 hp. Wrapped in oilskin in the bottom of her pack.
 
-**Waterskin of Ringstown Well Water:** Not magical, just well water from before she entered the Thicket. The Ringstown well is noted as drawing from a pre-Flan source that predates the current contamination. This waterskin qualifies as a valid anchor for Old Brindle's cleansing rite at Area 4. Brynn brought it specifically because she read the signs and suspected she might need something clean and untouched.
+**Waterskin of Ringstown Well Water:** Not magical, just well water drawn before she entered the Thicket. The Ringstown well draws from a pre-Flan source that predates the region's current troubles. She brought it because she read the signs and suspected she might need something clean and untouched.
 
 ---
 
@@ -100,11 +100,19 @@ Brynn has been grove-warden for five years, managing the woodland commons south 
 
 ---
 
-## Adventure Connections
+## Proficiencies
 
-- **Old Brindle.** Brynn and Old Brindle have never met, but they know of each other, two nature-wardens working adjacent territories inevitably share observations through mutual contacts. She knows he is in the Thicket and is alarmed that he hasn't emerged. When she finds him at Area 4 exhausted and at 6 hp, she will use *Cure Light Wounds* on him immediately without being asked.
-- **The cleansing rite anchor.** Brynn's waterskin of well water is the second available anchor (after Tessaly's holy water). Old Brindle will accept either. Brynn will instinctively understand the rite he is attempting and can assist rather than simply watching.
-- **Hold Animal and the owlbear.** At Area 5, Brynn may attempt *Hold Animal* on the owlbear. It will not work, Old Brindle warned her. If she has been told this, she holds the spell. If she has not been to Area 4, she will try it, fail, and understand immediately what Old Brindle meant when he said *"What answered me was not the beast."*
+**Weapon Proficiencies:** Scimitar, Sling, Dagger
+
+**Non-Weapon Proficiencies:**
+
+| Proficiency | Ability | d% |
+|-------------|---------|-----|
+| Healing | Wisdom | 70% |
+| Herbalism | Intelligence | 55% |
+| Animal Handling | Wisdom | 75% |
+| Weather Sense | Wisdom | 75% |
+| Survival | Intelligence | 65% |
 
 ---
 
