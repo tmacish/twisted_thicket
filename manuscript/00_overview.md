@@ -1,6 +1,6 @@
 # The Twisted Thicket
 
-*An OSRIC-compatible wilderness adventure for 4-6 player characters of levels 5-7*
+*SF1 -- An OSRIC / AD&D 2E compatible wilderness adventure for 4-6 player characters of levels 5-7*
 
 ---
 

@@ -347,7 +347,7 @@ def cb_interior(canvas, doc):
     # Running header
     canvas.setFont('Cinzel', 7.4)
     canvas.setFillColor(DARK_INK)
-    canvas.drawString(ML, PH - 0.52*inch, 'TTT-1  •  THE TWISTED THICKET')
+    canvas.drawString(ML, PH - 0.52*inch, 'SF1  •  THE TWISTED THICKET')
     canvas.setFont('IMFell', 7.4)
     canvas.drawRightString(PW - MR, PH - 0.52*inch, str(doc.page))
     canvas.setStrokeColor(RULE_COL)
@@ -368,7 +368,7 @@ def cb_map(canvas, doc):
     canvas.rect(0, 0, PW, PH, fill=1, stroke=0)
     canvas.setFont('Cinzel', 7.4)
     canvas.setFillColor(DARK_INK)
-    canvas.drawCentredString(PW/2, PH - 0.50*inch, 'TTT-1  •  THE TWISTED THICKET')
+    canvas.drawCentredString(PW/2, PH - 0.50*inch, 'SF1  •  THE TWISTED THICKET')
     canvas.setFont('IMFell', 7.4)
     canvas.drawRightString(PW - MR, PH - 0.50*inch, str(doc.page))
     canvas.setStrokeColor(RULE_COL)
@@ -401,7 +401,7 @@ def cb_cover(canvas, doc):
     canvas.setFont('IMFellI', 7.2)
     canvas.drawCentredString(PW/2, by + 0.16*inch, 'Role Playing Game Supplement')
     canvas.setFont('Cinzel', 7.8)
-    canvas.drawString(0.44*inch, by + 0.25*inch, 'MODULE TTT-1')
+    canvas.drawString(0.44*inch, by + 0.25*inch, 'MODULE SF1')
 
     # Artwork frame
     ax = 0.44*inch;  aw = PW - 0.88*inch
@@ -435,28 +435,31 @@ def cb_cover(canvas, doc):
     canvas.drawCentredString(PW/2, tb_y + 0.65*inch,
                              'An Adventure for 4-6 Characters, Levels 5-7')
 
-    # Gold rules below subtitle
+    # Author credit
+    canvas.setFont('IMFellI', 8.0)
+    canvas.setFillColor(colors.Color(0.82, 0.72, 0.48))
+    canvas.drawCentredString(PW/2, tb_y + 0.52*inch, 'By T.J. McDonald')
+
+    # Gold rules below author
     canvas.setStrokeColor(GOLD)
     canvas.setLineWidth(0.4)
-    canvas.line(0.46*inch, tb_y+0.50*inch, PW-0.46*inch, tb_y+0.50*inch)
+    canvas.line(0.46*inch, tb_y+0.40*inch, PW-0.46*inch, tb_y+0.40*inch)
     canvas.setLineWidth(1.6)
-    canvas.line(0.46*inch, tb_y+0.43*inch, PW-0.46*inch, tb_y+0.43*inch)
+    canvas.line(0.46*inch, tb_y+0.33*inch, PW-0.46*inch, tb_y+0.33*inch)
 
     # Tagline
     canvas.setFont('IMFellI', 8.2)
     canvas.setFillColor(colors.Color(0.82, 0.72, 0.48))
-    canvas.drawCentredString(PW/2, tb_y + 0.22*inch,
-                             'OSRIC Compatible  —  A Prelude to White Plume Mountain')
+    canvas.drawCentredString(PW/2, tb_y + 0.16*inch,
+                             'OSRIC / AD&D 2E Compatible  —  and the Second Fall begins')
 
     # Bottom bar
     bb_h = 0.48*inch
     canvas.setFillColor(DARK_INK)
     canvas.rect(0.33*inch, 0.33*inch, PW-0.66*inch, bb_h, fill=1, stroke=0)
-    canvas.setFont('Cinzel', 11.5)
+    canvas.setFont('Cinzel', 9)
     canvas.setFillColor(colors.white)
-    canvas.drawString(0.52*inch, 0.33*inch + 0.18*inch, 'TSR')
-    canvas.setFont('IMFell', 7.5)
-    canvas.drawString(0.52*inch + 0.44*inch, 0.33*inch + 0.18*inch, 'Games')
+    canvas.drawString(0.52*inch, 0.33*inch + 0.18*inch, 'T.J. McDonald')
     canvas.setFont('IMFellI', 6.8)
     canvas.setFillColor(colors.Color(0.65, 0.65, 0.65))
     canvas.drawCentredString(PW/2, 0.33*inch + 0.18*inch,
@@ -489,15 +492,15 @@ def cb_back(canvas, doc):
     canvas.setFont('Cinzel', 7.8)
     canvas.setFillColor(GOLD_DIM)
     canvas.drawCentredString(PW/2, tp_y + 0.50*inch,
-                             'MODULE TTT-1   •   LEVELS 5-7   •   4-6 PLAYERS')
-    canvas.drawCentredString(PW/2, tp_y + 0.30*inch, 'OSRIC COMPATIBLE')
+                             'MODULE SF1   •   LEVELS 5-7   •   4-6 PLAYERS')
+    canvas.drawCentredString(PW/2, tp_y + 0.30*inch, 'OSRIC / AD&D 2E COMPATIBLE')
 
     # Town image
     iy  = tp_y - 0.08*inch - 2.20*inch
     ix  = 0.50*inch;  iw = PW - 1.00*inch;  ih = 2.20*inch
     canvas.setFillColor(DARK_INK)
     canvas.rect(ix-2, iy-2, iw+4, ih+4, fill=1, stroke=0)
-    canvas.drawImage(str(IMAGES/'ringstown.png'),
+    canvas.drawImage(str(IMAGES/'ringstown_northgate.png'),
                      ix, iy, width=iw, height=ih,
                      preserveAspectRatio=True, anchor='c', mask='auto')
 
@@ -545,16 +548,16 @@ def cb_back(canvas, doc):
     canvas.setFont('IMFell', 8.2)
     canvas.setFillColor(DARK_INK)
     canvas.drawString(0.65*inch, is_y+0.36*inch,
-                      'For use with the OSRIC rules system (AD&D 1st Edition compatible)')
+                      'For use with the OSRIC rules system and AD&D 2nd Edition')
     canvas.drawString(0.65*inch, is_y+0.17*inch,
                       'Suitable for 4-6 players  •  Characters of levels 5-7')
 
     # Bottom bar
     canvas.setFillColor(DARK_INK)
     canvas.rect(0.36*inch, 0.36*inch, PW-0.72*inch, 0.50*inch, fill=1, stroke=0)
-    canvas.setFont('Cinzel', 10)
+    canvas.setFont('Cinzel', 9)
     canvas.setFillColor(colors.white)
-    canvas.drawString(0.52*inch, 0.52*inch, 'TSR  Games')
+    canvas.drawString(0.52*inch, 0.52*inch, 'MODULE SF1')
     canvas.setFont('IMFellI', 6.8)
     canvas.setFillColor(colors.Color(0.62, 0.62, 0.62))
     canvas.drawCentredString(PW/2, 0.52*inch, 'For Personal Use Only — Not for Distribution')
@@ -583,6 +586,7 @@ CONTENT = [
     ('manuscript/areas/07_riddle_cave_of_the_ash_tongue.md','area'),
     ('manuscript/05_conclusion.md',                        'chapter'),
     ('manuscript/08_rumors.md',                            'appendix'),
+    ('manuscript/appendices/weapon_stats.md',              'appendix'),
 ]
 
 
@@ -593,9 +597,7 @@ def build():
     register_fonts()
     S = build_styles()
 
-    # Blueprint map
-    bp_path = '/tmp/ttt_blueprint.png'
-    make_blueprint(str(IMAGES/'twistedthicketdmmap.png'), bp_path)
+    bp_path = str(IMAGES/'new_dm_map.png')
 
     # Frames
     tiny = Frame(0, 0, 1, 1, leftPadding=0, rightPadding=0,
@@ -612,7 +614,7 @@ def build():
                  topPadding=0, bottomPadding=0)
 
     doc = BaseDocTemplate(str(OUTPUT), pagesize=letter, allowSplitting=1,
-                          title='The Twisted Thicket (Module TTT-1)',
+                          title='The Twisted Thicket (Module SF1)',
                           author='Personal Use Only',
                           subject='OSRIC Compatible Adventure, Levels 5-7')
     doc.addPageTemplates([
@@ -648,7 +650,10 @@ def build():
         if not fp.exists():
             continue
         if idx > 0:
-            story.append(CondPageBreak(1.6*inch))
+            if rel.endswith('weapon_stats.md'):
+                story.append(PageBreak())
+            else:
+                story.append(CondPageBreak(1.6*inch))
         story.extend(parse_file(fp, S))
         story.append(Spacer(1, 8))
 

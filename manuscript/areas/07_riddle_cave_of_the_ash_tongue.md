@@ -1,6 +1,6 @@
 # Area 7: Riddle Cave of the Ash Tongue
 
-> The cave mouth is little more than a split in a rocky outcrop, black around the edges as if some ancient fire once breathed from it and left a permanent impression of itself in the stone. It is not on the gnome bark map from the north gate, the gnome knew it was here and chose not to mark it. Three openings in the outcrop face; two smell of animal and damp earth; one smells of old smoke, cold rock, and something underneath that has no good name, something that has been here since before the forest had its current shape. That third opening goes deeper than it should.
+> The cave mouth is little more than a split in a rocky outcrop, black around the edges as if some ancient fire once breathed from it and left a permanent impression of itself in the stone. It is not on the gnome bark map from the north gate, the gnome knew it was here and chose not to mark it. Three openings in the outcrop face; two smell of animal and damp earth; one smells of old smoke, cold rock, something underneath that has no good name, something that has been here since before the forest had its current shape, and faintly beneath all of it, wax burned within the last day. That third opening goes deeper than it should, and something inside it has been burning a light recently enough that the wax is not yet cold.
 
 ---
 
@@ -24,7 +24,7 @@ The cave can be found through the following:
 
 The centre opening narrows immediately into a passage eight feet long and barely two feet wide. A Medium character must turn sideways and move carefully, one round to pass through, no roll required, but a character in plate mail or carrying a large shield must leave it at the entrance or make a Strength check to squeeze through (on a failed check, the character is stuck for one round and makes noise). A Large creature cannot enter at all.
 
-Beyond the passage, the cave opens.
+Beyond the passage, the cave opens. The first party member to clear the passage can see, before they have fully entered: candlelight. Steady, nearly spent, at the far wall.
 
 ---
 
@@ -40,10 +40,95 @@ Twenty feet across, twelve feet high at the apex, the chamber is roughly oval wi
 
 **The trappers' corner.** South wall, floor level: the debris of the cave's more recent mundane use. A rusted canteen, a rotted bedroll frame, a broken leather strap that was once part of a pack. Rumour #14 was true, this was a waystation before the current trouble started. The trappers are gone now. The debris is theirs.
 
-**Evidence of recent passage.** The operative's visit is legible in the dust:
-- A single clear heel print, narrow-soled, near the north wall, consistent with the silk-wearer's tracks from Area 6. Made within the last two days.
-- A candle burned entirely to nothing, leaving a wax puddle on a flat stone near the carved face. The operative needed light to work by.
-- A single crossbow bolt, dropped and not retrieved, lying parallel to the north wall. It is standard manufacture, nothing distinctive. Someone in a hurry dropped it and did not stop.
+**The figure at the north wall.** The first character through the entry passage enters the outer chamber and stops.
+
+Seated against the north wall, near the carved stone face, is a person. Dark wool and green silk. Narrow boots, soles matching the profile of the tracks from Area 6. A nearly spent candle on a flat stone beside them. A spanned crossbow on the stone with a bolt in the groove, angled toward the passage opening. One hand rests near the crossbow. The other is open, visible, and still.
+
+They are not asleep. They heard the party long before the first character cleared the passage. They have had time to do whatever they intended to do about that, and what they chose was to wait.
+
+When the first party member enters, they look at them. Then, if a weapon is visible, they look at the weapon. Then they look at the party member's face.
+
+They do not speak first.
+
+---
+
+## Varek Sorn
+
+The figure at the north wall is the silk-wearing operative who preceded the party through the Thicket. They killed Kael Vorst at Area 3 and Orn at Area 6. They solved the puzzle here, opened the cache, and did not continue north. They chose to wait. They want to see who followed the weapons this far into the forest.
+
+**AC** -2 (bracers of defense, Dexterity, ring of protection +1); **Class** Thief 12 / Mage 14; **hp** 55; **MV** 120 ft.  
+**THAC0** 11 (+2 short sword); **Attacks** +2 short sword (paralytic poison) or dagger (thrown, 30 ft./60 ft./120 ft.)  
+**Backstab** x4 damage when attacking from concealment or surprise  
+**Str** 12, **Int** 18, **Wis** 14, **Dex** 18, **Con** 13, **Cha** 15  
+**Saving Throws** Death/Poison 8, Wands 4, Paralyzation 8, Breath 10, Spells 7  
+**Thief Skills** Move Silently 97%, Hide in Shadows 95%, Find/Remove Traps 90%, Open Locks 99%, Hear Noise 55%  
+**Spells per day** 1st: 5, 2nd: 5, 3rd: 5, 4th: 4, 5th: 4, 6th: 3, 7th: 2
+
+**Poison.** The short sword carries a paralytic venom. A creature struck must save vs. Death/Poison or be paralyzed for 1d4 turns. She is not trying to kill the party. She is removing threats from the board.
+
+**Pre-cast protections.** Before the party arrived she had already cast Stoneskin (absorbs the first 1d4+8 physical hits entirely; roll privately and note the result before the session) and Mirror Image (8 images; each successful hit against her destroys one image instead of harming her). Both are in effect when the party enters. A party that has not encountered high-level magic will spend several rounds learning why their weapons are not working. She does not explain. She watches them figure it out.
+
+**The Contingency.** She carries a pre-set Contingency spell, trigger condition: if reduced to 10 hp or fewer, Teleport Without Error fires instantly, no action required, no saving throw, no warning. She is gone. Not fleeing, not retreating: simply absent, mid-combat if necessary, between one round and the next. No sound, no flash. The cave is empty where she was. The party cannot prevent it. They cannot follow. They cannot claim a kill. She chose her destination before she entered the Thicket and it is not anywhere in the Shield Lands the party currently knows.
+
+The referee should hold this as a design fact: Varek Sorn cannot be killed in this adventure. She can be dealt with, fought until the Contingency fires, or left behind. But she will never leave a body. She always exits on her own terms. That is fifty years of operational practice made into a rule.
+
+---
+
+### The Name
+
+In certain guild circles and counting-rooms, the name Sarra of the Keys carries weight, and it is spoken quietly. Whether this is Varek Sorn's true name, an operational alias, or a legend they have borrowed is not established in this adventure. The party may draw their own conclusions.
+
+The legend, as it is told: she does not move ordinary cargo. She moves the things that open other things. Sealed correspondence across closed borders. Documents that unlock succession lines. Route intelligence that opens passage into places people are not supposed to enter. She has been doing this for thirty years across the Flanaess, and she has never been caught and never, to any guild's knowledge, left a witness who could identify her to someone who would use that information against her.
+
+The legend ends the same way in every version. Someone who knows the name asks what she has not moved yet. The answer, among those who know enough to answer: the locked things under the smoking mountain. Those, they say, are next.
+
+**Recognition.** A character with guild connections, thieves' guild membership, or significant experience in Critwall's merchant circles may make an Intelligence check. On a success, they recognize the operational profile: the precision kills, the silk, the narrow sole, the evident ability to move through hostile terrain at night without detection, and the scope of what has been routed through this forest. They have heard the name without knowing the face. The name, if the check succeeds, is Sarra of the Keys.
+
+If the character says the name aloud in the outer chamber, she pauses, one beat, no more. *"That name is older than the person using it. I find it useful that people still know it."* She does not confirm or deny.
+
+---
+
+### The Encounter
+
+She does not initiate combat. She is assessing: who are these people, what did they find, and what do they intend to do with it. She is prepared for the possibility that the answer is an attack.
+
+**What she knows.** She has been in the Thicket for several days. She knows about the wagon crash. She knows the weapons were separated from the convoy. She has been feeling their movement since they left Coach B, and the weapons do not travel without being felt by someone attentive. If the party is carrying Wave, Whelm, or Blackrazor, she knows within one round of them entering the chamber.
+
+If the party is carrying all three: she is quiet for a moment before she speaks. That was not in the plan.
+
+**She does not speak first.** She waits to see what the party does.
+
+**Opening lines.** If the party asks who she is: *"That depends on what you've heard."* If the party demands answers without offering them first: she says nothing and lets the silence do its work. If the party shows a weapon openly: *"You found them. Both, or all three?"* If the party attacks without words: she acts on initiative.
+
+---
+
+### Outcomes
+
+**The deal.** She wants the weapons to go north. She has spent years making sure they would. If the party is going north, she has no reason to oppose them and several reasons to ensure they arrive. She can offer: the puzzle solution (she has already solved it and will confirm the steps plainly, not demonstrate), confirmation that a silk thread in the cache recess is still armed and how to disarm it without triggering the dust signal, and a verbal briefing on the bark map's most critical landmarks. In exchange she asks for one thing: do not name her to Elnara or to anyone connected to Sorel Vane's operation. She is not threatening. She simply does not want to be found by the people who are currently looking for her.
+
+She will not say what she intends when she reaches the mountain. She will not confirm her name. If pressed about the Revocation, she stops talking.
+
+She will say, if the deal is made and the party seems capable: *"The mountain is not a destination. It is a door. Someone needs to be on the other side of it with the right things in their hands. That is why the weapons matter. That is why they had to come this way."* She will not say what is on the other side.
+
+**The fight.** If combat begins, she acts on initiative. The first character through the entry passage who has not yet had time to orient is in the backstab position: the passage forces characters to emerge one at a time, and she has been sitting at the correct angle for hours. She poisons the largest physical threat first.
+
+Her Stoneskin absorbs the first several hits without damage and her Mirror Images consume the rest one by one. A party that has not encountered high-level magical protection will spend rounds attempting to understand why their weapons are not working. She does not explain. She watches. When they stop swinging and start thinking is when the conversation she wanted can actually happen.
+
+She does not fight to the death because the Contingency makes that impossible. If her defenses are stripped and the party lands significant damage, she drops to 10 hp and she is simply gone, mid-round, between one action and the next. If she chooses to leave before the Contingency becomes relevant, Dimension Door (4th-level, instant, no saving throw) drops her 360 feet away in the treeline before anyone can act on it.
+
+**The chase.** There is no chase. She does not run; she departs. The bark map and the cache remain. The party is left in an empty cave with the unsettled knowledge that they could not stop someone they may not fully understand. Whether they meet Varek Sorn again is not a question. They will. The answer is in the mountain.
+
+---
+
+### What She Will and Will Not Say
+
+She will confirm: the weapons belong at the mountain. She moved them toward it because capable hands need to carry them through what comes next. Sorel Vane was operating under direction from a figure claiming to be Keraptis who is not the historical Keraptis, and that figure has been hunting the weapons for a long time.
+
+She will not confirm: her name. Her allegiance. What the Revocation is or does. What waits at the mountain when the weapons arrive.
+
+**If the party presses her on personal motivation** (why does this matter to you, why have you done this for thirty years): she is quiet for one beat. Then: *"Someone I knew went into the dark before any of this started. I have been finishing what they would have done."* She does not say the name. She does not explain further. If pressed again, she changes the subject with the particular efficiency of someone who has decided they have already said too much. This is, in the context of who she is and what she has built over fifty years, as close to a confession as she will ever make to strangers.
+
+**If the party has the Revocation** (the lead-lined case from Area 2): her manner changes the moment she sees it. Not to alarm or greed, to the particular stillness of someone in the presence of a thing that costs them something. She does not reach for it. She does not ask where they found it. After a moment she says: *"Keep that safe."* Two words. She will not say more about it. A character who watches her carefully in that moment, and who later reads the history document the party may have found in Ringstown, will understand what those two words cost her.
 
 ---
 
@@ -99,7 +184,7 @@ A single thread of fine dark silk, matching the fabric torn on the hollow's thor
 
 If the thread is broken (by reaching into the cache without noticing it), the vial cracks against the stone edge and releases a pinch of white plume dust into the air of the outer chamber, enough to trigger saving throws for anyone present (save vs. Death/Poison or experience one round of disorienting euphoria, no mechanical combat effect, but the party will know they triggered something). More importantly: a thin thread of glittering white powder drifts out through the entry passage and disperses into the outside air in a brief visible puff.
 
-This signal is visible at range. The operative prepared it before leaving and will not see it, they are already north. But the false Keraptis is watching through any active dust in the area, and the pool at Area 4 is now either closed (if the party cleansed it) or active. **If the pool was cleansed:** the signal is simply a puff of dust that means nothing to anyone watching; the scrying connection is severed. **If the pool was not cleansed:** the false Keraptis sees it, and knows the cave has been found.
+This signal is visible at range. The operative prepared it before opening the cache and knows it is there. If she is present when the thread is broken, she will react with quiet assessment, not alarm: she knows exactly what the dust does. In a deal outcome, she will tell the party about the thread and how to disarm it cleanly before they reach into the cache. If she has fled or been killed before the party reaches the cache, the signal functions as written. The false Keraptis is watching through any active dust in the area, and the pool at Area 4 is now either closed (if the party cleansed it) or active. **If the pool was cleansed:** the signal is simply a puff of dust that means nothing to anyone watching; the scrying connection is severed. **If the pool was not cleansed:** the false Keraptis sees it, and knows the cave has been found.
 
 **Disabling it.** A Thief can cut the thread cleanly and remove the vial without triggering it, given one round of careful work. A careful non-Thief can attempt the same on a Dexterity check. The disarming requires both steps: cut the thread AND catch or immobilise the vial before it can crack against the stone. Cutting the thread alone ,  without first securing the vial ,  still triggers the signal, even if the cut was deliberate. Leaving the mechanism intact (carefully replacing the stone panel without breaking the thread) is also an option: it is never triggered, and whoever is watching for the signal receives no indication either way.
 
@@ -152,4 +237,10 @@ This is not the end of the story. The cave, the bark-map, the gnome's note, and 
 
 The plume above the mountain is visible from the cave mouth if the party looks north. At dusk, the face forms in the smoke. It does not look surprised to be found.
 
-**On Varek Sorn.** The silk-wearing operative who passed through this cave is Varek Sorn (full entry in the NPC section). They killed Kael Vorst at Area 3, directed Orn to his death at Area 6, repositioned assets across the Thicket, and exited north through the basalt foothills. The tracks leading from the cave mouth point northeast. They are at least a day ahead of any party completing this adventure sequentially. Whether the party encounters Varek Sorn in a sequel ,  and in what capacity ,  is left to the referee. Their allegiance is deliberately ambiguous; the party's evidence will support more than one interpretation, none of them complete.
+**On Varek Sorn.** The full encounter entry is in the Varek Sorn section above. The key referee note: she chose to wait at this cave rather than continue north, which is the single most important fact about her. A person who could leave and chose not to is making a statement. She wants to know who has been following the weapons through the forest. The party should feel, when they find her, that they have been expected.
+
+Her allegiance is not established in this adventure and should not be resolved here. The available evidence supports at least three interpretations, and she will not narrow it. Let the party argue about her on the road north.
+
+The canonical reading of this adventure is that Varek Sorn is Sarra: the woman named in the history document, Laski's younger sister, the factor from Critwall who lost the person she steered by to the thing in the dark water and then spent fifty years finishing what they would have done. The three aliases, the Critwall origin, the scope of what she has moved toward this mountain, the way she reacts to the Revocation, and the "someone I knew" admission all point the same direction. The module text keeps it ambiguous to give referees room, but the intention is that she is Sarra, and the history document was written to receive that confirmation when a referee is ready to give it.
+
+The Laski thread is not resolved in this adventure. It should not be. The party plants the seed at Area 7. The history document waters it. The confirmation belongs in SF2, underground, when the party meets her again and she finally says the name aloud. That is the scene this adventure is building toward.

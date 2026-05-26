@@ -26,16 +26,22 @@ Sorel ran the distribution leg of the dust network in the Thicket, dispatching c
 
 ## Varek Sorn, Deep Operative
 
-Varek Sorn preceded the party through the Thicket by days ,  killing Kael Vorst (Area 3) and Orn (Area 6), carving fresh K-marks at the logging camp treeline (Area 3), and caching route intelligence in the Riddle Cave (Area 7). They are not encountered in this adventure; they are a thread pointing forward to White Plume Mountain.
+Varek Sorn preceded the party through the Thicket, killing Kael Vorst (Area 3) and Orn (Area 6), carving fresh K-marks at the logging camp treeline (Area 3), and caching route intelligence in the Riddle Cave (Area 7). Unlike every other threat in this adventure, Varek Sorn has not left. They solved the puzzle at Area 7, opened the cache, and chose to stay. See the Area 7 encounter section for full details.
 
-**AC** 4; **Class** Thief 6; **hp** 24; **MV** 120 ft.  
-**Attacks** short sword or dagger; back-stab x3 damage  
-**Str** 11, **Int** 14, **Wis** 12, **Dex** 17, **Con** 13, **Cha** 13  
-**Saving Throws** Death/Poison 11, Wands 12, Paralyzation 11, Breath 14, Spells 13
+**AC** -2 (bracers of defense, Dexterity, ring of protection +1); **Class** Thief 12 / Mage 14; **hp** 55; **MV** 120 ft.  
+**THAC0** 11 (+2 short sword); **Attacks** +2 short sword (paralytic poison, save vs. Death/Poison or paralyzed 1d4 turns) or dagger (thrown, 30 ft./60 ft./120 ft.)  
+**Backstab** x4 damage when attacking from concealment or surprise  
+**Str** 12, **Int** 18, **Wis** 14, **Dex** 18, **Con** 13, **Cha** 15  
+**Saving Throws** Death/Poison 8, Wands 4, Paralyzation 8, Breath 10, Spells 7  
+**Thief Skills** Move Silently 97%, Hide in Shadows 95%, Find/Remove Traps 90%, Open Locks 99%, Hear Noise 55%  
+**Spells per day** 1st: 5, 2nd: 5, 3rd: 5, 4th: 4, 5th: 4, 6th: 3, 7th: 2  
+**Pre-cast at Area 7:** Stoneskin (1d4+8 hits absorbed), Mirror Image (8 images), Contingency (trigger: Teleport Without Error at 10 hp or fewer)
 
-*On allegiance:* Their full allegiance is not established in this adventure. They possessed operational knowledge of Sorel Vane's crew composition by name, and access to the weapon convoy routing. Whether they serve the false Keraptis directly, Elnara's network, or a third party is deliberately ambiguous ,  the available evidence supports more than one interpretation.
+*On allegiance:* Not established. They possessed operational knowledge of Sorel Vane's crew by name, access to the weapon convoy routing, and the means to open the Riddle Cave independently. Whether they serve the false Keraptis, Elnara's network, or a third interest is deliberately ambiguous. The available evidence supports more than one interpretation, none of them complete.
 
-*On back-stab:* Both confirmed kills (Kael Vorst and Orn) show a narrow blade wound to the back, delivered from behind. In any sequel encounter, they should not be found in a fair fight if they can avoid it.
+*On the name:* In certain guild circles and counting-rooms the name Sarra of the Keys carries significant weight. The canonical reading is that Varek Sorn is Sarra: Laski's younger sister, the factor from Critwall, who lost the person she steered by to the thing in the dark water and has spent fifty years finishing what they would have done. The module text keeps this ambiguous to give referees flexibility. The adventure is designed to reward a referee who confirms it, in SF2 or later, when the party meets her underground and she finally says the name aloud.
+
+*On back-stab:* Both confirmed kills in the Thicket were delivered from behind with a narrow blade. At Area 7, Varek Sorn is in a prepared position with their back to a wall they know and an entry passage that forces the party to enter one at a time. They did not take a fair fight in the Thicket and will not take one in the cave.
 
 ---
 
