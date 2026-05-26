@@ -4,3 +4,6 @@ prompts/
 # Claude Code
 .claude/
 
+# Session prep (local only)
+playtesting/
+
