@@ -1,6 +1,6 @@
 # Concluding the Adventure
 
-The adventure ends when the party returns to Ringstown, whether the owlbear is dead or calmed, the dust destroyed or secured, and regardless of how many of the seven areas they explored. Elnara pays the commission without ceremony and asks four questions in sequence, in this order, before saying anything else: *"Is the beast dealt with? Is the pool closed? What did you bring back? And the dust — what you found, what's left of it. What did you do?"* The fourth question is the one that costs her something to ask.
+The adventure ends when the party returns to Ringstown, whether the owlbear is dead or calmed, the dust destroyed or secured, and regardless of how many of the seven areas they explored. Elnara pays the commission without ceremony and asks four questions in sequence, in this order, before saying anything else: *"Is the beast dealt with? Is the pool closed? What did you bring back? And the dust ,  what you found, what's left of it. What did you do?"* The fourth question is the one that costs her something to ask.
 
 ---
 
@@ -14,15 +14,15 @@ Elnara's reactions to what the party returns with:
 
 **The dust destroyed:** She adds 20 gp to whatever she owes. She does not call this a bonus. She calls it *"the correct outcome."*
 
-**The dust cache surrendered to Elnara:** She confiscates it as evidence, pays nothing additional for it, and will not discuss what she intends to do with it. A party that negotiates *before* handing it over can extract an additional 10–25 gp depending on how many doses are present and how well they argue.
+**The dust cache surrendered to Elnara:** She confiscates it as evidence, pays nothing additional for it, and will not discuss what she intends to do with it. A party that negotiates *before* handing it over can extract an additional 10-25 gp depending on how many doses are present and how well they argue.
 
 **The dust cache kept or sold:** She does not know. If she finds out later, she will remember.
 
-**The Revocation returned:** She takes the lead-lined case with both hands. She does not open it. She holds it still for a moment — longer than she holds anything — and then sets it on her desk. She looks at the party. *"This is what all of it was for. The dust, the beast, the network in the Thicket. He was not testing a weapon. He was looking for this."* She adds 50 gp to the commission without negotiation. She does not explain what the tablet says. If the party presses her, she says: *"When the time comes to use it, you will understand why I did not tell you tonight. Some knowledge makes people targets."* She does not look away when she says it.
+**The Revocation returned:** She takes the lead-lined case with both hands. She does not open it. She holds it still for a moment ,  longer than she holds anything ,  and then sets it on her desk. She looks at the party. *"This is what all of it was for. The dust, the beast, the network in the Thicket. He was not testing a weapon. He was looking for this."* She adds 50 gp to the commission without negotiation. She does not explain what the tablet says. If the party presses her, she says: *"When the time comes to use it, you will understand why I did not tell you tonight. Some knowledge makes people targets."* She does not look away when she says it.
 
 **Blink's manifest naming "E. Forger" returned to her:** She takes it, looks at it for one moment, and places it in her ledger without comment. She adds 10 gp to the commission without explanation. If pressed, she says: *"For your discretion."* She does not confirm what the name means.
 
-**The weapon-convoy manifest returned to her:** The one with the routing note signed *E.* She takes it. She does not look at it for long. She places it face-down in her ledger. She adds 10 gp to the commission and says nothing further. The party should understand, if they are paying attention, that she already knows exactly what the document says, because she wrote part of it. If pressed directly — *"Was this your operation?"* — she says: *"Those were my people. The owlbear was not part of my plan. The plan failed."* A pause. *"What matters is what comes after."* She does not look away. This is the closest the adventure comes to Elnara being accountable for the situation. She authorized a trap that failed catastrophically. She has not stopped trying to salvage it.
+**The weapon-convoy manifest returned to her:** The one with the routing note signed *E.* She takes it. She does not look at it for long. She places it face-down in her ledger. She adds 10 gp to the commission and says nothing further. The party should understand, if they are paying attention, that she already knows exactly what the document says, because she wrote part of it. If pressed directly ,  *"Was this your operation?"* ,  she says: *"Those were my people. The owlbear was not part of my plan. The plan failed."* A pause. *"What matters is what comes after."* She does not look away. This is the closest the adventure comes to Elnara being accountable for the situation. She authorized a trap that failed catastrophically. She has not stopped trying to salvage it.
 
 **Whelm and/or Blackrazor returned:** She receives each weapon with the same flat expression, relief, carefully managed. She places them in the iron chest with Wave and locks it. She tells the party: *"These three objects are the reason this entire situation exists. Someone underground wants them back. As long as they are here, that someone has a reason to keep looking north."* She does not explain further. She is already thinking about what comes next.
 
@@ -30,13 +30,13 @@ Elnara's reactions to what the party returns with:
 
 She names a figure. The referee should set it high enough to mean something. She does not negotiate it down.
 
-**The coded ledger (Area 2) and/or Kael Vorst's identity:** If the party has connected Kael Vorst to the Inheritor's network and can describe the chain, Inheritor → Kael → Sorel → Mave/Dort → road, Elnara listens without interrupting. She adds 50 gp (the promised intelligence bonus) and says: *"That confirms what I suspected about the structure. It does not tell me who is at the top of it."* She means this literally.
+**The coded ledger (Area 2) and/or Kael Vorst's identity:** If the party has connected Kael Vorst to the Inheritor's network and can describe the chain, Inheritor -> Kael -> Sorel -> Mave/Dort -> road, Elnara listens without interrupting. She adds 50 gp (the promised intelligence bonus) and says: *"That confirms what I suspected about the structure. It does not tell me who is at the top of it."* She means this literally.
 
 **The obsidian disc (cracked, if the party used it at Area 5) from Area 3:** She examines it carefully, sets it down. *"Kael Vorst's. He was carrying a live one when we last tracked him, three months ago. This one is spent."* This is the first confirmation that Elnara has been monitoring the Inheritor's network for longer than this adventure suggests. If the party never used the disc at Area 5, it is intact and warm; she will not touch it, will ask the party to set it on the table, and her reaction shifts to the fresh disc entry below.
 
 **The fresh obsidian disc from Area 7:** She does not touch it. She asks the party to set it on the table. She looks at it from a distance. *"That came from the cache in the cave."* She does not ask how they know about the cave. She adds 25 gp and says: *"Do not use it. Do not let anyone else use it. I will arrange for it to be examined by someone who can tell me what door it opens."*
 
-**The bark-map from Area 7:** She spreads it on her desk and studies it for a full minute. She does not share what she sees in it. Then she produces her own field notebook and, without being asked, copies out the key landmarks in her precise handwriting — the forks, the iron-red spring, the entry vent. When she is done she slides the bark-map back across the desk to the party. *"You'll need this more than I will. I know the mountain."* She does not explain what she means by that. The party has the original.
+**The bark-map from Area 7:** She spreads it on her desk and studies it for a full minute. She does not share what she sees in it. Then she produces her own field notebook and, without being asked, copies out the key landmarks in her precise handwriting ,  the forks, the iron-red spring, the entry vent. When she is done she slides the bark-map back across the desk to the party. *"You'll need this more than I will. I know the mountain."* She does not explain what she means by that. The party has the original.
 
 **The gnome warning (Gnomish, from Area 7):** If the party cannot read it, she can. She reads it twice. Her expression does not change. She says: *"The third vent from the east."* Then: *"Someone has been inside and come back. Recently."* She looks at the party. *"That is more than I knew this morning."*
 
@@ -46,7 +46,7 @@ She names a figure. The referee should set it high enough to mean something. She
 
 The adventure resolves its immediate threats but does not close the larger story. These threads remain when the party leaves Ringstown:
 
-**If the cleansing rite was never performed:** The pool at Area 4 remains active (if the party never reached it) or remains unaddressed. The owlbear, if killed, died at the height of its contamination rather than at partial suppression — it fought harder and the party paid for it. Elnara pays the commission without comment. Old Brindle, if he learns the rite was never completed, says only: *"The pool will need closing. Someone will have to go back."* He does not say it accusingly. He says it because it is true.
+**If the cleansing rite was never performed:** The pool at Area 4 remains active (if the party never reached it) or remains unaddressed. The owlbear, if killed, died at the height of its contamination rather than at partial suppression ,  it fought harder and the party paid for it. Elnara pays the commission without comment. Old Brindle, if he learns the rite was never completed, says only: *"The pool will need closing. Someone will have to go back."* He does not say it accusingly. He says it because it is true.
 
 **The Inheritor is still active.** The false Keraptis was watching through the pool, through the K-marks, through the owlbear's borrowed eyes. The pool is closed. The owlbear is dealt with. The control apparatus in the Thicket is dismantled. But the source, the laboratory under the mountain, the manufactured dust, the copies of Keraptis fighting over a dead wizard's identity, is untouched. White Plume Mountain still smokes. The face still forms at dusk.
 
@@ -74,7 +74,11 @@ Wave does neither of these things. Wave is a sea weapon, aquatic in origin, alig
 
 **If the dust was preserved or sold:** The substance continues to exist in the world. Whoever holds it, Elnara, a Critwall buyer, the party, holds a temptation and a liability. The Inheritor will want it back or want to know who took it. Kelpwick, if he purchased doses from the party, will have questions about their provenance that he does not ask aloud for at least a week.
 
-**If party members used the dust repeatedly:** End with a quiet moment: a character notices they have scratched something into a surface without intending to. They look at what they carved. It is a K. They do not remember doing it. The voice, if there was ever a voice, is not there anymore. But the habit is.  **If the party explored all seven areas:** They leave Ringstown with the bark-map (if Elnara didn't take it), the gnome's navigation note, a fresh obsidian disc that opens a door somewhere underground, and the knowledge that the previous expedition that retrieved these three weapons did not make it home. They have a route. They have intelligence no one else has. They have weapons of legendary provenance. White Plume Mountain is north, and now they know how to go in rather than merely where.  ---
+**If party members used the dust repeatedly:** End with a quiet moment: a character notices they have scratched something into a surface without intending to. They look at what they carved. It is a K. They do not remember doing it. The voice, if there was ever a voice, is not there anymore. But the habit is.
+
+**If the party explored all seven areas:** They leave Ringstown with the bark-map (if Elnara didn't take it), the gnome's navigation note, a fresh obsidian disc that opens a door somewhere underground, and the knowledge that the previous expedition that retrieved these three weapons did not make it home. They have a route. They have intelligence no one else has. They have weapons of legendary provenance. White Plume Mountain is north, and now they know how to go in rather than merely where.
+
+---
 
 ## The Final Image
 
@@ -86,7 +90,7 @@ Wave does neither of these things. Wave is a sea weapon, aquatic in origin, alig
 >
 > She does not say *be careful* or *good luck.* She unlocks the iron chest, checks that all three weapons are accounted for, and locks it again.
 
-> The pool is dark. The hollow is quiet. At dusk, looking north from the south gate, the plume above the mountain catches the last light and holds a face for three or four seconds — the same face that was carved into the cave wall before anyone alive was born — and then the light shifts and it is only smoke again.
+> The pool is dark. The hollow is quiet. At dusk, looking north from the south gate, the plume above the mountain catches the last light and holds a face for three or four seconds ,  the same face that was carved into the cave wall before anyone alive was born ,  and then the light shifts and it is only smoke again.
 >
 > The cave map in your pack shows the first landmark north of the treeline. The distance, for the first time, feels measurable.
 

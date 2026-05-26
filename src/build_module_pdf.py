@@ -517,8 +517,8 @@ def cb_back(canvas, doc):
         "something much larger than a single forest.",
         "",
         "This module is designed as a compact single-session outdoor adventure and as a "
-        "prologue to White Plume Mountain. It includes six fully detailed pre-generated "
-        "characters, a complete wandering encounter table, and full sequel hooks.",
+        "prologue to White Plume Mountain. It includes a complete wandering encounter "
+        "table and full sequel hooks.",
     )
     dx = 0.52*inch;  dw = PW - 1.04*inch
     dy = iy - 0.22*inch
@@ -651,25 +651,6 @@ def build():
             story.append(CondPageBreak(1.6*inch))
         story.extend(parse_file(fp, S))
         story.append(Spacer(1, 8))
-
-    # --- Character pages ---
-    story.append(CondPageBreak(2*inch))
-    story.append(Paragraph('Pre-Generated Characters', S['h1']))
-    story.append(SecRule(CW, thick=1.0))
-    story.append(Spacer(1, 4))
-    story.append(Paragraph(
-        'Six pre-generated characters are provided below for convention and tournament use. '
-        'Each is built for OSRIC/AD&D 1st Edition at the appropriate level. '
-        'Players may choose freely; the party functions without any specific combination.',
-        S['body0']))
-    story.append(Spacer(1, 8))
-
-    for cf in sorted((BASE/'characters').glob('[0-9]*.md')):
-        if cf.name == '00_index.md':
-            continue
-        story.append(CondPageBreak(2*inch))
-        story.extend(parse_file(cf, S))
-        story.append(Spacer(1, 12))
 
     # --- Ringstown tactical map ---
     story.append(NextPageTemplate('map'))

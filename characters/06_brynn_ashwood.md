@@ -2,6 +2,8 @@
 
 *Grove-warden from the woodlands south of Ringstown. She came north when the birds stopped returning from the Thicket. She has been watching the forest die from the edges inward, one species at a time, and she is done watching.*
 
+**Alignment:** True Neutral
+
 ---
 
 ## Ability Scores
@@ -9,7 +11,7 @@
 | Ability | Score | Notes |
 |---------|-------|-------|
 | Strength | 10 |, |
-| Dexterity | 13 | −1 AC |
+| Dexterity | 13 | -1 AC |
 | Constitution | 15 | +1 hp/die |
 | Intelligence | 13 |, |
 | Wisdom | 16 | +2 magical defence bonus |
@@ -20,10 +22,13 @@
 ## Combat Statistics
 
 **Hit Points:** 38  
-**Armour Class:** 5 *(leather AC 8, shield −1, Dex −1, ring −1)*  
+**Armour Class:** 5 *(leather AC 8, shield -1, Dex -1, ring -1)*  
 **Movement:** 12"  
 **THAC0:** 18 *(base, before weapon bonuses)*  
 **Attacks per Round:** 1
+**Hit Die:** d8
+**Experience Points:** 27,500 / 35,001
+**Age:** 32
 
 **Weapons:**
 
@@ -55,7 +60,7 @@
 - Cure Light Wounds *(1d8 hp restored)*
 
 **2nd Level (3 slots):**
-- Barkskin *(improves target's AC by 1 per 4 caster levels; currently AC −1 to any touched creature for 4+ rounds)*
+- Barkskin *(improves target's AC by 1 per 4 caster levels; currently AC -1 to any touched creature for 4+ rounds)*
 - Slow Poison *(halts poison progression for 1 hour per level; does not cure, only delays)*
 - Charm Person or Mammal *(charm a humanoid or beast; will not work on targets whose will is already fully overridden)*
 
@@ -113,6 +118,12 @@ Brynn has been grove-warden for five years, managing the woodland commons south 
 | Animal Handling | Wisdom | 75% |
 | Weather Sense | Wisdom | 75% |
 | Survival | Intelligence | 65% |
+
+---
+
+## Languages
+
+Common, Druidic *(secret)*, Elvish, Gnomish, Goblin
 
 ---
 

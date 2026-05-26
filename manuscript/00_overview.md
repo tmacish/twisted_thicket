@@ -1,6 +1,6 @@
 # The Twisted Thicket
 
-*An OSRIC-compatible wilderness adventure for 4–6 player characters of levels 5–7*
+*An OSRIC-compatible wilderness adventure for 4-6 player characters of levels 5-7*
 
 ---
 

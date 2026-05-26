@@ -4,7 +4,7 @@ Roll 1d100. Rumours may be heard in Ringstown taverns, at the market, from trave
 
 **Truth key:** **T** = True. **F** = False. **~** = Partially true or misleading.
 
-**Referee note on Rumour #99:** There is no human spy in Ringstown. The truth behind this rumour is the scrying connection — the false Keraptis has been observing through the contaminated pool and dust traces in the area, not through a human informant. Players who investigate will find no agent. If pressed, the source of the rumour is likely Brother Aldric's documented case notes being read by the wrong person, or simply the paranoia that accumulates in a town that has watched three carriages not come back. The ~ rating reflects that *someone* is watching, but not in the way the rumour describes.
+**Referee note on Rumour #99:** There is no human spy in Ringstown. The truth behind this rumour is the scrying connection ,  the false Keraptis has been observing through the contaminated pool and dust traces in the area, not through a human informant. Players who investigate will find no agent. If pressed, the source of the rumour is likely Brother Aldric's documented case notes being read by the wrong person, or simply the paranoia that accumulates in a town that has watched three carriages not come back. The ~ rating reflects that *someone* is watching, but not in the way the rumour describes.
 
 | d% | Rumour | |
 |----|--------|-|

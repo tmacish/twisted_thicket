@@ -6,8 +6,8 @@
 
 | d8 | File | Character | Class | Level | Role |
 |----|------|-----------|-------|-------|------|
-| 1 | [01](01_calder_mourne.md) | Calder Mourne | Human Fighter | 7 | Heavy combat, party anchor |
-| 2 | [02](02_kaida_swift.md) | Kaida Swift | Human Thief | 7 | Locks, traps, scouting |
+| 1 | [01](01_kaida_swift.md) | Kaida Swift | Human Thief | 7 | Locks, traps, scouting |
+| 2 | [02](02_tasmin_reed.md) | Tasmin Reed | Half-Elf Bard | 6 | Lore, fascinate, history of the weapons |
 | 3 | [03](03_sable_crane.md) | Sable Crane | Human Ranger | 6 | Tracking, wilderness, ranged |
 | 4 | [04](04_tessaly_vorn.md) | Tessaly Vorn | Human Cleric | 6 | Healing, holy water, anti-contamination |
 | 5 | [05](05_mordechai_fletch.md) | Mordechai Fletch | Human Magic-User | 6 | Arcane investigation, combat support |
@@ -19,7 +19,7 @@
 
 ## Adventure-Specific Notes
 
-**Whelm** (Area 2) responds to Wulfric by instinct. Any character can carry it; only a dwarf gets the full mechanical benefit.
+**Whelm** (Area 2) responds to Wulfric by instinct. Any character can carry it; only a dwarf gets the full mechanical benefit. Tasmin's Legend Lore (30%) may also identify it if she handles it directly.
 
 **Aldwyn's detect evil** (at will, 60 ft) identifies the pool at Area 4 as evil before the party can see it, and reads the obsidian disc from Area 3 as "faintly, coldly evil, structured rather than passionate." His *Cure Disease* clears the dust compulsion on Pirrel if no antitoxin is available, and his aura grants companions +1 to saves during the cleansing rite.
 
@@ -29,7 +29,7 @@
 
 **Area 7's detection mechanism** is a Thief task. Kaida can disarm it cleanly; anyone else risks triggering it.
 
-**The owlbear** (Area 5) is AC 3 and HD 8+3. Calder's longsword +2 and Wulfric's combat bonuses are the primary damage sources. Brynn's *Hold Animal* will not work on a dust-controlled creature but Mordechai's *Slow* will.
+**The owlbear** (Area 5) is AC 3 and HD 8+3. Wulfric's combat bonuses and Potion of Giant Strength are the primary damage sources. Tasmin's *Faerie Fire* outlines the creature, granting the party +2 to hit. Brynn's *Hold Animal* will not work on a dust-controlled creature but Mordechai's *Slow* will.
 
 ---
 

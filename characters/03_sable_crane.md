@@ -2,6 +2,8 @@
 
 *Shield Lands game warden turned freelance guide. She has worked the Thicket's southern edge for three seasons. She knew something was wrong before the first carriage disappeared, the birds told her, in the way that birds stop telling you things when an area goes bad.*
 
+**Alignment:** Neutral Good
+
 ---
 
 ## Ability Scores
@@ -9,7 +11,7 @@
 | Ability | Score | Notes |
 |---------|-------|-------|
 | Strength | 15 | +0 to hit, +0 damage *(just below bonus threshold)* |
-| Dexterity | 17 | +2 missile to hit, −3 AC |
+| Dexterity | 17 | +2 missile to hit, -3 AC |
 | Constitution | 14 |, |
 | Intelligence | 12 |, |
 | Wisdom | 15 | +1 magical defence bonus |
@@ -20,10 +22,13 @@
 ## Combat Statistics
 
 **Hit Points:** 50  
-**Armour Class:** 3 *(studded leather AC 6, Dex −3)*  
+**Armour Class:** 3 *(studded leather AC 6, Dex -3)*  
 **Movement:** 12"  
 **THAC0:** 15 *(base, before weapon bonuses)*  
 **Attacks per Round:** 3/2 *(or 2 with bow)*
+**Hit Die:** d8
+**Experience Points:** 90,000 / 150,001
+**Age:** 31
 
 **Weapons:**
 
@@ -33,7 +38,7 @@
 | Shortsword | +0 | 1d6 | Off-hand; rangers may two-weapon fight |
 | Longbow | +2 | 1d8 | +2 Dex missile; range 7"/14"/21"; 24 arrows |
 
-**Two-Weapon Fighting:** Rangers suffer only −0/−2 to hit (primary/off-hand) rather than the standard penalty when wielding a second weapon.
+**Two-Weapon Fighting:** Rangers suffer only -0/-2 to hit (primary/off-hand) rather than the standard penalty when wielding a second weapon.
 
 **Favoured Enemies:** Humanoids (giants, goblinoids). +4 to hit and damage against these types.
 
@@ -98,6 +103,12 @@ Sable worked game warden patrol in the roadwoods south of the Thicket for four y
 | Herbalism | Intelligence | 50% |
 | Weather Sense | Wisdom | 70% |
 | Hunting | Wisdom | 70% |
+
+---
+
+## Languages
+
+Common, Elvish, Goblin, Orcish
 
 ---
 

@@ -22,8 +22,8 @@ The gatehouse beside the south gate is less a building than a fortified lean-to:
 
 **Referee Information:** Elnara's full statistics appear in the NPCs section. She is the party's primary quest-giver and the person holding the most accurate, if incomplete, picture of what is happening in the Thicket. The one crate that arrived intact from the session zero run, Wave, still sealed in its bladder-skin lining, is locked in an iron chest bolted to the floor in the back corner of the Post. Elnara will not discuss its contents, confirm its existence, or allow anyone near it. If the party recovered Whelm and Blackrazor from the Thicket and returns them to her, she accepts each weapon with the same flat expression and says nothing that constitutes an explanation.
 
-**Gate Wardens (×2)**  
-**AC** 6; **HD** 1+1; **hp** 7 each; **MV** 12"  
+**Gate Wardens (x2)**  
+**AC** 6; **HD** 1+1; **hp** 7 each; **MV** 120 ft.  
 **Attacks** spear or light crossbow; **Morale** 9  
 *Warden Posk* is a reliable veteran who trusts Elnara completely. *Warden Drev* is younger, nervous, and has been drinking since the third carriage came back in pieces.
 
@@ -38,7 +38,7 @@ The inn smells of tallow, wet wool, and something fried in old fat. It is warm, 
 ---
 
 **Marta Holvik, Innkeeper**  
-**AC** 9; **HD** 2; **hp** 11; **MV** 12"  
+**AC** 9; **HD** 2; **hp** 11; **MV** 120 ft.  
 **Attacks** ladle (as club) or sharp word  
 **Str** 11, **Int** 13, **Wis** 14, **Dex** 10, **Con** 12, **Cha** 13  
 Marta has seen three separate groups head into the Thicket this season and watched two of them not come back. She will not be rude about it, but she will ask for payment in advance.
@@ -46,18 +46,18 @@ Marta has seen three separate groups head into the Thicket this season and watch
 ---
 
 **Tomas Holvik, Barkeep** (Marta's nephew)  
-**AC** 9; **HD** 1; **hp** 5; **MV** 12"  
+**AC** 9; **HD** 1; **hp** 5; **MV** 120 ft.  
 **Attacks** fist or bottle (as club)  
 Tomas is cheerful, indiscreet, and has heard every conversation held at the bar for the past three years. He does not realise how much he knows.
 
 ---
 
 **Pell Dast, Logging Camp Foreman**
-**AC** 9; **HD** 1; **hp** 5; **MV** 12"
+**AC** 9; **HD** 1; **hp** 5; **MV** 120 ft.
 **Attacks** belt knife
-Pell arrived at the Plume's Rest four days ago, paid a week in advance, and has not left the common room except to sleep. He is not injured. He is very quiet and drinking steadily, which Marta permits because he is causing no trouble and he is paying. He has a ring of five keys on his belt — including the supply shed key from Area 3, which is why the lock was picked rather than opened: whoever emptied the shed could not ask Pell for the key without revealing themselves.
+Pell arrived at the Plume's Rest four days ago, paid a week in advance, and has not left the common room except to sleep. He is not injured. He is very quiet and drinking steadily, which Marta permits because he is causing no trouble and he is paying. He has a ring of five keys on his belt ,  including the supply shed key from Area 3, which is why the lock was picked rather than opened: whoever emptied the shed could not ask Pell for the key without revealing themselves.
 
-*Referee information:* Pell was the actual foreman of the logging camp. He recognised immediately that Kael Vorst was not a real replacement foreman — Kael knew nothing about logging and moved wrong for the work. When the owlbear hit, Pell ran south. He did not witness Kael's murder, but during the chaos he saw a figure coming from the north treeline, moving fast and deliberately, while everyone else was fleeing south. He does not know this is relevant. He is not sure he saw it clearly. A character who spends an hour in patient conversation with him — and buys two or three rounds of drinks — can coax this out. He describes the figure as wearing something dark, moving wrong for a logger or hunter, heading north into the Thicket while the beast was still audible. He cannot describe a face.
+*Referee information:* Pell was the actual foreman of the logging camp. He recognised immediately that Kael Vorst was not a real replacement foreman ,  Kael knew nothing about logging and moved wrong for the work. When the owlbear hit, Pell ran south. He did not witness Kael's murder, but during the chaos he saw a figure coming from the north treeline, moving fast and deliberately, while everyone else was fleeing south. He does not know this is relevant. He is not sure he saw it clearly. A character who spends an hour in patient conversation with him ,  and buys two or three rounds of drinks ,  can coax this out. He describes the figure as wearing something dark, moving wrong for a logger or hunter, heading north into the Thicket while the beast was still audible. He cannot describe a face.
 
 ---
 
@@ -70,7 +70,7 @@ Low ceiling, long benches, and a fire that someone clearly built too large and h
 ---
 
 **Grix "Scald" Fennow, Proprietor**  
-**AC** 7 (leather); **Fighter** 3; **hp** 19; **MV** 12"  
+**AC** 7 (leather); **Fighter** 3; **hp** 19; **MV** 120 ft.  
 **Attacks** fist or shortsword  
 **Str** 15, **Int** 10, **Wis** 9, **Dex** 13, **Con** 14, **Cha** 11  
 A broad, scarred man with a mercenary past he does not discuss. Grix knows Sorel Vane by name and will say so if pressed, for a price. He is not loyal to the smugglers, he simply knows things cost money.
@@ -78,18 +78,18 @@ A broad, scarred man with a mercenary past he does not discuss. Grix knows Sorel
 ---
 
 **Lielle, Barmaid**  
-**AC** 9; **HD** 1-1; **hp** 4; **MV** 12"  
+**AC** 9; **HD** 1-1; **hp** 4; **MV** 120 ft.  
 **Attacks** tray (as club)  
 Lielle has memorised every face that has come through the door this season and will describe any of them in exchange for a coin or a compliment, whichever seems more sincere.
 
 ---
 
 **Bren Fetch, Surviving Outrider**
-**AC** 9; **HD** 1-1; **hp** 4; **MV** 12"
+**AC** 9; **HD** 1-1; **hp** 4; **MV** 120 ft.
 **Attacks** knife
 One of Sorel Vane's six outriders from the Coach B run. He fled south after the wreck and has been at the Scalded Goblin for four days, spending down his emergency coin. He is not precisely guilty of anything the party can easily name but he is frightened and lying about why he is in Ringstown.
 
-*Referee information:* Bren can confirm the attack on Coach B — the owlbear, the speed of it, the dead left behind. He does not know what the cargo was (the outriders were not told specifics). He knows Sorel Vane's name and that Sorel had gone north to coordinate something. He does not know what happened to Mave or Dort. If the party reveals that Sorel is alive in the Thicket, Bren is visibly, quietly relieved and will tell them everything he knows. He knows nothing of real operational value but can confirm the coach's timing, the outrider count (six deployed, three dead at the wreck, one fled, two unaccounted for when he ran), and that someone else he does not recognise was already moving north through the Thicket in the same window.
+*Referee information:* Bren can confirm the attack on Coach B ,  the owlbear, the speed of it, the dead left behind. He does not know what the cargo was (the outriders were not told specifics). He knows Sorel Vane's name and that Sorel had gone north to coordinate something. He does not know what happened to Mave or Dort. If the party reveals that Sorel is alive in the Thicket, Bren is visibly, quietly relieved and will tell them everything he knows. He knows nothing of real operational value but can confirm the coach's timing, the outrider count (six deployed, three dead at the wreck, one fled, two unaccounted for when he ran), and that someone else he does not recognise was already moving north through the Thicket in the same window.
 
 ---
 
@@ -102,7 +102,7 @@ Quieter than the Goblin, with actual candles on the tables and a board menu writ
 ---
 
 **Aldeth Oaken, Proprietor**  
-**AC** 8 (DEX bonus); **Thief** 4; **hp** 14; **MV** 12"  
+**AC** 8 (DEX bonus); **Thief** 4; **hp** 14; **MV** 120 ft.  
 **Attacks** hand crossbow or dagger  
 **Str** 9, **Int** 14, **Wis** 13, **Dex** 16, **Con** 11, **Cha** 12  
 Aldeth knows Blink Tinderflip, knows roughly what he trades in, and is not pleased that his last job has brought armed strangers and a frenzied owlbear to her town. She will share what she knows about Blink only if convinced the party genuinely intends to resolve the situation rather than profit from it.
@@ -115,7 +115,7 @@ A narrow shopfront packed floor-to-beam with dried herbs, sealed jars, coils of 
 
 **Referee Information:** Mundane alchemical supplies, spell components (common), and antitoxins are available here. Kelpwick has a small supply of items that counteract the effects of white plume dust, he does not advertise this, but will mention it if the party describes dust-related symptoms.
 
-**Dust Antitoxin (3 doses available):** A bitter grey tincture. A creature that drinks one dose gains a +2 bonus to its next saving throw against dust backlash effects. When administered directly to a creature already in active backlash or compulsion — applied rather than swallowed — it clears the ongoing symptoms over 1d4 turns instead. 8 gp per dose.
+**Dust Antitoxin (3 doses available):** A bitter grey tincture. A creature that drinks one dose gains a +2 bonus to its next saving throw against dust backlash effects. When administered directly to a creature already in active backlash or compulsion ,  applied rather than swallowed ,  it clears the ongoing symptoms over 1d4 turns instead. 8 gp per dose.
 
 **The Clearance Bin.** Near the door, a battered wooden crate holds a collection of unlabelled vials, ceramic flasks, and wax-stoppered bottles, Kelpwick's miscellaneous inventory: things whose labels detached, batches whose notes he lost, experiments that did not go where intended, and stock acquired from other practitioners without full documentation. He sells them at 1 copper piece each. He does not identify them in advance. He does not offer refunds. He does maintain, with some dignity, that none of them will *definitely* kill anyone.
 
@@ -125,15 +125,15 @@ A narrow shopfront packed floor-to-beam with dried herbs, sealed jars, coils of 
 |----|-------------------|--------|
 | 1 | Clear, faintly honey-sweet | **Potion of healing.** Restores 1d6+1 hp. Kelpwick labelled this "uncertain efficacy" after a customer complained about the flavour; it works fine. |
 | 2 | Murky orange, no notable taste | **Potion of infravision.** Grants infravision 60 ft for 1 hour. The original label was in a language Kelpwick cannot read. |
-| 3 | Thick, colourless, faintly oily | **Oil of slipperiness (mislabelled as tonic).** Intended to be applied externally; when drunk, the drinker's grip becomes unreliable for 1 hour. All attack rolls and item manipulation (opening doors, using tools) suffer a −2 penalty. Applying it to a surface or object works normally. |
-| 4 | Grey particulate suspended in water, slightly fizzy | **Philtre of sneezing.** Save vs. poison or sneeze uncontrollably for 1d4 rounds: −2 to attack rolls, automatic failure on any attempt at silence or stealth. On a successful save, the drinker merely finds it repulsive. |
+| 3 | Thick, colourless, faintly oily | **Oil of slipperiness (mislabelled as tonic).** Intended to be applied externally; when drunk, the drinker's grip becomes unreliable for 1 hour. All attack rolls and item manipulation (opening doors, using tools) suffer a -2 penalty. Applying it to a surface or object works normally. |
+| 4 | Grey particulate suspended in water, slightly fizzy | **Philtre of sneezing.** Save vs. poison or sneeze uncontrollably for 1d4 rounds: -2 to attack rolls, automatic failure on any attempt at silence or stealth. On a successful save, the drinker merely finds it repulsive. |
 | 5 | Faintly iridescent, smells of bitter sweetness | **Failed dust counteragent.** Save vs. poison. *Failure:* gain the white plume dust combat bonuses (+2 attack, damage, saves) for 1 round, then roll immediately on the dust backlash table. *Success:* no effect except that the drinker smells strongly of bitter sweetness for 2d4 hours, animals react to them as a dust-exposed creature, and the owlbear (if still active) detects them by scent at double normal range. |
-| 6 | Dark red, no label, no smell, bottle slightly warm | **Unknown provenance.** The referee rolls 1d6 secretly: on 1–3, this is a genuine potion of heroism (Fighter-type characters gain +2 effective levels for 10 rounds; others gain +2 to hit and +5 temporary hp); on 4–6, it is a slow-acting poison (2d6 damage after 1d4 rounds, save vs. poison for half). Kelpwick does not know which it is. He has not been able to bring himself to test it. |
+| 6 | Dark red, no label, no smell, bottle slightly warm | **Unknown provenance.** The referee rolls 1d6 secretly: on 1-3, this is a genuine potion of heroism (Fighter-type characters gain +2 effective levels for 10 rounds; others gain +2 to hit and +5 temporary hp); on 4-6, it is a slow-acting poison (2d6 damage after 1d4 rounds, save vs. poison for half). Kelpwick does not know which it is. He has not been able to bring himself to test it. |
 
 ---
 
 **Kelpwick, Proprietor**  
-**AC** 7; **Gnome Illusionist** 3; **hp** 9; **MV** 9"  
+**AC** 7; **Gnome Illusionist** 3; **hp** 9; **MV** 90 ft.  
 **Attacks** staff or dagger  
 **Str** 8, **Int** 15, **Wis** 11, **Dex** 13, **Con** 12, **Cha** 10  
 **Spells (typical):** *colour spray*, *detect illusion*, *change self*  
@@ -150,7 +150,7 @@ Anvil, bellows, and a dwarf who has been working iron for longer than most of th
 ---
 
 **Durven Ash, Blacksmith**  
-**AC** 6 (natural toughness and leather apron); **Dwarf Fighter** 4; **hp** 28; **MV** 9"  
+**AC** 6 (natural toughness and leather apron); **Dwarf Fighter** 4; **hp** 28; **MV** 90 ft.  
 **Attacks** hammer (as warhammer) +1 to hit and damage (Str)  
 **Str** 17, **Int** 10, **Wis** 12, **Dex** 9, **Con** 16, **Cha** 8  
 Durven has noticed that three separate caravans have brought wagons with the same type of bracket damage, the kind left by a very large claw. He has said nothing because no one asked. He will tell the party if they bring him work first.
@@ -158,7 +158,7 @@ Durven has noticed that three separate caravans have brought wagons with the sam
 ---
 
 **Pip, Apprentice**  
-**AC** 9; **HD** 1-1; **hp** 3; **MV** 12"  
+**AC** 9; **HD** 1-1; **hp** 3; **MV** 120 ft.  
 A teenage boy with burns up both arms and an admirable lack of self-pity. Will run errands for the party for a copper piece each.
 
 ---
@@ -172,7 +172,7 @@ Bessa Kolm's smithy specialises in wagon ironwork, horseshoes, and the sort of h
 ---
 
 **Bessa Kolm, Smith**  
-**AC** 7; **Fighter** 2; **hp** 14; **MV** 12"  
+**AC** 7; **Fighter** 2; **hp** 14; **MV** 120 ft.  
 **Attacks** smith's hammer (as warhammer)  
 **Str** 14, **Int** 12, **Wis** 13, **Dex** 11, **Con** 13, **Cha** 14  
 Practical, direct, and pleased to have customers who aren't asking her about Durven. She will rebuild the party's destroyed carriage at cost if they bring her the salvageable frame pieces from the road.
@@ -188,7 +188,7 @@ The name is a joke, or was originally: Orryn Vault named it after the mountain b
 ---
 
 **Orryn Vault, Proprietor**  
-**AC** 5 (chain shirt kept from service); **Fighter** 5; **hp** 30; **MV** 12"  
+**AC** 5 (chain shirt kept from service); **Fighter** 5; **hp** 30; **MV** 120 ft.  
 **Attacks** longsword or shortbow  
 **Str** 13, **Int** 11, **Wis** 14, **Dex** 12, **Con** 13, **Cha** 11  
 A retired Shield Lands sergeant with a long memory and a dislike of unanswered questions. Orryn knows the names of every expedition that has headed toward White Plume Mountain in the past decade and roughly what became of each of them. He will share this freely; he thinks people going there should know what they are walking into.
@@ -204,17 +204,17 @@ Old Brindle, the hermit druid from the Thicket, once kept horses here before the
 ---
 
 **Yenna Brindle, Stablemaster**  
-**AC** 8; **HD** 2; **hp** 10; **MV** 12"  
+**AC** 8; **HD** 2; **hp** 10; **MV** 120 ft.  
 **Attacks** pitchfork (as spear) or knife  
 **Str** 12, **Int** 11, **Wis** 13, **Dex** 12, **Con** 11, **Cha** 13  
 Yenna is worried about her uncle. She has not seen him in three weeks, which is not unusual, but two weeks ago one of his marker-cords came back tied to a horse that had clearly run a long way. She will ask the party to look for him.
 
-*Referee information:* Old Brindle has deliberately withheld from Yenna that the false Keraptis knows her name — he does not want to alarm her. If the party mentions this, she will go very quiet and ask how they know. She will not panic, but she will not forget. Old Brindle has been protecting her; the party has just handed her information he chose to keep.
+*Referee information:* Old Brindle has deliberately withheld from Yenna that the false Keraptis knows her name ,  he does not want to alarm her. If the party mentions this, she will go very quiet and ask how they know. She will not panic, but she will not forget. Old Brindle has been protecting her; the party has just handed her information he chose to keep.
 
 ---
 
 **Tok, Ostler**  
-**AC** 9; **HD** 1-1; **hp** 4; **MV** 12"  
+**AC** 9; **HD** 1-1; **hp** 4; **MV** 120 ft.  
 An elderly man of few words who is very good with horses and indifferent to people.
 
 ---
@@ -228,10 +228,10 @@ A modest stone building with a heavy door and a cudgel hung above the altar, St.
 ---
 
 **Brother Aldric, Curate**  
-**AC** 8 (DEX); **Cleric** 3; **hp** 15; **MV** 12"  
+**AC** 8 (DEX); **Cleric** 3; **hp** 15; **MV** 120 ft.  
 **Attacks** mace  
 **Str** 10, **Int** 12, **Wis** 15, **Dex** 13, **Con** 11, **Cha** 14  
-**Spells (typical):** *cure light wounds* ×2, *detect evil*  
+**Spells (typical):** *cure light wounds* x2, *detect evil*  
 Young, earnest, and increasingly frightened by what he has been seeing in the infirmary: the dust backlash symptoms, the scrawled K-marks, the survivors who mutter in a voice that does not sound entirely their own. He will ask the party to describe anything strange they encounter and will take detailed notes.
 
 ---
@@ -245,7 +245,7 @@ The town's garrison: a squat two-storey building with a holding cell in the base
 ---
 
 **Coss Halven, Warden-Captain**  
-**AC** 4 (chain and shield); **Fighter** 4; **hp** 24; **MV** 9"  
+**AC** 4 (chain and shield); **Fighter** 4; **hp** 24; **MV** 90 ft.  
 **Attacks** longsword or heavy crossbow  
 **Str** 13, **Int** 11, **Wis** 12, **Dex** 11, **Con** 13, **Cha** 12  
 Steady, loyal, and not particularly imaginative. Halven knows something is badly wrong and is relieved every time someone else agrees to do something about it. He will not obstruct the party unless they commit an obvious crime.
@@ -259,7 +259,7 @@ An old stone well in a small open square, slightly off the main ring road. The s
 **Referee Information:** The well is Ringstown's primary gossip node. Any party member who spends 10 minutes here will hear one rumour of the referee's choice without any roll required. The Flan carvings, if examined by someone with relevant knowledge, suggest this site was considered a boundary marker between settled land and the old forest.
 
 **Hedda, the Well-Keeper**  
-**AC** 9; **HD** 1-1; **hp** 3; **MV** 12"  
+**AC** 9; **HD** 1-1; **hp** 3; **MV** 120 ft.  
 An ancient woman who charges a copper piece per bucket and has an opinion on every person in Ringstown. She has noticed that the water has tasted faintly of minerals for the past month and suspects it is connected to whatever is happening to the north. She is right, though the connection is indirect.
 
 ---
@@ -273,7 +273,7 @@ A semi-permanent collection of stalls occupying the eastern edge of Ring Square 
 ---
 
 **Fennick Oyle, Market Master**  
-**AC** 9; **HD** 1; **hp** 5; **MV** 12"  
+**AC** 9; **HD** 1; **hp** 5; **MV** 120 ft.  
 **Attacks** short sword (rarely drawn)  
 **Str** 9, **Int** 13, **Wis** 11, **Dex** 11, **Con** 10, **Cha** 13  
 An officious, record-keeping man who is more useful than he appears. His trade ledgers document a sharp drop in trapper activity beginning six weeks ago, roughly coinciding with the first carriage disappearances. He will share this if asked about trade patterns.
@@ -291,7 +291,7 @@ A shop that smells considerably better than Thingizzard's, filled with hanging b
 ---
 
 **Senna of the Long Road, Herbalist**  
-**AC** 8 (DEX); **Druid** 2; **hp** 10; **MV** 12"  
+**AC** 8 (DEX); **Druid** 2; **hp** 10; **MV** 120 ft.  
 **Attacks** sickle or sling  
 **Str** 9, **Int** 13, **Wis** 15, **Dex** 13, **Con** 12, **Cha** 14  
 **Spells (typical):** *entangle*, *faerie fire*  
@@ -308,7 +308,7 @@ A large, draughty building at the edge of the town ring, used to store trade goo
 ---
 
 **Brod Chandler, Warehousekeeper**  
-**AC** 9; **HD** 1; **hp** 5; **MV** 12"  
+**AC** 9; **HD** 1; **hp** 5; **MV** 120 ft.  
 **Attacks** heavy key ring (as club) or loud objection  
 **Str** 10, **Int** 9, **Wis** 8, **Dex** 9, **Con** 11, **Cha** 10  
 Brod is lazy, mildly corrupt, and visibly anxious about the crates in bay four. He will accept a 5 gp bribe to look the other way while the party examines them. He will accept a 2 gp bribe to describe who dropped them off. He will accept a 1 gp bribe just to stop talking about how he cannot possibly allow anyone into the warehouse.

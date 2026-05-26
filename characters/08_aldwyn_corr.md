@@ -2,6 +2,8 @@
 
 *Knight-errant of the Order of the Radiant Shield, a holy order sworn to Heironeous operating out of the central Shield Lands. He was dispatched north when the Order received reports of a substance producing compulsive behaviour around a specific divine name. Heironeous does not share names with dead wizards. Aldwyn is here to establish the distinction.*
 
+**Alignment:** Lawful Good
+
 ---
 
 ## Ability Scores
@@ -20,10 +22,14 @@
 ## Combat Statistics
 
 **Hit Points:** 50
-**Armour Class:** 1 *(plate mail +1 AC 1, shield −1)*
+**Armour Class:** 1 *(plate mail +1 AC 1, shield -1)*
 **Movement:** 6" *(encumbered in plate)*
 **THAC0:** 15 *(base, before weapon bonuses)*
 **Attacks per Round:** 3/2
+**Hit Die:** d10
+**Experience Points:** 65,000 / 95,001
+**Age:** 25
+**Deity:** Heironeous
 
 **Weapons:**
 
@@ -53,7 +59,7 @@
 
 **Lay on Hands:** Once per day, Aldwyn may heal by touch. Heals 2 hp per paladin level, currently **12 hp total per day**, divided among as many recipients and as many touches as he chooses. He cannot use this on himself.
 
-**Aura of Protection:** All evil creatures within 10 ft of Aldwyn suffer −1 to attack rolls against any target. All companions within 10 ft receive +1 to saving throws against magic cast by evil sources. This aura is always active and requires no action.
+**Aura of Protection:** All evil creatures within 10 ft of Aldwyn suffer -1 to attack rolls against any target. All companions within 10 ft receive +1 to saving throws against magic cast by evil sources. This aura is always active and requires no action.
 
 **Immune to Disease:** Aldwyn cannot contract natural or magical disease.
 
@@ -103,6 +109,12 @@ Aldwyn has been with the Order of the Radiant Shield for eleven years, having en
 | Religion | Wisdom | 70% |
 | Heraldry | Intelligence | 55% |
 | Healing | Wisdom | 60% |
+
+---
+
+## Languages
+
+Common, Old Oeridian, Elvish
 
 ---
 

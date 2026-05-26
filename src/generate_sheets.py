@@ -6,7 +6,6 @@ Authentic 1980s TSR aesthetic: parchment, fantasy fonts, red-and-brown borders.
 Usage:
     python3 generate_sheets.py           # all characters -> sheets/
     python3 generate_sheets.py 01        # single character (by number prefix)
-    python3 generate_sheets.py --all     # all + combined PDF
 
 Requires: pip install reportlab
 Fonts downloaded automatically to fonts/ on first run.
@@ -126,8 +125,8 @@ def parse_character(md_path: Path) -> dict:
     text = md_path.read_text(encoding="utf-8")
     char: dict = {"source": md_path.name}
 
-    # H1: "Name — Race Class Level"
-    m = re.match(r'#\s+(.+?)\s+[—–]\s+(.+?)\s+(\d+)', text)
+    # H1: "Name, Race Class Level"
+    m = re.match(r'#\s+(.+?),\s+(.+?)\s+(\d+)', text)
     if m:
         char["name"]  = m.group(1).strip()
         raw_cls       = m.group(2).strip()
@@ -223,6 +222,32 @@ def parse_character(md_path: Path) -> dict:
             if skill and skill.lower() not in ("skill", "---"):
                 char["thief_skills"].append({"name": skill, "total": total})
 
+    # Class-specific abilities (Bard, Ranger, Druid, Paladin, Cleric, Dwarf, Half-Elf)
+    char["class_abilities"] = []
+    for sec_m in re.finditer(
+        r'## ((?:Bard|Ranger|Druid|Paladin|Cleric|Dwarf|Half.?Elf)\s+Abilities)\n\n(.+?)(?=\n---|\n## |\Z)',
+        text, re.DOTALL
+    ):
+        title = sec_m.group(1).strip()
+        sec_text = sec_m.group(2)
+        items = []
+        # Bullet format: "- **Name:** desc"
+        for item in re.finditer(r'^-\s*\*\*([^*\n]+?):\*\*\s*(.+)', sec_text, re.MULTILINE):
+            desc = _clean(item.group(2)).strip()
+            if desc:
+                items.append({"name": item.group(1).strip(), "desc": desc})
+        # Paragraph format: "**Name:** desc\n\n**Next:** ..." (fallback if no bullets found)
+        if not items:
+            for item in re.finditer(
+                r'\*\*([^*\n]+?):\*\*\s*(.+?)(?=\n\n\*\*|\Z)', sec_text, re.DOTALL
+            ):
+                desc = re.sub(r'\n', ' ', _clean(item.group(2)))
+                desc = re.sub(r'\s+', ' ', desc).strip()
+                if desc:
+                    items.append({"name": item.group(1).strip(), "desc": desc})
+        if items:
+            char["class_abilities"].append({"title": title, "items": items})
+
     # Spells memorised
     char["spells"] = {}
     sec = re.search(r'## Spells Memoris[e|é]d\n\n(.+?)(?=\n---|\n## )', text, re.DOTALL)
@@ -239,6 +264,26 @@ def parse_character(md_path: Path) -> dict:
                 if m2:
                     names.append(m2.group(1).strip().rstrip(':').strip())
             char["spells"][lv] = {"slots": slots, "spells": names}
+
+    # Turning Undead table (Cleric / Paladin)
+    char["turning_undead"] = []
+    sec = re.search(r'## Turning Undead\n\n(.+?)(?=\n---|\n## |\Z)', text, re.DOTALL)
+    if sec:
+        for row in re.finditer(
+            r'^\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|',
+            sec.group(1), re.MULTILINE
+        ):
+            name   = row.group(1).strip()
+            result = row.group(2).strip()
+            if name and 'Undead' not in name and '---' not in name:
+                char["turning_undead"].append({"type": name, "result": result})
+
+    # Languages
+    char["languages"] = []
+    sec = re.search(r'## Languages\n\n(.+?)(?=\n---|\n## |\Z)', text, re.DOTALL)
+    if sec:
+        raw = _clean(sec.group(1).strip())
+        char["languages"] = [l.strip() for l in re.split(r',', raw) if l.strip()]
 
     # Equipment block
     sec = re.search(r'## Equipment\n\n(.+?)(?=\n---|\n## )', text, re.DOTALL)
@@ -406,12 +451,19 @@ def render_abilities(c, char, x, y, w) -> float:
 
     ry = y - bar_h - 2 - 10
 
+    # Fixed left-justified columns: name | score box | notes
+    NAME_W   = 80   # ability name column width
+    SCORE_X  = x + NAME_W + 8   # left edge of score box
+    SCORE_W  = 24
+    NOTES_X  = SCORE_X + SCORE_W + 6
+    NOTES_W  = w - (NOTES_X - x) - 6
+
     # Column headers
     _sf(c, C_INK)
     c.setFont(head(), 6.5)
     c.drawString(x + 5, ry, "Ability")
-    c.drawCentredString(x + w - 32, ry, "Score")
-    c.drawString(x + w - 18, ry, "Notes")
+    c.drawCentredString(SCORE_X + SCORE_W / 2, ry, "Score")
+    c.drawString(NOTES_X, ry, "Notes")
     _ss(c, C_RULE);  c.setLineWidth(0.5)
     c.line(x + 4, ry - 2, x + w - 4, ry - 2)
     ry -= ROW_H - 2
@@ -424,21 +476,20 @@ def render_abilities(c, char, x, y, w) -> float:
 
         _sf(c, C_INK)
         c.setFont(body(), 8)
-        c.drawString(x + 5, ry, ab_row["name"])
+        c.drawString(x + 5, ry, clip_str(ab_row["name"], c, body(), 8, NAME_W - 4))
 
         # Score in a small box
-        score_x = x + w - 50
         _ss(c, C_BORDER);  c.setLineWidth(0.6)
-        c.rect(score_x, ry - 2, 22, 11, stroke=1, fill=0)
+        c.rect(SCORE_X, ry - 2, SCORE_W, 11, stroke=1, fill=0)
         _sf(c, C_HEADING)
         c.setFont(head(), 8.5)
-        c.drawCentredString(score_x + 11, ry + 1, ab_row["score"])
+        c.drawCentredString(SCORE_X + SCORE_W / 2, ry + 1, ab_row["score"])
 
-        # Notes (abbreviated)
-        notes = clip_str(ab_row["notes"], c, italic(), 6.5, w - 56)
+        # Notes left-justified after score box
+        notes = clip_str(ab_row["notes"], c, italic(), 6.5, NOTES_W)
         _sf(c, C_INK)
         c.setFont(italic(), 6.5)
-        c.drawString(x + w - 24, ry, notes)
+        c.drawString(NOTES_X, ry, notes)
 
         ry -= ROW_H
 
@@ -548,11 +599,16 @@ def render_proficiencies(c, char, x, y, w) -> float:
 
 def render_combat(c, char, x, y, w) -> float:
     FIELDS = [
-        ("Hit Points",        "HP"),
-        ("Armour Class",      "AC"),
-        ("THAC0",             "THAC0"),
-        ("Attacks per Round", "Attacks/Rd"),
-        ("Movement",          "Movement"),
+        ("Hit Points",          "HP"),
+        ("Hit Die",             "Hit Die"),
+        ("Armour Class",        "AC"),
+        ("THAC0",               "THAC0"),
+        ("Attacks per Round",   "Attacks/Rd"),
+        ("Backstab",            "Backstab"),
+        ("Movement",            "Movement"),
+        ("Experience Points",   "XP"),
+        ("Age",                 "Age"),
+        ("Deity",               "Deity"),
     ]
     ROW_H = 14
     rows = [(label, char["combat"].get(key, "")) for key, label in FIELDS
@@ -650,13 +706,103 @@ def render_thief_skills(c, char, x, y, w) -> float:
     return y - box_h - 5
 
 
+def render_class_abilities(c, char, x, y, w, max_h=180) -> float:
+    sections = char.get("class_abilities", [])
+    if not sections:
+        return y
+    FONT_SZ = 6.5
+    LEADING  = 8.5
+    bar_h    = 13
+
+    # content entries: ("section"|"name"|"body", text)
+    content: list[tuple[str, str]] = []
+    for sec in sections:
+        if len(sections) > 1:
+            content.append(("section", sec["title"]))
+        for item in sec["items"]:
+            content.append(("name", item["name"] + ":"))
+            for line in word_wrap(item["desc"], c, body(), FONT_SZ, w - 18):
+                content.append(("body", "  " + line))
+            content.append(("body", ""))
+
+    box_h = min(bar_h + 16 + len(content) * LEADING + 4, max_h)
+    draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
+    bar_label = "Abilities" if len(sections) > 1 else sections[0]["title"]
+    section_bar(c, bar_label, x, y - bar_h - 2, w, font_size=7)
+
+    ry = y - bar_h - 2 - 10
+    stop_y = y - box_h + LEADING
+
+    for kind, line in content:
+        if ry < stop_y:
+            break
+        if kind == "body" and not line.strip():
+            ry -= LEADING * 0.35
+            continue
+        if kind == "section":
+            _sf(c, C_BORDER)
+            c.setFont(head(), 6)
+            c.drawString(x + 5, ry, line.upper())
+            ry -= LEADING
+        elif kind == "name":
+            _sf(c, C_HEADING)
+            c.setFont(head(), FONT_SZ)
+            c.drawString(x + 5, ry, line)
+            ry -= LEADING
+        else:
+            _sf(c, C_INK)
+            c.setFont(body(), FONT_SZ)
+            c.drawString(x + 5, ry, line)
+            ry -= LEADING
+
+    return y - box_h - 5
+
+
+def render_turning_undead(c, char, x, y, w) -> float:
+    rows = char.get("turning_undead", [])
+    if not rows:
+        return y
+    ROW_H = 11
+    bar_h = 13
+    mid = (len(rows) + 1) // 2
+    col_rows = max(mid, len(rows) - mid)
+    box_h = bar_h + 14 + ROW_H * (col_rows + 1) + 4
+    draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
+    section_bar(c, "Turn Undead", x, y - bar_h - 2, w, font_size=7)
+
+    ry      = y - bar_h - 2 - 10
+    half_w  = (w - 12) / 2
+    res_off = half_w * 0.70
+
+    _sf(c, C_INK);  c.setFont(head(), 5.5)
+    c.drawString(x + 5,                           ry, "UNDEAD TYPE")
+    c.drawString(x + 5 + res_off,                 ry, "RESULT")
+    c.drawString(x + 5 + half_w + 6,              ry, "UNDEAD TYPE")
+    c.drawString(x + 5 + half_w + 6 + res_off,    ry, "RESULT")
+    _ss(c, C_RULE);  c.setLineWidth(0.4)
+    c.line(x + 4, ry - 2, x + w - 4, ry - 2)
+    ry -= ROW_H
+
+    for i, entry in enumerate(rows):
+        col = 0 if i < mid else 1
+        row = i if col == 0 else i - mid
+        rx      = x + 5 + col * (half_w + 6)
+        ry_row  = ry - row * ROW_H
+        _sf(c, C_INK);  c.setFont(body(), 7)
+        c.drawString(rx, ry_row, entry["type"])
+        _sf(c, C_HEADING);  c.setFont(head(), 7.5)
+        c.drawString(rx + res_off, ry_row, entry["result"])
+
+    return y - box_h - 5
+
+
 def render_spells(c, char, x, y, w) -> float:
     spells = char.get("spells", {})
     if not spells:
         return y
     LEVEL_H = 12
     SPELL_H = 10
-    bar_h = 10
+    bar_h = 13
     total_lines = sum(1 + len(d["spells"]) for d in spells.values())
     box_h = bar_h + 16 + LEVEL_H * len(spells) + SPELL_H * total_lines + 8
     box_h = min(box_h, 200)
@@ -665,7 +811,7 @@ def render_spells(c, char, x, y, w) -> float:
     section_bar(c, "Spells Memorised", x, y - bar_h - 2, w, font_size=7)
 
     ORDINALS = {1:"1st", 2:"2nd", 3:"3rd", 4:"4th", 5:"5th", 6:"6th"}
-    ry = y - bar_h - 2 - 10
+    ry = y - bar_h - 2 - LEVEL_H - 2
     stop_y = y - box_h + SPELL_H
 
     for lv, data in sorted(spells.items()):
@@ -676,29 +822,205 @@ def render_spells(c, char, x, y, w) -> float:
         c.rect(x + 4, ry - 1, w - 8, LEVEL_H, fill=1, stroke=0)
         _sf(c, C_PARCHMENT);  c.setFont(head(), 6.5)
         c.drawString(x + 8, ry + 3, lv_label)
-        ry -= LEVEL_H
+        ry -= LEVEL_H + 2
 
         spell_list = data["spells"]
         mid = (len(spell_list) + 1) // 2
         col_w = (w - 14) / 2
+        col_top = ry
 
         for i, name in enumerate(spell_list):
             if ry < stop_y:
                 break
             col = 0 if i < mid else 1
             row = i if col == 0 else i - mid
-            if col == 1 and row == 0:
-                ry_base = ry + mid * SPELL_H
-            else:
-                ry_base = ry
-
             rx = x + 6 + col * col_w
-            r_y = ry_base - (row if col == 0 else row) * SPELL_H
+            r_y = col_top - row * SPELL_H
             _sf(c, C_INK);  c.setFont(body(), 7)
             c.drawString(rx, r_y, "- " + name)
 
         rows_drawn = max(mid, len(spell_list) - mid)
-        ry -= rows_drawn * SPELL_H + 3
+        ry = col_top - rows_drawn * SPELL_H - 3
+
+    return y - box_h - 5
+
+
+def render_languages(c, char, x, y, w) -> float:
+    langs = char.get("languages", [])
+    if not langs:
+        return y
+    FONT_SZ = 6.5
+    LEADING  = 8.5
+    bar_h    = 13
+    text = ", ".join(langs)
+    lines = word_wrap(text, c, body(), FONT_SZ, w - 10)
+    box_h = bar_h + 14 + len(lines) * LEADING + 4
+    draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
+    section_bar(c, "Languages", x, y - bar_h - 2, w, font_size=7)
+    ry = y - bar_h - 2 - 10
+    for line in lines:
+        _sf(c, C_INK)
+        c.setFont(body(), FONT_SZ)
+        c.drawString(x + 5, ry, line)
+        ry -= LEADING
+    return y - box_h - 5
+
+
+# ---------------------------------------------------------------------------
+# Ability modifiers quick-reference
+# ---------------------------------------------------------------------------
+
+def _dex_reaction_adj(score: int) -> int:
+    if score <= 3:  return -3
+    if score == 4:  return -2
+    if score == 5:  return -1
+    if score <= 15: return 0
+    if score == 16: return +1
+    if score == 17: return +2
+    if score == 18: return +2
+    return +3
+
+
+def extract_key_mods(char: dict) -> list[tuple[str, str]]:
+    """Pull combat-relevant modifiers from ability notes for at-a-glance display."""
+    result = []
+    for ab in char.get("abilities", []):
+        name  = ab["name"]
+        score = ab.get("score", "10")
+        notes = _clean(ab.get("notes", ""))
+
+        if name == "Strength":
+            parts = []
+            m = re.search(r'([+-]\d+)\s+to\s+hit', notes, re.I)
+            if m and int(m.group(1)) != 0: parts.append(f"Hit {m.group(1)}")
+            m = re.search(r'([+-]\d+)\s+damage', notes, re.I)
+            if m and int(m.group(1)) != 0: parts.append(f"Dmg {m.group(1)}")
+            if parts: result.append(("STR", "  ".join(parts)))
+
+        elif name == "Dexterity":
+            try:   dex = int(str(score).split('/')[0])
+            except ValueError: dex = 10
+            parts = []
+            react = _dex_reaction_adj(dex)
+            if react != 0: parts.append(f"Init {react:+d}")
+            m = re.search(r'([+-]\d+)\s+missile', notes, re.I)
+            if m: parts.append(f"Miss {m.group(1)}")
+            m = re.search(r'([+-]\d+)\s*AC|AC\s*([+-]\d+)', notes, re.I)
+            if m:
+                val = m.group(1) or m.group(2)
+                parts.append(f"AC {val}")
+            if parts: result.append(("DEX", "  ".join(parts)))
+
+        elif name == "Constitution":
+            m = re.search(r'([+-]\d+)\s+hp', notes, re.I)
+            if m: result.append(("CON", f"HP/die {m.group(1)}"))
+
+        elif name == "Wisdom":
+            m = re.search(r'([+-]\d+)\s+magical\s+def', notes, re.I)
+            if m: result.append(("WIS", f"Magic Def {m.group(1)}"))
+
+        elif name == "Charisma":
+            m = re.search(r'[Rr]eaction\s*([+-]\d+)|([+-]\d+)\s*[Rr]eaction', notes)
+            if m:
+                val = m.group(1) or m.group(2)
+                result.append(("CHA", f"Reaction {val}"))
+
+    return result
+
+
+def render_ability_mods(c, char, x, y, w) -> float:
+    mods = extract_key_mods(char)
+    if not mods:
+        return y
+    FONT_SZ = 7
+    LEADING = 10
+    bar_h   = 13
+    LABEL_W = 28
+    box_h = bar_h + 12 + len(mods) * LEADING + 4
+    draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
+    section_bar(c, "Ability Modifiers", x, y - bar_h - 2, w, font_size=7)
+    ry = y - bar_h - 2 - 10
+    for ability, mod_text in mods:
+        _sf(c, C_HEADING);  c.setFont(head(), FONT_SZ)
+        c.drawString(x + 5, ry, ability + ":")
+        _sf(c, C_INK);  c.setFont(body(), FONT_SZ)
+        c.drawString(x + 5 + LABEL_W, ry, mod_text)
+        ry -= LEADING
+    return y - box_h - 5
+
+
+def render_current_hp(c, char, x, y, w) -> float:
+    max_hp = char.get("combat", {}).get("Hit Points", "")
+    bar_h  = 13
+    cell_h = 18
+    box_h  = bar_h + 10 + cell_h + 14
+    draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
+    section_bar(c, "Current Hit Points", x, y - bar_h - 2, w, font_size=7)
+
+    ry   = y - bar_h - 2 - 8
+    half = (w - 14) / 2
+
+    for i, (label, val) in enumerate([("MAX", max_hp), ("CURRENT", "")]):
+        cell_x = x + 5 + i * (half + 2)
+        _ss(c, C_BORDER);  c.setLineWidth(0.8)
+        c.rect(cell_x, ry - cell_h, half - 2, cell_h, stroke=1, fill=0)
+        if val:
+            _sf(c, C_HEADING);  c.setFont(head(), 11)
+            c.drawCentredString(cell_x + (half - 2) / 2, ry - 13, val)
+        _sf(c, C_INK);  c.setFont(body(), 5.5)
+        c.drawCentredString(cell_x + (half - 2) / 2, ry - cell_h - 6, label)
+
+    return y - box_h - 5
+
+
+def render_thac0_matrix(c, char, x, y, w) -> float:
+    thac0_raw = char.get("combat", {}).get("THAC0", "")
+    m_t   = re.match(r'(\d+)', str(thac0_raw))
+    thac0 = int(m_t.group(1)) if m_t else None
+
+    ACS     = list(range(10, -6, -1))   # AC 10 down to -5
+    n       = len(ACS)
+    bar_h   = 13
+    row_h   = 12
+    label_w = 34
+    col_w   = (w - label_w - 10) / n
+    box_h   = bar_h + 8 + row_h * 2 + 8
+
+    draw_border(c, x, y - box_h, w, box_h, lw=1, gap=2)
+    lbl = "To Hit Matrix" + (f"  (THAC0 {thac0})" if thac0 else "")
+    section_bar(c, lbl, x, y - bar_h - 2, w, font_size=7)
+
+    ry      = y - bar_h - 2 - 5
+    cell_x0 = x + label_w
+
+    # Row 1: AC header cells (shaded)
+    _sf(c, C_INK);  c.setFont(head(), 6)
+    c.drawString(x + 5, ry + 2, "AC")
+    for i, ac in enumerate(ACS):
+        cx = cell_x0 + i * col_w
+        _sf(c, C_PARCHMENT_SHD)
+        c.rect(cx, ry - 2, col_w - 1, row_h, fill=1, stroke=0)
+        _ss(c, C_RULE);  c.setLineWidth(0.3)
+        c.rect(cx, ry - 2, col_w - 1, row_h, stroke=1, fill=0)
+        _sf(c, C_BORDER);  c.setFont(head(), 6)
+        c.drawCentredString(cx + (col_w - 1) / 2, ry + 2, str(ac))
+    ry -= row_h + 3
+
+    # Row 2: roll needed
+    _sf(c, C_INK);  c.setFont(head(), 6)
+    c.drawString(x + 5, ry, "Need")
+    for i, ac in enumerate(ACS):
+        cx = cell_x0 + i * col_w
+        if thac0 is not None:
+            roll = thac0 - ac
+            if roll <= 1:   roll_str, hard = "1",   False
+            elif roll > 20: roll_str, hard = "--",  True
+            else:           roll_str, hard = str(roll), roll >= 17
+        else:
+            roll_str, hard = "", False
+        _sf(c, C_HEADING if hard else C_INK)
+        c.setFont(head() if hard else body(), 6.5)
+        c.drawCentredString(cx + (col_w - 1) / 2, ry, roll_str)
 
     return y - box_h - 5
 
@@ -843,7 +1165,7 @@ def draw_sheet(char: dict, c):
     draw_diamond(c, LX + IW - 28, name_y - 13, half=5)
 
     _sf(c, C_INK)
-    c.setFont(bl(), 20)
+    c.setFont(head(), 20)
     c.drawCentredString(W / 2, name_y - 20, char.get("name", "Unknown"))
 
     # ---- INFO BAR: class / race / level / alignment ----
@@ -862,8 +1184,9 @@ def draw_sheet(char: dict, c):
     current_y = info_y - 13 - 6
 
     # ---- TWO-COLUMN LAYOUT ----
-    LEFT_W = 165
-    RIGHT_W = IW - LEFT_W - 14 - 8
+    col_w  = (IW - 14 - 8) // 2
+    LEFT_W = col_w
+    RIGHT_W = col_w
     RIGHT_X = LX + LEFT_W + 8
 
     left_y  = current_y
@@ -875,16 +1198,31 @@ def draw_sheet(char: dict, c):
     if char.get("proficiencies", {}).get("weapon") or char.get("proficiencies", {}).get("nonweapon"):
         left_y -= 3
         left_y = render_proficiencies(c, char, LX, left_y, LEFT_W)
+    if char.get("languages"):
+        left_y -= 3
+        left_y = render_languages(c, char, LX, left_y, LEFT_W)
 
     right_y = render_combat(c, char, RIGHT_X,   right_y, RIGHT_W)
+    right_y -= 3
+    right_y = render_current_hp(c, char, RIGHT_X, right_y, RIGHT_W)
+    if extract_key_mods(char):
+        right_y -= 3
+        right_y = render_ability_mods(c, char, RIGHT_X, right_y, RIGHT_W)
     right_y -= 3
     right_y = render_weapons(c, char, RIGHT_X,  right_y, RIGHT_W)
     if char.get("thief_skills"):
         right_y -= 3
         right_y = render_thief_skills(c, char, RIGHT_X, right_y, RIGHT_W)
+    if char.get("turning_undead"):
+        right_y -= 3
+        right_y = render_turning_undead(c, char, RIGHT_X, right_y, RIGHT_W)
 
     bottom_y = min(left_y, right_y) - 6
     FULL_W = IW - 14
+
+    # THAC0 matrix (full width)
+    bottom_y = render_thac0_matrix(c, char, LX, bottom_y, FULL_W)
+    bottom_y -= 4
 
     # Spells (casters only)
     if char.get("spells"):
@@ -1027,7 +1365,7 @@ def render_bg_section(c, heading: str, content: str,
     return y - box_h - 5
 
 
-def draw_background_sheet(bg: dict, c) -> None:
+def draw_background_sheet(bg: dict, c, char: dict | None = None) -> None:
     from reportlab.lib.pagesizes import LETTER
     W, H = LETTER
 
@@ -1067,7 +1405,7 @@ def draw_background_sheet(bg: dict, c) -> None:
     draw_diamond(c, LX + 14,       name_y - 13, half=5)
     draw_diamond(c, LX + IW - 28,  name_y - 13, half=5)
     _sf(c, C_INK)
-    c.setFont(bl(), 20)
+    c.setFont(head(), 20)
     c.drawCentredString(W / 2, name_y - 20, bg.get("name", ""))
 
     # ---- SUBTITLE BAR ----
@@ -1126,12 +1464,78 @@ def draw_background_sheet(bg: dict, c) -> None:
         )
         current_y -= 4
 
+    # ---- CLASS ABILITIES (Bard, Ranger, etc.) ----
+    if char and char.get("class_abilities") and current_y > BOTTOM + 30:
+        remaining = current_y - BOTTOM - 16
+        current_y = render_class_abilities(c, char, LX, current_y, FULL_W, max_h=remaining)
+
     # ---- FOOTER ----
     _sf(c, C_BORDER)
     c.setFont(body(), 5.5)
     c.drawCentredString(W / 2, MARGIN + 4,
         f"The Twisted Thicket  *  {bg.get('name', '')}  *  Player Background")
 
+
+# ---------------------------------------------------------------------------
+# Blank character sheet template
+# ---------------------------------------------------------------------------
+
+BLANK_CHAR: dict = {
+    "name":        "___________________________",
+    "class":       "_________________",
+    "race":        "___________",
+    "level":       "__",
+    "alignment":   "___________________",
+    "description": "",
+    "abilities": [
+        {"name": "Strength",     "score": "__", "notes": ""},
+        {"name": "Dexterity",    "score": "__", "notes": ""},
+        {"name": "Constitution", "score": "__", "notes": ""},
+        {"name": "Intelligence", "score": "__", "notes": ""},
+        {"name": "Wisdom",       "score": "__", "notes": ""},
+        {"name": "Charisma",     "score": "__", "notes": ""},
+    ],
+    "combat": {
+        "Hit Points":        "___",
+        "Hit Die":           "___",
+        "Armour Class":      "___",
+        "THAC0":             "___",
+        "Attacks per Round": "___",
+        "Movement":          "___",
+        "Experience Points": "________ / ________",
+        "Age":               "___",
+    },
+    "weapons": [
+        {"name": "____________________", "to_hit": "___", "damage": "______", "notes": ""},
+        {"name": "____________________", "to_hit": "___", "damage": "______", "notes": ""},
+        {"name": "____________________", "to_hit": "___", "damage": "______", "notes": ""},
+    ],
+    "saves": [
+        {"name": "Death / Poison", "target": "__"},
+        {"name": "Wands",          "target": "__"},
+        {"name": "Paralyzation",   "target": "__"},
+        {"name": "Breath Weapon",  "target": "__"},
+        {"name": "Spells",         "target": "__"},
+    ],
+    "thief_skills":    [],
+    "class_abilities": [],
+    "turning_undead":  [],
+    "spells":          {},
+    "languages":       [],
+    "equipment":       "Worn: _______________________________________________\nPack: _______________________________________________\nCoin: _______________________",
+    "magic_items":     [],
+    "personality":     [],
+    "proficiencies": {
+        "weapon":    ["_____________", "_____________", "_____________"],
+        "nonweapon": [
+            {"name": "____________________", "ability": "_______", "check": "___%"},
+            {"name": "____________________", "ability": "_______", "check": "___%"},
+            {"name": "____________________", "ability": "_______", "check": "___%"},
+            {"name": "____________________", "ability": "_______", "check": "___%"},
+        ],
+        "bonus": "",
+    },
+}
 
 # ---------------------------------------------------------------------------
 # Entry point
@@ -1156,7 +1560,7 @@ def generate_sheet(md_path: Path, out_dir: Path) -> None:
     bg_path = _find_background(md_path.stem)
     if bg_path:
         c.showPage()
-        draw_background_sheet(parse_background(bg_path), c)
+        draw_background_sheet(parse_background(bg_path), c, char=char)
 
     c.save()
     print(f"  {out.name}"  + (" (+background)" if bg_path else ""))
@@ -1183,8 +1587,19 @@ def main():
     OUTPUT_DIR.mkdir(exist_ok=True)
 
     # Determine targets
-    do_combined = "--all" in sys.argv
-    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    args = sys.argv[1:]
+
+    if args and args[0] == "blank":
+        from reportlab.pdfgen import canvas as cv
+        from reportlab.lib.pagesizes import LETTER
+        out = OUTPUT_DIR / "blank_sheet.pdf"
+        c = cv.Canvas(str(out), pagesize=LETTER)
+        c.setTitle("Blank Character Sheet - The Twisted Thicket")
+        draw_sheet(BLANK_CHAR, c)
+        c.save()
+        print(f"\n  {out.name}")
+        print(f"\nSheets saved to {OUTPUT_DIR}/")
+        return
 
     if args:
         prefix = args[0].zfill(2)
@@ -1200,26 +1615,6 @@ def main():
     print(f"\nGenerating {len(files)} sheet(s)...")
     for f in files:
         generate_sheet(f, OUTPUT_DIR)
-
-    if do_combined or len(files) > 1:
-        from reportlab.pdfgen import canvas as cv
-        from reportlab.lib.pagesizes import LETTER
-        combined = OUTPUT_DIR / "all_characters.pdf"
-        c = cv.Canvas(str(combined), pagesize=LETTER)
-        c.setTitle("The Twisted Thicket — All Characters")
-        page_count = 0
-        for f in files:
-            if page_count > 0:
-                c.showPage()
-            draw_sheet(parse_character(f), c)
-            page_count += 1
-            bg_path = _find_background(f.stem)
-            if bg_path:
-                c.showPage()
-                draw_background_sheet(parse_background(bg_path), c)
-                page_count += 1
-        c.save()
-        print(f"  all_characters.pdf  ({page_count} pages, backgrounds included)")
 
     print(f"\nSheets saved to {OUTPUT_DIR}/")
 

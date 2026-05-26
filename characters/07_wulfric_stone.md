@@ -1,6 +1,8 @@
 # Wulfric Stone, Dwarf Fighter 5
 
-*Former Shield Lands garrison soldier, retired to mercenary work after fifteen years of wall-watching. He came north because Calder asked him to and because the pay was acceptable. He did not expect to feel a warhammer calling to him from somewhere in a ravine. He has reconsidered his career choices.*
+*Former Shield Lands garrison soldier, retired to mercenary work after fifteen years of wall-watching. He came north because the pay was acceptable and the contract was clear. He did not expect to feel a warhammer calling to him from somewhere in a ravine. He has reconsidered his career choices.*
+
+**Alignment:** Lawful Neutral
 
 ---
 
@@ -13,17 +15,20 @@
 | Constitution | 17 | +3 hp/die *(warrior)*; +3 to saves vs. magic and poison |
 | Intelligence | 10 |, |
 | Wisdom | 11 |, |
-| Charisma | 8 | Reaction −1 *(dwarves' reputation does not help)* |
+| Charisma | 8 | Reaction -1 *(dwarves' reputation does not help)* |
 
 ---
 
 ## Combat Statistics
 
 **Hit Points:** 60  
-**Armour Class:** 1 *(plate mail AC 3, shield −1, ring −1)*  
+**Armour Class:** 1 *(plate mail AC 3, shield -1, ring -1)*  
 **Movement:** 6" *(encumbered in plate; dwarves already move 6")*  
 **THAC0:** 16 *(base, before weapon bonuses)*  
 **Attacks per Round:** 3/2
+**Hit Die:** d10
+**Experience Points:** 20,000 / 32,501
+**Age:** 67
 
 **Weapons:**
 
@@ -76,7 +81,7 @@
 
 ## Background
 
-Wulfric spent fifteen years as a garrison fighter in the Shield Lands, eventually reaching the rank of sergeant-equivalent before a border reduction left his unit dissolved and him moderately well-paid and purposeless. He has been working with Calder on and off for three years, security contracts, escort work, one memorable siege he never discusses. When Calder said *"Elnara has a job in the north, involving a large and dangerous animal,"* Wulfric said *"Reasonable"* and packed his plate mail.
+Wulfric spent fifteen years as a garrison fighter in the Shield Lands, eventually reaching the rank of sergeant-equivalent before a border reduction left his unit dissolved and him moderately well-paid and purposeless. He has been working security and escort contracts since, mostly in the northern Shield Lands. When a posted contract arrived through the garrison network, work for Ranger-Captain Elnara, large and dangerous animal, northern road, Wulfric read it, noted the pay, and packed his plate mail.
 
 He does not have opinions about legendary weapons, Keraptis, or the politics of White Plume Mountain. He has opinions about whether something is trying to kill him and what to do about it. These opinions are usually correct and sometimes sufficient.
 
@@ -94,6 +99,12 @@ He does not have opinions about legendary weapons, Keraptis, or the politics of 
 | Endurance | Constitution | 95% |
 | Mining | Wisdom | 40% |
 | Appraising | Intelligence | 50% |
+
+---
+
+## Languages
+
+Common, Dwarven, Orcish, Goblin
 
 ---
 

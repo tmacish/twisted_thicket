@@ -1,0 +1,173 @@
+# The Long War Below and the Breaking at Blackmoor: A True Account.
+
+*A true history of Oerth and of those who saved it.*
+
+---
+
+## Preface, in the Hand of the Scribe
+
+These are not my words. They are the words of my master, Silvanius, bard and loremaster, who took me as his apprentice when I was three and who died this past winter with most of a sentence still in him. I am Tasmin Reed, half-elven, and I am the one who held the pen.
+
+He dictated this over the final season of his life, in the afternoons, when the pain let him think. Some days he managed three pages. Some days he managed three words and then sat looking at the window. I wrote down what he said and not what I thought he meant to say, because he made me swear to that early, when his hand was still steady enough to grip my wrist.
+
+He was honest with me about one thing before he began, and asked me to be honest with you. He was not there for all of it. He joined the company on the Lendore Isles after they had already gone down into the Underdark and come back up fewer than they went, and he walked into the Battle of Blackmoor at their side, and he stayed with them through the long years after. But the earliest part of this history, the early wars and the year in the dark and the death that broke them, he had only as they told it to him, across years, in firelight and in cups and in the long unguarded talk of people who have decided to trust you. So the first sections of this account are not what Silvanius saw. They are what the others said, many voices remembered by one. Where the voices disagreed, he has told me so.
+
+He had one instruction above all others. *Do not let them sing it the easy way.* The world has a song about all of this, and the song is wrong in the places that matter, and Silvanius spent the back half of his long life learning exactly where. He was a bard. He could have made a fortune singing the easy version. He refused, and it cost him, and he never once complained about the cost, which is the most bardlike thing about him and the thing I am least able to imitate.
+
+Where I have added anything of my own, I have set it inside brackets, so you will know the lorekeeper's voice from the apprentice's. He did not finish. The last section is built from his notes and from my memory of how he spoke. I have done my best. I am young, and I will carry this a long time, and I would rather carry it heavy and true than light and false.
+
+He told me everything he had. I know all of it now, and so will you, as far as he knew it, which was very far and not quite to the end.
+
+*Tasmin Reed*
+
+---
+
+## I. The Company of Hero's Hill
+
+I will start with the people, because the histories never do, and that is their first lie.
+
+I am a bard, and I have sung a great many men into the ground, a few of whom deserved finer verses than I had the skill to give them. One of them deserved rather worse, and got it. His name was Lyrion, a priest of such towering and well-rehearsed piety that he could make grace over a bowl of soup feel like the founding of a temple. I had the honor of singing at his funeral, after a purple worm swallowed him whole in the Temple of Death and, finding him not to its liking, returned his holy symbol and very little else. I have since given it a better name for any song that would carry it: the Crawling Violet. The name scans. I gave him three verses. He would have wanted forty, all of them about himself. I have never been prouder of a song nor more certain the subject would have loathed it. I tell you this early because a man should say plainly what kind of bard he is, so you know how much salt to keep within reach. I will mention Lyrion again. The gods rest his enormous and immortal opinion of himself.
+
+But this is not Lyrion's song, and it is not mine. I came to the company of Hero's Hill late. By the time I found them, on the Lendore Isles in the Spindrift Sea, they had already been down into the Underdark and come back up changed, and the thing that broke them had already happened, and I would spend the rest of my life hearing about it secondhand from people who could not stop telling it and could not bear to. I knew the survivors as well as a young chronicler ever knows the heroes he attaches himself to. The one they loved most, I never met. Hold on to that. It matters to everything that follows.
+
+They were led, insofar as they were led at all, by two who should never have balanced and did. One was a desert-born wizard named Aprif Al-Hazim, a sworn man of a quiet society called the Purple Order, whose whole creed was: *we work in the darkness, so that others may tread fearlessly in the light.* The other was a half-elf, Bryce Winter, a warrior-prince out of Glaroring who fought in two styles at once, the elven that is all economy and grace and the human that is all heat and appetite, as though he could not choose which half of his blood to honor and so honored both at the expense of his enemies. Aprif thought three moves ahead and flinched. Bryce did not think and did not flinch and was somehow usually right. Between the cold mind and the bright blade the company kept its shape.
+
+There were others, and I will not crowd the page with all of them. Two dwarven priests, cousins, who argued like weather and fought like the end of the world, one of whom, Cadarn, carried a faith so fierce and so genuine that it made poor Lyrion's look like the painted stage-prop it always was. A haunted rogue with a knife he could not throw away. A commander who stayed behind to make the keep a fortress. And a gnome named Blink, who picked locks and pockets with equal cheer and would, in the long years after, turn that cheer into a shipping fortune. They were good. I want that written plainly, because what comes after is so heavy that people forget the thing it crushed was good.
+
+And there was Laski, who was already gone before I arrived, and whom I will nonetheless spend the next pages trying to give you, because they gave Laski to me and it is the only way I can pay them back.
+
+[He stopped here the first day. Just the name. We did not get further until the following afternoon.]
+
+## II. Laski
+
+I never met Laski. I want that on the page before anything else I say, because everything I am about to tell you I learned from people who could not tell it without stopping partway through and starting again.
+
+The histories that bother at all call Laski "a fighter of considerable reputation," and that is true and it is nothing, it is a coin-rubbing of a person. Laski was the one the others steered by. Not the leader. The center. The one whose approval the rogue wanted and would not ask for, the one the bright prince showed off for, the one the wizard trusted to be brave so that he did not have to be. Laski had the family height and the family stubbornness and an absolute, congenital inability to leave a wrong thing alone, which is a quality that makes a person beloved and gets that person killed, often in the same week.
+
+Everyone in that company loved Laski, and it was not one love, it was several. The wizard loved Laski the way a careful man loves the brave friend who lets him stay careful. Bryce loved Laski the way the reckless love the one fixed thing they can steer by. And I, who came too late to love Laski at all, loved the shape Laski had left in them, the Laski-sized space each of them carried and kept stepping around, which is a smaller and sadder thing to love and was the only thing I was given to love.
+
+They told me Laski had a younger sister back in Critwall, six years behind and already running factor work before she was properly grown. Laski spoke of her, they said, with the particular pride of an older sibling who has decided, privately, that the younger one is the better of the two. I never met her either. I have wondered, since, what became of her. A person does not lose a sibling like Laski and simply continue. But I am ahead of myself, and that is a different grief, and I did not live to learn its shape.
+
+[I have left that last line as he said it. He said *I did not live to learn its shape* while he was still alive. I did not correct him. I think he knew he would not, and was speaking from where he already half stood.]
+
+## III. The Long War Below
+
+What follows now, I had only from the survivors. I was not there. I set it down the way they gave it to me, and where I can, I tell you when they disagreed.
+
+The early wars are the part the songs get nearly right, so I will be brief. They fought devil-cults and broke a slaver ring and cleansed a fallen dwarven hold of something that wore the bodies of the people it had eaten. Good work, hard work, the ordinary heroism that fills the first verses.
+
+Then they went down into the Underdark, and stayed a year, which is eleven months longer than anyone should, and they did not all come back up.
+
+It was down there, in the dark, that Aprif learned the lesson that would organize the rest of his very long life: that some evils do not die when you kill them, because they were never properly alive, and you cannot kill a thing in the place where it actually lives. He learned it the way men learn the things that change them, which is to say he learned it on a day that cost him what he could not pay.
+
+[He stopped again here. The next section is the one he returned to most often, and rewrote in his head a dozen times, and could never get to sit the way he wanted. I have set down the version he settled on at the last.]
+
+## IV. The Death
+
+I was not there. I need you to hold that, because of all the things in this history it is the thing I would most have wished to witness and the thing I am most glad I did not. What follows is assembled from every account I could reach across forty years, most of which did not agree, all of which agreed on two things.
+
+Deep in the Underdark, the company came to the edge of a brilliant pool in a bizarre temple. Yet the kind of still cold water that has not seen the sky since the world was poured. And something came up out of it. Not an enemy they had marched to fight. Not a devil, not a drow, not anything the maps named. Something with claws, massive and fast, that surfaced where Laski happened to be standing, and that should not have been there, in that water, at that depth, at all. It did not single Laski out. I have come to understand, late and from a direction I will explain, that it did not single anyone out, that it was not the kind of thing that singles out, that Laski was simply the first warm thing it reached.
+
+The two things every account agrees on are these.
+
+There was no time. Every witness, unprompted, used those words or words exactly like them. There was no time.
+
+And Laski was not afraid. Every witness said this too, and none of them were asked. They volunteered it, each of them, as though it were the only part worth carrying away. Whatever came up out of that black water, it found a person who did not flinch from it, and that is the last true thing anyone can say about Laski, and it is a good last thing, and it is not nearly enough.
+
+They buried what there was to bury, far underground, and they carried the rest of it up into the light, and the company was never quite the company again. They went on, because that is what such companies do. Months later they stood at Blackmoor and broke the reaching of the half-god Iuz, and they won, and bought the world the decades it has been spending ever since without thanking anyone. That part I saw with my own eyes, for I had joined them by then. Aprif, the man who spent half his fighting life lying stunned on the floor while braver people bled, was vital to the breaking of it. The songs want a sword for that day, and Aprif was never a sword. He was a mind that would not look away.
+
+But the thing that organized the rest of his deathless life did not happen at Blackmoor, where I stood beside him. It happened months before, at that black water in the dark, where I did not. A clawed thing came up out of the deep and killed the best of them in a heartbeat. To everyone present it looked like one more horror of a place made of them.
+
+Aprif did not think it was one more horror. He never said so out loud, not for thirty years, because as I would learn, the saying of it was the dangerous part.
+
+## V. Aprif, and the Thread
+
+After Blackmoor the company scattered, and the short-lived among them did the merciful thing and died in beds. But Aprif did not die. This is the part I find hardest to write plainly, because I knew him, I sat across fires from him for years, and what he did frightened me even as I understood why.
+
+Somewhere in his decades of study Aprif found a way to outlast his span. I do not know how. He would not tell me, and the once or twice he came near it his face did a thing I did not like and did not press. The Purple Order keeps arts that are not for the daylight, and Aprif had given his whole self to the Order's work, and I believe he decided, coldly and on purpose, that the problem in front of him was larger than one human life and that he would therefore stop being held to one. He made himself nearly deathless so that he would have the centuries the thing might require. I have never been able to decide whether that was the bravest act of his life or the most frightened, and I have come to think it was both, which is how it usually is with the things that matter.
+
+What Aprif did with his stolen centuries was pull on a thread. The thread was Laski.
+
+He could not let the death be senseless. The careful man, the theorist, took the one death in all their wars that made no sense, the clawed thing that surfaced from black water where nothing should have been, and he followed it backward. Where had it come from. What water connects to what deeper water. What is below the deeper water. He traced it for years, the way only a man with too much time and one unbearable question will trace a thing, and the trail ran downward, always downward, from that black water to deeper water, and in his last years it drew him west and north to the foot of a mountain that smokes. He did not tell me what he expected to find there. I am not sure he knew. I am sure that what he found was worth seven years of silence.
+
+He told me things, over the years, in letters. Not plainly. Never plainly. Aprif wrote the way a man writes who assumes his letters will be read by people he did not address them to, which is to say he wrote in hints and half-turns and sentences that stopped a word early. Those letters are the spine of what little I can say with confidence, and I have kept them, and Tasmin has them now. They do not give me the whole picture. They give me the edges of one. I will lay the edges down for you, side by side, and I will tell you honestly where the middle is missing.
+
+## VI. The Mountain, and the Thief
+
+Everyone knows the song about the smoking mountain. A wizard who had grown powerful and strange and greedy stole three famous weapons, a trident that yearned toward open water, a warhammer forged in dwarven grief, and a greatsword that hungered toward the dark, and dragged them underground, and built a deathtrap of a dungeon around them, and was never seen again. In time, adventurers went in and took the weapons back out. The wizard they never found. He is a story told to children now, a thief and a madman, a shape with no inside to it.
+
+I am going to set three things beside that song, and I am not going to draw a line between them, because I cannot, and because Aprif, who was the most careful man I ever knew, would not draw it either, even to me, even at the end. A half-understood thing said aloud is more dangerous than a thing kept honestly in the dark. So here are the three things, laid side by side. You are a wiser reader than I am a writer. Draw your own line, or have the grace not to.
+
+The first thing. There is a sickness loose in the western roadlands, carried in a pale glittering dust. Those who take it are filled with terrible strength and a hostile, alien clarity, and they mutter a name that is not their own, and they are seized by a need to carve a single letter into wood and stone and their own skin. The name they mutter, I am told, is the thief's. No one can say why a dead madman's name should rise unbidden in the mouths of strangers a hundred years on. I record it because it troubles me and I do not understand it.
+
+The second thing. The three weapons did not stay taken. Something has been gathering them again, patiently, across years, moving them through honest hands toward the one mountain they came out of. And Aprif, in the last letter of his I would call clear, wrote me a single instruction underlined three times: that the three must never, under any circumstance, be brought together to that mountain. He did not explain. He never explained. But Aprif did not underline things.
+
+The third thing. In one of his last letters Aprif wrote that he had begun to wonder whether the world had the thief exactly backwards. *I think he was holding a door,* he wrote, *and not a hoard.* And in the very last letter, the one that reads like a man writing while looking over his shoulder, he copied out a single line he said he had found carved deep in the dark, in an old and careful hand, and said he could not stop thinking about it and did not yet know whose words they were. The line was: *I am still working on it.*
+
+That is all I have. A dust that makes the living wear a dead man's name. A set of weapons drifting home to a mountain they must never reach. A careful wizard's growing certainty that a thief was something other than a thief, and a phrase carved in the dark by a hand he could not name. The death in the black water sits at one end of this, and the smoking mountain sits at the other, and Aprif spent his deathless life walking the distance between them, and then he walked into the deep beneath that mountain and did not come back.
+
+I can feel the shape of the thing that connects all of it. I cannot prove a line of it. Neither could he, or he would have written it, and he did not. So I will not pretend to a certainty I was never given. I will only tell you that whatever the truth is, it is larger than a thief and older than the song, and the people who will need to know it are not yet born, or are children, or are walking toward that wood right now and do not know what they carry.
+
+## VII. Bryce, and the Long Outliving
+
+Let me set down one of the living before I return to the dead, because he is the one I find I cannot stop thinking of now that my own end is near, and because someone ought to write down what it costs to be the one who stays.
+
+Bryce Winter was the brightest blade I ever stood behind, and vain in the harmless way of beautiful people who have never once in their lives been overlooked. Underneath the vanity was the only ambition I ever heard him confess, and it was not conquest and not glory. It was permanence. He wanted to build a thing that would still be standing when he was not. He poured every coin of every haul into a frontier keep he named Hero's Hill, and he made it real, walls and a well and a gate and people who lived behind them and slept easier for it, and he was prouder of that gate than of any monster he ever put down.
+
+Here is the cruelty the songs leave out, because the songs end at the victory and do not stay for the bill. Bryce was a half-elf, and the elf in his blood meant he did not die when his short-lived friends did. He buried them. The mortal ones, across the long flat years after Blackmoor, the rogue and the commander and every human friend he had, until the bright company was scattered to its few long-lived remnants and a wizard who had refused to die. He had built a home so that something of his would outlast him, and instead he outlasted everyone who had made the home worth having. He did not grieve the way we short-lived do, all at once and then slowly less. He grieved sideways, the way the elf-blooded do, in long silences, in a face that did not change for a decade and then changed all at once over nothing, over an empty chair, over a song he was not expecting to hear.
+
+Where he is now I do not know. I watched the start of the long outliving and then I lost the thread of him. He went quiet, the way the long-lived go quiet, and then he went away, west I think, toward the grey water, the pull of the elf-blood in him drawing him on, the way they go when the weight of remembering grows heavier than the joy of it. He may well be alive. The half-elven linger, long after you have given up expecting it. If this account ever reaches a tall fair man with two sword-styles and a lifetime of funerals behind his eyes, I have one thing to say that I never managed to say while he could hear it. You built the gate, Bryce. It held. It is very nearly the only thing any of us made that the dust has not yet reached, and it was enough, and you may set the weight down whenever you are ready.
+
+[He wept here, a little, which he had not done at Laski's name and did at this one. I did not write it down at first. He told me to. He said grief keeps its own ledger, and a true history honors the entries it did not expect.]
+
+## VIII. The Weapons That Will Not Stay Lost
+
+The three weapons did not stay where the old adventurers left them. Something has been gathering them again, patiently, across years, moving them through honest hands toward the one mountain they came out of.
+
+Some of those honest hands are a gnome's. Blink came through the long years more or less whole, which was always his particular gift, and he turned a thief's eye for locks and marks into a shipping fortune out of Critwall. He moves cargo now for a great many people, and his tidy crates and his good name have been lent, without his full knowing, to the slow gathering Aprif warned me of. He has carried at least one of the three and either does not know it or has chosen not to ask, which in a gnome as quick as Blink is its own kind of knowing. I am fond of him and will not paint him a villain. He is a small player in a large game who has declined to look too closely at his own manifests, which is a thing more of us do than will admit it. The ranger-captain at Ringstown, a woman called Elnara, has a hand in it too, and I do not think even she sees the whole shape of what she serves. There is a mover behind the movers. I never learned the name. I have a fear, and I will set it down at the end, because a fear precisely stated is a kind of inheritance, and you may need it.
+
+The weapons have surfaced, now, in a poisoned wood north of Ringstown that the locals call the Twisted Thicket. The dust is loose there. A maddened beast walks there. And the three keys to whatever door Aprif feared are scattered among the trees, drifting, as such things do, toward the smoking mountain.
+
+That is where this history meets the present, and where I run out of past to be sure of.
+
+## IX. What I Know, and What I Fear
+
+[From here the lorekeeper did not dictate in full sentences. He gave me notes and fragments and a great deal of silence. I have assembled them as faithfully as I am able. The voice is mine where it must be. The knowledge is his.]
+
+What I know, and would stake my name on:
+
+The three weapons must never be brought together to that mountain. I do not know the whole reason. Aprif knew it and would not write it, and that silence from that man is the loudest warning I have ever received. Whatever good cause someone offers for carrying the three home, however brave or grieving or certain that someone is, the cause is wrong. Carry them anywhere else. Throw them in the sea. But not there, not together.
+
+Aprif went down into the Sunless Sea, below the smoking mountain, seven years before I set this down, following the thread he had followed all his deathless life, and he did not come back. I do not know if he lives. I believe he might, because I do not think that man knows how to stop, and because the arts that kept him are not easily undone. Blink searches for him still. If you ever meet a gnome asking after a desert wizard in the deep places, tell him the truth, whatever it is. He has earned the truth from someone.
+
+And what I fear:
+
+Laski had a younger sister, six years behind, who went silent after the Underdark and did not speak her grief loudly. I know this because the survivors mentioned her, across the years, with the quiet care of people who have decided some griefs are not theirs to carry aloud. I never knew her. I am not certain anyone who survived did, except perhaps Blink, and Blink's memory for names has never been reliable where it touches something he would rather not look at.
+
+I have heard three names, each from a different mouth, and I do not know if they name three people or one. Aprif, in one of his careful sideways letters, mentioned a factor out of Critwall who had pressed him with pointed questions about the Underdark, and called her Sarra. Blink, when I pressed him gently on a name attached to certain cargo manifests, gave me the name Maret, and nothing else, and changed the subject with the particular speed of a man who has decided he has already said too much. And the Purple Order, in the last word I had from them before they went quiet, referred in passing to a woman they called Ilara, who had asked questions they found unsettling about the nature of what lies beneath the smoking mountain.
+
+One name, or three. I do not know.
+
+But I have spent my life learning that the second fall would not look like the first, that it would not come as an army, that it would come as a contract and a forest and a careful hand moving honest cargo toward a mountain. And when I ask myself who in all this world would have both the patience and the reason to gather three weapons across decades and steer them home, who would have spent fifty years building the certainty that someone, finally, has to act, I think of the grieving girl behind those three names, and I am afraid.
+
+I hope I am wrong. I have been wrong before, and gladly. But if I am right, then understand this, you who read it: she will not be a monster. She will be the most reasonable person in the room. She will have done the arithmetic. And the thing that makes her dangerous is the thing that made her sibling beloved, the absolute inability to leave a wrong thing alone, turned by half a century of grief into a key that fits the only lock that must never turn.
+
+If you find her at the door, do not bring her an army. Find out what the careful wizard found beneath the mountain, and find whoever else ever stood where she is standing, with the same fear and the same grief and the same hand on the same lock, and learn what they chose. Bring her that. An argument might reach her. Nothing else will.
+
+That is the whole of what I have. It is not the whole of the story. I will not live to learn the rest.
+
+## Epilogue
+
+He died eleven days after he gave me this. The last thing he said that I could make into words was not about the mountain or the weapons. He asked whether Laski had been afraid, at the end. I told him no. Every account agrees. He said good, and closed his eyes, and that was the end of the dictation and very nearly the end of him.
+
+He left instructions for his own funeral, too, in the same breath as everything else, the way bards do, with one eye always on the song. They were short. *Sing me true,* he said, *and sing me short, and whatever else you do, do not do to me what I did to Lyrion, though between us the old fraud had it coming, and the Crawling Violet showed more restraint than I did.* I sang him true. I sang him short. Whether I was kinder to him than he was to Lyrion, or kinder than the Crawling Violet, I leave to the gods and to you.
+
+There is one thing he never wrote down and never asked me to, and I will set it here, because a true history honors the entries it did not expect, and because he is not here to turn it into a joke. Lyrion was my father.
+
+He was every pompous, soup-blessing, well-rehearsed thing my master says he was. I know this because Silvanius told me, in jokes and in footnotes, across twenty-four years. I was three when the Crawling Violet took him at the Temple of Death, too young to remember the sermons or the incense or the man himself, which is a thing Silvanius understood without my having to say it. Silvanius sang him into the ground in three verses that everyone agreed were unkind and accurate, and then he looked down at the half-elf girl standing at the edge of the grave with nowhere left to go, and he took her home that same day, and called her his apprentice, and spent the rest of his long life teaching her the difference between a true song and an easy one, and making her write down every joke he ever made about her father. I let him. The jokes were how he carried Lyrion, and they were how he carried me, and the gods help me, the verses were accurate. I do not use my father's name. But I have set his death down in my master's words exactly as my master told it, the Crawling Violet and the holy symbol and all of it, because Silvanius taught me that you do not get to keep only the dignified parts of the people you loved.
+
+I have kept his letters from Aprif, and his notes, and this. I am young, and half-elven, and I will carry it a long time. If it has reached you, then it outran the easy song, which is all he wanted.
+
+Do not let them sing it the easy way.
+
+Tasmin Reed

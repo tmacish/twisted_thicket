@@ -1,2 +1,6 @@
 .old/
 prompts/
+
+# Claude Code
+.claude/
+

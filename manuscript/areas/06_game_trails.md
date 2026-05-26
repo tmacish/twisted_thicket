@@ -28,7 +28,7 @@ The greatsword is embedded point-first in the trunk of a large white oak thirty 
 
 A character with Whelm, approaching the oak: Whelm becomes cold enough to be uncomfortable in the hand. Not painful, not dropping temperature, simply wrong. The two weapons are aware of each other. They have history. Whelm does not want to be near Blackrazor, and its expression of this is to become a tool you want to put down.
 
-**Retrieving it.** The blade is driven four inches into heartwood. Pulling it free requires either a Strength check at −2 or two characters making normal Strength checks in a coordinated effort. It comes free cleanly, no resistance from the wood, no special ceremony required. The oak does not visibly react, but the dead bark above the wound crumbles slightly, releasing a fine grey dust that is not white plume dust. It is simply dead wood. Blackrazor killed this tree the way it kills things: thoroughly and without noticing.
+**Retrieving it.** The blade is driven four inches into heartwood. Pulling it free requires either a Strength check at -2 or two characters making normal Strength checks in a coordinated effort. It comes free cleanly, no resistance from the wood, no special ceremony required. The oak does not visibly react, but the dead bark above the wound crumbles slightly, releasing a fine grey dust that is not white plume dust. It is simply dead wood. Blackrazor killed this tree the way it kills things: thoroughly and without noticing.
 
 **What Blackrazor feels like.** Picking it up is not the same as picking up a sword. The first thing is the weight, slightly less than expected for a blade this size, which is wrong. The second is the sound: not from the blade but from somewhere inside the person holding it, a note below the threshold of hearing that is felt in the sternum before it is heard anywhere else. It is not unpleasant. That is, as rumour #86 correctly notes, the problem.
 
@@ -46,11 +46,11 @@ Forty feet west of the main trail, propped upright against a pine with his back 
 
 **How he died.** A healer's examination or a successful Intelligence check reveals: a single narrow wound to the back, below the left shoulder blade, angled upward. The same profile as Kael Vorst at Area 3. The same killer, the same blade, the same post-mortem arrangement. The K carved into Kael's forehead and the K carved into Orn's forehead were made by the same hand. Kael was the contact the party had evidence for. Orn is evidence that the killer is still working, and still moving north.
 
-**Fresh tracks near the body.** A character who examines the ground immediately around the pine finds a separate set of narrow-soled boot prints distinct from the 18-to-24-hour transit tracks described in the trail reading above. These are recent — made within the last few hours, the mud still soft in the impressions. They approach from the north, stop at the pine, and return north. The operative came back through after Orn followed the note.
+**Fresh tracks near the body.** A character who examines the ground immediately around the pine finds a separate set of narrow-soled boot prints distinct from the 18-to-24-hour transit tracks described in the trail reading above. These are recent ,  made within the last few hours, the mud still soft in the impressions. They approach from the north, stop at the pine, and return north. The operative came back through after Orn followed the note.
 
 **The crate.** The seal on its lid matches neither Blink Tinderflip's mark nor the mountain-peak secondary stamp from Area 5, it bears a plain wax impression with no design, pressed by a thumb. Inside: 3 doses of white plume dust in ceramic tubes and a folded paper, written in a careful hand. The paper is not coded. It reads:
 
-> *For the attention of the receiving party: the second cache has been relocated. The original staging point (the camp supply shed) was compromised. These three tubes are the remainder. The balance of the shipment moved north ahead of schedule. Find the cave and follow the markers. Do not use the obsidian method of entry, that key is spent.* (See Area 7 referee notes for which disc this refers to — it is the operative's disc, not Kael Vorst's.)
+> *For the attention of the receiving party: the second cache has been relocated. The original staging point (the camp supply shed) was compromised. These three tubes are the remainder. The balance of the shipment moved north ahead of schedule. Find the cave and follow the markers. Do not use the obsidian method of entry, that key is spent.* (See Area 7 referee notes for which disc this refers to ,  it is the operative's disc, not Kael Vorst's.)
 
 The note was written for Orn to deliver. It was taken from him after he died and placed back in the crate, where it would be found with the body. Whoever wrote it, the silk-wearing operative, wanted the party to find this, or at least did not care if they did. They are not afraid of being understood. They are already north.
 
@@ -69,7 +69,7 @@ They will attempt to ambush the party if the party approaches from the south (th
 - They have found something the scavengers came to find (any piece of Coach B cargo, any dust), AND
 - They are not planning to report the scavengers' presence to Elnara,
 
-…the scavengers will sell what they know for 10 gp total: the partial buyer network in Critwall (names that partially overlap with the coded ledger from Area 2), the fact that a second group passed through heading north yesterday (the silk-wearer, not the party, someone else), and the location of a knotted gnome cord they found but cannot read.
+...the scavengers will sell what they know for 10 gp total: the partial buyer network in Critwall (names that partially overlap with the coded ledger from Area 2), the fact that a second group passed through heading north yesterday (the silk-wearer, not the party, someone else), and the location of a knotted gnome cord they found but cannot read.
 
 If the party has the lost gnome from the encounter below and can translate the cord: it reads differently from the others. The others said *do not follow the light.* This one, the most recently tied, says *the cave is still safe.* This is directions to Area 7, marked for gnomes who know the code.
 
@@ -78,7 +78,7 @@ If the party has the lost gnome from the encounter below and can translate the c
 ### Rival Scavengers (Tren, Harwick, Ossi, Maret)
 **Fighter 1**, Human, Mixed
 **AC** 6 *(leather + small shield)*, **HD** 1, **hp** 5, 6, 4, 5
-**Attacks** 1/round: light crossbow +1 to hit, 1d4+1 damage (range 6"/12"/18"); or short sword +1 to hit, 1d6 damage
+**Attacks** 1/round: light crossbow +1 to hit, 1d4+1 damage (range 60 ft./120 ft./180 ft.); or short sword +1 to hit, 1d6 damage
 **Saving Throws** Death/Poison 14, Wands 15, Paralyzation 16, Breath 17, Spells 17
 **Morale** 7 *(drops to 4 if their leader falls)*
 
@@ -110,7 +110,7 @@ She speaks Common but prefers not to. She will not discuss the mountain, the dus
 
 She will trade this knowledge, specifically, guiding the party to Area 7, for escort south to the forest edge when the party is finished. She does not want payment. She wants to go home.
 
-*Referee note:* If the party encountered a lost gnome via wandering encounter table entry 13, that was Nib. If so, she recognises the party and will come down from her tree immediately — the survival hesitation is gone. She offers guidance to Area 7 as described, simply without the negotiation delay. Nib is a specific individual, not a generic encounter.
+*Referee note:* If the party encountered a lost gnome via wandering encounter table entry 13, that was Nib. If so, she recognises the party and will come down from her tree immediately ,  the survival hesitation is gone. She offers guidance to Area 7 as described, simply without the negotiation delay. Nib is a specific individual, not a generic encounter.
 
 ---
 
@@ -132,6 +132,6 @@ She will trade this knowledge, specifically, guiding the party to Area 7, for es
 
 **On Orn's note and "the cave."** The cave referenced in the note is Area 7, the Riddle Cave of the Ash Tongue. The warning that "that key is spent" refers to the operative's own disc, which they used to bypass the face mechanism when they entered the cave two days earlier. Kael's disc, found on his body at Area 3, was a separate copy still intact when Kael died. By the time the party reads this note, both discs are spent, but for unrelated reasons: the operative's from opening the cave, Kael's from the party's use at Area 5 (if they used it there). A player who asks how the operative knew the disc would be spent has the right instinct but the wrong disc in mind. The note was written for a different reader and a different set of circumstances. The party is not the intended audience, and reading it as the audience they are, people who have already severed the control connection, gives them a significant intelligence advantage: whoever is north of here does not know the control apparatus has been disrupted.
 
-**On the silk-wearing operative (Varek Sorn).** They passed through the game trails 18 to 24 hours ago on their main transit, setting up the note for Orn, killing Kael during the logging camp attack, and exiting north. When Orn followed the note north a few hours ago, the operative had not yet cleared the area entirely — they intercepted him in the game trails, killed him, arranged the body, and continued north. The 18-to-24-hour transit tracks and the fresh tracks near Orn's body are from two separate passages through the same ground. They are not in any area of this adventure now; they have left the Thicket. Where they went is north, and what they were protecting is the cave and whatever comes after it. If this adventure is a prologue, the operative is a thread the party will encounter again, somewhere underground, wearing something that does not smell like the forest.
+**On the silk-wearing operative (Varek Sorn).** They passed through the game trails 18 to 24 hours ago on their main transit, setting up the note for Orn, killing Kael during the logging camp attack, and exiting north. When Orn followed the note north a few hours ago, the operative had not yet cleared the area entirely ,  they intercepted him in the game trails, killed him, arranged the body, and continued north. The 18-to-24-hour transit tracks and the fresh tracks near Orn's body are from two separate passages through the same ground. They are not in any area of this adventure now; they have left the Thicket. Where they went is north, and what they were protecting is the cave and whatever comes after it. If this adventure is a prologue, the operative is a thread the party will encounter again, somewhere underground, wearing something that does not smell like the forest.
 
 **On pacing.** Area 6 is not a destination, it is a transit zone that rewards the party for thoroughness. A party that moves through quickly finds Blackrazor and nothing else. A party that reads the trails, examines the dead smuggler, talks to the scavengers, and climbs the right tree finds the full picture of who is moving through this forest and in what direction. Both outcomes are valid. The second outcome is richer. Do not force the slow path, but reward it.

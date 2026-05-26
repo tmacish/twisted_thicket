@@ -34,7 +34,7 @@ Divide the players as evenly as possible between the two coaches before the scen
 
 ## Perception Check
 
-Each player rolls **1d20 and adds their Wisdom modifier** (OSRIC/2E: Wisdom reaction/intuition adjustment, or a straight Wisdom check if modifiers are not in use). Sum the totals within each coach separately.
+Each player rolls **1d20 and adds their Wisdom modifier** (2E: Wisdom magical defence adjustment, or a straight Wisdom check if the adjustment is not in use). Sum the totals within each coach separately.
 
 The coach with the **lower sum** failed to notice in time.
 
@@ -49,21 +49,20 @@ The coach with the **lower sum** failed to notice in time.
 >
 > It is through the tree line and gone before you can draw a weapon.
 
-**Every player in the destroyed coach must Save vs. Paralyzation.**
+**Every player in the destroyed coach must make a Dexterity check.**
 
 | Result | Damage |
 |--------|--------|
-| Failed save | 2d6 trampling + 1d6 falling (3d6 total) |
-| Successful save | 1d6 falling only |
+| Failed check | 2d6 trampling + 1d6 falling (3d6 total) |
+| Successful check | 1d6 falling only |
 
 The surviving coach and its cargo are undamaged.
 **Scattered cargo:** Roll 1d6 for the sealed consignment from the destroyed coach.
 
 | d6 | Result |
 |----|--------|
-| 1–4 | Intact but thrown from the road; recoverable from the verge or nearby undergrowth |
-| 5–6 | Outer casing smashed; inner case or crate remains closed unless forced open |
-|
+| 1-4 | Intact but thrown from the road; recoverable from the verge or nearby undergrowth |
+| 5-6 | Outer casing smashed; inner case or crate remains closed unless forced open |
 
 If Coach B is struck, the correspondence case is lost on the road south of Ringstown, close enough that Elnara's wardens can recover it without the party's involvement. It is not a Thicket objective. If Coach A is struck, *Wave* is thrown clear and becomes the obvious recovery objective. In either case, do **not** identify additional White Plume relics here.
 

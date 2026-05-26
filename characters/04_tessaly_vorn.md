@@ -2,6 +2,8 @@
 
 *Curate-errant from a St. Cuthbert temple in the central Shield Lands, sent north to investigate and document the dust's theological implications. "A substance that compels the carving of a specific name" was, apparently, considered a matter of religious concern. She agrees.*
 
+**Alignment:** Lawful Neutral
+
 ---
 
 ## Ability Scores
@@ -22,10 +24,14 @@
 ## Combat Statistics
 
 **Hit Points:** 32  
-**Armour Class:** 3 *(chain mail AC 5, shield −1, ring −1)*  
+**Armour Class:** 3 *(chain mail AC 5, shield -1, ring -1)*  
 **Movement:** 9" *(chain mail encumbrance)*  
 **THAC0:** 18 *(base, before weapon bonuses)*  
 **Attacks per Round:** 1
+**Hit Die:** d8
+**Experience Points:** 40,000 / 55,001
+**Age:** 26
+**Deity:** St. Cuthbert
 
 **Weapons:**
 
@@ -94,12 +100,15 @@
 | Skeleton | T |
 | Zombie | T |
 | Ghoul | T |
-| Shadow | 7 |
-| Wight | 9 |
-| Ghast | 11 |
-| Wraith | D |
+| Shadow | T |
+| Wight | 7 |
+| Ghast | 10 |
+| Wraith | 13 |
+| Mummy | - |
+| Spectre | - |
+| Vampire | - |
 
-*T = Automatic turn; D = Automatic destroy; numbers indicate minimum roll needed on 1d20.*
+*T = Automatic turn; D = Automatic destroy; numbers = minimum roll on 1d20; - = cannot be turned at this level.*
 
 ---
 
@@ -122,6 +131,12 @@ Tessaly's temple sent her north when three separate reports arrived in the same 
 | Reading / Writing | Intelligence | 75% |
 | Ancient History | Intelligence | 65% |
 | Etiquette | Charisma | 70% |
+
+---
+
+## Languages
+
+Common, Old Oeridian, Elvish, Dwarven, Keoish
 
 ---
 

@@ -2,6 +2,8 @@
 
 *Scholar from Critwall, specialising in mind-affecting magic and the theory of consciousness transfer. He came north because someone is doing badly what he has spent twelve years studying how to do properly. This offends him professionally.*
 
+**Alignment:** True Neutral
+
 ---
 
 ## Ability Scores
@@ -9,7 +11,7 @@
 | Ability | Score | Notes |
 |---------|-------|-------|
 | Strength | 9 |, |
-| Dexterity | 14 | −1 AC |
+| Dexterity | 14 | -1 AC |
 | Constitution | 12 |, |
 | Intelligence | 18 | +10% to learn spells; reads all languages; additional spells per level |
 | Wisdom | 13 |, |
@@ -20,10 +22,13 @@
 ## Combat Statistics
 
 **Hit Points:** 18  
-**Armour Class:** 6 *(bracers AC 7, Dex −1)*  
+**Armour Class:** 6 *(bracers AC 7, Dex -1)*  
 **Movement:** 12"  
 **THAC0:** 19 *(base, before weapon bonuses)*  
 **Attacks per Round:** 1
+**Hit Die:** d4
+**Experience Points:** 50,000 / 60,001
+**Age:** 38
 
 **Weapons:**
 
@@ -107,6 +112,12 @@ Mordechai has published two monographs on mind-affecting magic and is working on
 | Ancient History | Intelligence | 85% |
 | Alchemy | Intelligence | 95% |
 | Astrology | Intelligence | 90% |
+
+---
+
+## Languages
+
+Common, Old Oeridian, Elvish, Dwarven, Gnomish, Ancient Baklunish, Flannic, Orcish *(reads all written languages)*
 
 ---
 

@@ -3,9 +3,9 @@
 
 ---
 
-Fifteen years garrison work in the Shield Lands. Eventually made sergeant-equivalent. Then a border reduction dissolved the unit and left you moderately well-paid and without a wall to watch. You have been doing security and escort work with **Calder Mourne** on and off for three years — he finds the jobs, you pack the plate mail, nobody discusses it as a formal arrangement because it does not need to be formal.
+Fifteen years garrison work in the Shield Lands. Eventually made sergeant-equivalent. Then a border reduction dissolved the unit and left you moderately well-paid and without a wall to watch. You have been doing security and escort contracts since, mostly in the northern Shield Lands, the kind of work that does not require a formal arrangement because the terms fit on a single page.
 
-When Calder said *"Elnara has a job in the north, involving a large and dangerous animal,"* you said *"Reasonable"* and started packing. You did not ask for additional details, because in your experience additional details rarely change what you end up doing with your hammer.
+A contract came through the garrison network. Work for **Ranger-Captain Elnara**, northern road, large and dangerous animal, pay listed. You read it, noted the pay, and started packing. You did not ask for additional details, because in your experience additional details rarely change what you end up doing with your hammer.
 
 ---
 
