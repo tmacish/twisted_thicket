@@ -80,6 +80,24 @@ Wave does neither of these things. Wave is a sea weapon, aquatic in origin, alig
 
 ---
 
+## The Commission
+
+This ask is not conditional on the party having assembled the full picture. Elnara commissions any party that returned with the weapons and demonstrated competence in the Thicket. She may explain more or less depending on what they brought back, but she always asks.
+
+She waits until the accounting is done. Then:
+
+She does not say *the mountain is dangerous* or *this will be difficult.* She says: *"The source is still there. The network in the Thicket was a test, not a destination. Something underground has been moving weapons toward a mountain for years, and I cannot move forces there officially without district authorization that would take months and arrive too visibly to do any good."*
+
+She looks at the party. *"What I can do is pay people who already know the enemy's mark, have held the weapons, and are standing in my office with a route. If you are willing to be those people."*
+
+She names a figure. Set it high enough to matter. She does not negotiate it down.
+
+**On the weapons:** She does not tell the party to bring the weapons to the mountain. She does not tell them not to. If asked directly: *"The weapons are yours to decide. I am not certain they are safer here than north of here. What I am certain of is that the mountain is the source and someone needs to go to the source."* She will not be drawn further on this. The decision is the party's.
+
+**Referee note:** This is the moment SF1 ends and the campaign toward White Plume Mountain begins. If the party is hesitant, the weapons themselves may settle the question: Whelm has been leaning northeast since Area 2. Blackrazor has been pulling toward depth. The route north will feel, to any character who has been carrying either weapon, less like a choice than a direction they have been facing since the Thicket.
+
+---
+
 ## The Final Image
 
 *Read this when the party departs Ringstown heading north, or as the closing image of this session.*
